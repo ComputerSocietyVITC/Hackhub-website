@@ -15,9 +15,9 @@ const NavBar: React.FC = () => {
     >
       <ul className="flex items-center">
         <li>
-          <Link href={"/home"} className="text-white px-6 py-1 rounded-full hover:bg-[#FFFFFF17]">
+          <button className="text-white px-6 py-1 rounded-full hover:bg-[#FFFFFF17]">
             Home
-          </Link>
+          </button>
         </li>
         <li>
           <button className="text-white px-6 py-1 hover:bg-[#FFFFFF17] rounded-full">
