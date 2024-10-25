@@ -31,7 +31,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }
       className="h-screen w-screen relative overflow-hidden flex items-center justify-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
+        backgroundSize: '120%',
         backgroundPosition: `calc(50% + ${mousePosition.x}px) calc(50% + ${mousePosition.y}px)`,
         backgroundRepeat: 'no-repeat',
         backgroundColor: 'black',

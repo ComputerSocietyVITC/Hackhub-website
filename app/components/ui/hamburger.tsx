@@ -1,28 +1,24 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { House, Menu, Users, Calendar, Handshake } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const sections = [
   {
     id: "home",
     name: "Home",
-    icon: <House className="h-4 w-4 text-gray-300" />,
   },
   {
     id: "about",
     name: "About",
-    icon: <Users className="h-4 w-4 text-gray-300" />,
   },
   {
     id: "events",
-    name: "Our Events",
-    icon: <Calendar className="h-4 w-4 text-gray-300" />,
+    name: "Events",
   },
   {
     id: "sponsors",
     name: "Sponsors",
-    icon: <Handshake className="h-4 w-4 text-gray-300" />,
   },
 ];
 
@@ -35,32 +31,30 @@ export function Hamburger() {
       <button
         id="toggleButton"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="md:hidden p-2 border rounded-full border-gray-600 hover:bg-gray-700 transition-all"
+        className="md:hidden p-2 border rounded-full border-gray-600 hover:bg-gray-200 transition-all fixed top-4 right-4 z-50"
       >
-        <Menu className="h-6 w-6 text-gray-300" />
+        <Menu className="h-8 w-8 text-gray-300 hover:text-black" />
       </button>
+
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-black p-4 rounded-lg shadow-lg mb-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 backdrop-blur-lg z-40"
           >
             {sections.map((section) => (
-              <button
+              <a
                 key={section.id}
-                className={`w-full flex items-center p-2 rounded-md text-left justify-start transition-transform duration-200 ${
+                href={`#${section.id}`}
+                className={`text-white text-xl flex items-center p-4 rounded-md justify-center w-full max-w-sm transition-transform duration-200 ${
                   activeSection === section.id
                     ? "text-gray-300"
                     : "hover:bg-gray-600 hover:text-white"
                 }`}
-                style={{
-                  fontSize: activeSection === section.id ? "inherit" : "1rem",
-                  transform:
-                    activeSection === section.id ? "none" : "scale(1.05)",
-                }}
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   setActiveSection(section.id);
                   document
                     .getElementById(section.id)
@@ -68,9 +62,8 @@ export function Hamburger() {
                   setIsMenuOpen(false);
                 }}
               >
-                {section.icon}
-                <span className="ml-2">{section.name}</span>
-              </button>
+                <span className="ml-4">{section.name}</span>
+              </a>
             ))}
           </motion.div>
         )}

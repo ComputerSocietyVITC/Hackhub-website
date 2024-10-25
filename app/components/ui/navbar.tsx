@@ -3,7 +3,7 @@ import React from 'react';
 const NavBar: React.FC = () => {
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#aboutpage' },
+    { name: 'About', href: '#about' },
     { name: 'Events', href: '#events' },
     { name: 'Sponsors', href: '#sponsors' },
   ];

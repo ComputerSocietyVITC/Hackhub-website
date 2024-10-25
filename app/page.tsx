@@ -1,6 +1,6 @@
 import React from "react";
 import Homepage from "./components/homepage";
-import Aboutpage from "./components/aboutpage";
+import Aboutpage from "./components/about";
 import Event from "./components/event";
 import Sponsors from "./components/sponsors";
 import GlobalLayout from "./components/GlobalLayout";
@@ -16,7 +16,7 @@ export default function Home() {
         </GlobalLayout>
       </div>
 
-      <div id="aboutpage">
+      <div id="about">
           <GlobalLayout backgroundImage="/images/bgtrack2.webp">
               <Aboutpage />
           </GlobalLayout>
@@ -33,8 +33,10 @@ export default function Home() {
                <Sponsors />
             </GlobalLayout>
       </div>
-
-      <NavBar />
+         <div className="navbar-container">
+             <NavBar />
+         </div>
+      
     </div>
   );
 }
