@@ -4,12 +4,14 @@ import Homepage from "./components/homepage";
 import Aboutpage from "./components/aboutpage";
 import Event from "./components/event";
 import Sponsors from "./components/sponsors";
+
 import GlobalLayout from "./components/GlobalLayout";
 
 
 export default function Home() {
   return (
     <div>
+
       <GlobalLayout backgroundImage="/images/bgtrack1.webp">
         <Homepage />
       </GlobalLayout>
@@ -24,6 +26,9 @@ export default function Home() {
         <Sponsors />
       </GlobalLayout>
     */}
+
+     
+   
     </div>
   );
 }
