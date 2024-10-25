@@ -35,7 +35,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }
         backgroundPosition: `calc(50% + ${mousePosition.x}px) calc(50% + ${mousePosition.y}px)`,
         backgroundRepeat: 'no-repeat',
         backgroundColor: 'black',
-        transition: 'background-position 200ms ease-out',
+        transition: 'background-position 300ms ease-out',
       }}
     >
       {children}

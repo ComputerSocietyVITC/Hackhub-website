@@ -1,39 +1,36 @@
-import Link from 'next/link';
 import React from 'react';
 
 const NavBar: React.FC = () => {
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '#aboutpage' },
+    { name: 'Events', href: '#events' },
+    { name: 'Sponsors', href: '#sponsors' },
+  ];
+
   return (
     <nav
-    style={{
-      position: 'fixed',
-      left: '500px',     
-      width: '772px',   
-      height: '56px',    
-      top: '8px',
-  }} 
-    className="bg-[#0a0a0a] p-4"
+      style={{
+        position: 'fixed',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        top: '8px',
+        maxWidth: '100%',
+        width: '772px',
+      }}
+      className=" p-4 rounded-lg"
     >
-      <ul className="flex items-center">
-        <li>
-          <button className="text-white px-6 py-1 rounded-full hover:bg-[#FFFFFF17]">
-            Home
-          </button>
-        </li>
-        <li>
-          <button className="text-white px-6 py-1 hover:bg-[#FFFFFF17] rounded-full">
-            About
-          </button>
-        </li>
-        <li>
-          <button className="text-white px-6 py-1 hover:bg-[#FFFFFF17] rounded-full">
-            Events
-          </button>
-        </li>
-        <li>
-          <button className="text-white px-6 py-1 hover:bg-[#FFFFFF17] rounded-full">
-            Sponsors
-          </button>
-        </li>
+      <ul className="flex flex-col md:flex-row items-center justify-center md:space-x-4 space-y-2 md:space-y-0">
+        {navItems.map(({ name, href }) => (
+          <li key={name} className="flex justify-center w-full md:w-auto">
+            <a
+              href={href}
+              className="text-white w-full md:w-auto px-6 py-1 rounded-full hover:bg-[#FFFFFF17] text-center"
+            >
+              {name}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
