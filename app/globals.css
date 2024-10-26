@@ -18,29 +18,38 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Ensure there's no body margin */
 }
 
 .hamburger-container {
   display: none;
 }
 
+.navbar-container {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .hamburger-container {
     display: block;
     position: absolute;
-    top: 1rem;   
-    right: 1rem; 
-    z-index: 10; 
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+  }
+
+  /* Ensure sections fill the viewport height */
+  .images-container {
+    width: 100vw;
+    height: 100vh;
+  
+    background-size:cover;
+    background-position:69%; /* Hide any overflow */
   }
 }
 
-.navbar-container{
-  display:none;
-}
-
-@media (min-width: 768px){
-  .navbar-container{
-    display:block
+@media (min-width: 768px) {
+  .navbar-container {
+    display: block;
   }
 }
