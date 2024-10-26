@@ -22,7 +22,7 @@ export default function Home() {
       </div>
 
       <div id="events">
-        <GlobalLayout backgroundImage="/images/Background_3.svg">
+        <GlobalLayout backgroundImage="/images/bgtrack3.webp">
           <Event />
         </GlobalLayout>
       </div>
