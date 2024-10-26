@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import Card from './ui/card';
 
 const Event = () => {
   return (
@@ -12,9 +13,9 @@ const Event = () => {
             <p className="text-white text-base font-bold text-3xl">02</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 mt-20 px-32">
-            <div className="min-h-[600px] rounded-lg bg-white/10"></div>
-            <div className="min-h-[600px] rounded-lg bg-white/10"></div>
-            <div className="min-h-[600px] rounded-lg bg-white/10"></div>
+            <Card/>
+            <Card/>
+            <Card/>
           </div>
         </div>
       </div>
