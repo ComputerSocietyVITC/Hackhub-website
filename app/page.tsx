@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <div id="home">
-        <GlobalLayout backgroundImage="/images/Background_1.svg" >
+        <GlobalLayout backgroundImage="/images/Background_1.png" >
           <Homepage />
         </GlobalLayout>
       </div>
@@ -22,13 +22,13 @@ export default function Home() {
       </div>
 
       <div id="events">
-        <GlobalLayout backgroundImage="/images/bgtrack3.webp">
+        <GlobalLayout backgroundImage="/images/Background_2.png">
           <Event />
         </GlobalLayout>
       </div>
 
       <div id="sponsors">
-        <GlobalLayout backgroundImage="/images/Background_4.svg">
+        <GlobalLayout backgroundImage="/images/Background_4.png">
           <Sponsors />
         </GlobalLayout>
       </div>

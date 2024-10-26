@@ -38,13 +38,25 @@ body {
     z-index: 10;
   }
 
-  /* Ensure sections fill the viewport height */
-  .images-container {
-    width: 100vw;
-    height: 100vh;
-  
-    background-size:cover;
-    background-position:69%; /* Hide any overflow */
+  /* Logo Position Adjustments for Smaller Screens */
+  .homepage-logo {
+    top: 30%; /* Adjust Hackhub logo position for smaller screens */
+  }
+
+  .homepage-2025-logo {
+    top: 50%; /* Adjust 2025 logo position for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-logo {
+    top: 25%; /* Further adjust Hackhub logo position for very small screens */
+    width: 70vw; /* Adjust width for smaller screens */
+  }
+
+  .homepage-2025-logo {
+    top: 45%; /* Further adjust 2025 logo position for very small screens */
+    width: 20vw; /* Adjust width for smaller screens */
   }
 }
 
