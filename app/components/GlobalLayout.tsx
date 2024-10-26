@@ -9,60 +9,67 @@ interface GlobalLayoutProps {
 
 const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isMobile, setIsMobile] = useState(false);
-  const requestRef = useRef<number | null>(null);
+  const [opacity, setOpacity] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const updateIsMobile = () => setIsMobile(window.innerWidth <= 768);
-      updateIsMobile(); // Set initial value on mount
+    const handleMouseMove = (event: MouseEvent) => {
+      const x = (event.clientX / window.innerWidth - 0.5) * 200;
+      const y = (event.clientY / window.innerHeight - 0.5) * 200;
+      setMousePosition({ x, y });
+    };
 
-      let targetX = 0;
-      let targetY = 0;
-
-      const handleMouseMove = (event: MouseEvent) => {
-        const maxMove = isMobile ? 15 : 30;
-        targetX = Math.max(-maxMove, Math.min(maxMove, (event.clientX / window.innerWidth) * maxMove));
-        targetY = Math.max(-maxMove, Math.min(maxMove, (event.clientY / window.innerHeight) * maxMove));
-      };
-
-      const animateBackground = () => {
-        setMousePosition((prevPos) => {
-          const x = prevPos.x + (targetX - prevPos.x) * 0.08;
-          const y = prevPos.y + (targetY - prevPos.y) * 0.08;
-          return { x, y };
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const scrollProgress = 1 - entry.intersectionRatio;
+            setOpacity(Math.min(scrollProgress * 1.2, 0.85));
+          }
         });
-        requestRef.current = requestAnimationFrame(animateBackground);
-      };
+      },
+      {
+        threshold: new Array(101).fill(0).map((_, i) => i / 100),
+        rootMargin: "-100px 0px",
+      }
+    );
 
-      window.addEventListener('mousemove', handleMouseMove);
-      window.addEventListener('resize', updateIsMobile);
-      requestRef.current = requestAnimationFrame(animateBackground);
-
-      return () => {
-        window.removeEventListener('mousemove', handleMouseMove);
-        window.removeEventListener('resize', updateIsMobile);
-        if (requestRef.current) cancelAnimationFrame(requestRef.current);
-      };
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
     }
-  }, [isMobile]);
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <main
-      className="relative overflow-hidden flex items-center justify-center"
-      style={{
-        height: isMobile ? '100vh' : '200vh',
-        width: '100vw',
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: isMobile ? 'cover' : '120%',
-        backgroundPosition: `${50 + mousePosition.x}% ${50 + mousePosition.y}%`, // Smoother positioning update
-        backgroundRepeat: 'no-repeat',
-        backgroundColor: 'black',
-        transition: 'background-position 200ms ease-out',
-      }}
+    <section 
+      ref={sectionRef} 
+      className="h-screen w-screen relative overflow-hidden flex items-center justify-center"
+      style={{ perspective: '2000px' }}
     >
-      {children}
-    </main>
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          transform: `translate3d(${mousePosition.x}px, ${mousePosition.y}px, 0) scale(1.1)`,
+          transition: 'transform 0.2s ease-out',
+        }}
+      />
+      <div
+        className="absolute inset-0 bg-black transition-opacity duration-300 ease-in-out"
+        style={{ opacity }}
+      />
+      <div className="relative z-10 w-full h-full flex items-center justify-center">
+        {children}
+      </div>
+    </section>
   );
 };
 
