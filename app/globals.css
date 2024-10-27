@@ -18,4 +18,50 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Ensure there's no body margin */
+}
+
+.hamburger-container {
+  display: none;
+}
+
+.navbar-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger-container {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+  }
+
+  /* Logo Position Adjustments for Smaller Screens */
+  .homepage-logo {
+    top: 30%; /* Adjust Hackhub logo position for smaller screens */
+  }
+
+  .homepage-2025-logo {
+    top: 50%; /* Adjust 2025 logo position for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-logo {
+    top: 25%; /* Further adjust Hackhub logo position for very small screens */
+    width: 70vw; /* Adjust width for smaller screens */
+  }
+
+  .homepage-2025-logo {
+    top: 45%; /* Further adjust 2025 logo position for very small screens */
+    width: 20vw; /* Adjust width for smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    display: block;
+  }
 }
