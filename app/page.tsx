@@ -12,25 +12,25 @@ export default function Home() {
   return (
     <div className="h-screen overflow-y-auto">
       <div id="home" className="snap-start h-screen">
-        <GlobalLayout backgroundImage="/images/Background_1.svg">
+        <GlobalLayout backgroundImage="/images/Background_1.png">
           <Homepage />
         </GlobalLayout>
       </div>
 
       <div id="about" className="snap-start h-screen">
-        <GlobalLayout backgroundImage="/images/Background_4.svg">
+        <GlobalLayout backgroundImage="/images/bgtrack2.webp">
           <Aboutpage />
         </GlobalLayout>
       </div>
       
       <div id="events" className="snap-start h-screen">
-        <GlobalLayout backgroundImage="/images/Background_3.svg">
+        <GlobalLayout backgroundImage="/images/Background_3.png">
           <Event />
         </GlobalLayout>
       </div>
       
       <div id="sponsors" className="snap-start h-screen">
-        <GlobalLayout backgroundImage="/images/Background_4.svg">
+        <GlobalLayout backgroundImage="/images/Background_4.png">
           <Sponsors />
         </GlobalLayout>
       </div>
