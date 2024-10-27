@@ -1,12 +1,18 @@
+'use client';
 import React from 'react';
 
 const NavBar: React.FC = () => {
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '#about' },
-    { name: 'Events', href: '#events' },
-    { name: 'Sponsors', href: '#sponsors' },
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Events', id: 'events' },
+    { name: 'Sponsors', id: 'sponsors' },
   ];
+
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <nav
@@ -18,17 +24,17 @@ const NavBar: React.FC = () => {
         maxWidth: '100%',
         width: '772px',
       }}
-      className=" p-4 rounded-lg"
+      className="p-4 rounded-lg"
     >
       <ul className="flex flex-col md:flex-row items-center justify-center md:space-x-4 space-y-2 md:space-y-0">
-        {navItems.map(({ name, href }) => (
+        {navItems.map(({ name, id }) => (
           <li key={name} className="flex justify-center w-full md:w-auto">
-            <a
-              href={href}
+            <button
+              onClick={() => scrollToSection(id)}
               className="text-white w-full md:w-auto px-6 py-1 rounded-full hover:bg-[#FFFFFF17] text-center"
             >
               {name}
-            </a>
+            </button>
           </li>
         ))}
       </ul>
