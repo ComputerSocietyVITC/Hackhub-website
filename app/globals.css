@@ -14,8 +14,8 @@
   }
 }
 
-::-webkit-scrollbar{
-  width: 0px;
+::-webkit-scrollbar {
+  width: 0px;  /* WebkKit hide scrollbar */
 }
 
 body {
@@ -23,6 +23,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0; /* Ensure there's no body margin */
+  -ms-overflow-style: none;  /* IE and Edge hide scrollbar */
+  scrollbar-width: none;  /* Firefox hide scrollbar */
 }
 
 .hamburger-container {
