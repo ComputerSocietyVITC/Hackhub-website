@@ -1,21 +1,9 @@
 'use client'
 import React from 'react';
-import Image from 'next/image'
+import Card from './ui/card';
 
 const Event = () => {
   return (
-<<<<<<< Updated upstream
-    <div className="bg-cover bg-center h-screen w-screen flex items-center relative justify-center">
-       <div
-        className="bg-center bg-no-repeat bg-contain h-[2vh] w-[60vw] absolute overflow-auto"
-        style={{
-          backgroundImage: 'url(/images/line2.webp)', // path to your .webp file
-          top: '5%', // Adjust this position as needed
-          left: '60%',
-          transform: 'translate(-50%, -50%)'
-        }}
-      />
-=======
     <div className="bg-cover bg-center h-screen w-screen flex items-center justify-center">
       <div className="min-h-screen w-full flex justify-center">
         <div className="mt-12 w-full px-5">
@@ -31,7 +19,6 @@ const Event = () => {
           </div>
         </div>
       </div>
->>>>>>> Stashed changes
     </div>
   );
 };
