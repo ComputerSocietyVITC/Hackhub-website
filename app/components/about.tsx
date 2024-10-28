@@ -8,7 +8,7 @@ const Aboutpage = () => {
       <div className="min-h-screen w-full flex justify-center">
         <div className="mt-40 w-full px-5">
           <div className="flex justify-between items-center px-12">
-            <p className="text-white text-4xl font-bold">01</p>
+            <p className="text-white text-base font-bold">01</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
             <p className="text-white text-4xl font-bold ">ABOUT</p>
           </div>
