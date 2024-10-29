@@ -25,12 +25,16 @@ const Homepage: React.FC = () => {
         className="bg-no-repeat bg-contain h-[10vh] w-[10vw] absolute homepage-2025-logo"
         style={{
           backgroundImage: 'url(images/2025.svg)',
-          top: '60%', // Base position; this will be overridden by media queries
-          left: '50%',
+          top: '50%', // Base position; this will be overridden by media queries
+          left: '30%',
           transform: 'translate(-50%, -50%)'
         }}
       />
+       <div>
+      
+      </div>
     </div>
+   
   );
 };
 
