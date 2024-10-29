@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Hamburger } from "./components/ui/hamburger";
+import Stars from "./components/stars/stars";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
+        
         {children}
+        <Stars starCount={130} />
         <div className="hamburger-container">
           <Hamburger />
         </div>

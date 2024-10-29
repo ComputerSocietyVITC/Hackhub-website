@@ -1,14 +1,13 @@
 'use client';
 import React from 'react';
-import Image from 'next/image'
+
 
 const Homepage: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen relative">
       <div
         className="bg-center bg-no-repeat bg-contain h-[2vh] w-[28vw] absolute"
-        style={{
-          backgroundImage: 'url(/images/line1.webp)', top: '23%', left: '47%',transform: 'translate(-50%, -50%)' }}/>
+       />
 
       {/* Hackhub Logo */}
       <div
@@ -26,12 +25,16 @@ const Homepage: React.FC = () => {
         className="bg-no-repeat bg-contain h-[10vh] w-[10vw] absolute homepage-2025-logo"
         style={{
           backgroundImage: 'url(images/2025.svg)',
-          top: '60%', // Base position; this will be overridden by media queries
-          left: '50%',
+          top: '50%', // Base position; this will be overridden by media queries
+          left: '30%',
           transform: 'translate(-50%, -50%)'
         }}
       />
+       <div>
+      
+      </div>
     </div>
+   
   );
 };
 
