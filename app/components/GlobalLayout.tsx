@@ -59,7 +59,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }
   return (
     <section
       ref={sectionRef} 
-      className="h-screen w-screen relative overflow-hidden flex items-center justify-center"
+      className="min-h-screen w-screen relative overflow-hidden flex items-center justify-center"
       style={{ perspective: '2000px' }} 
     >
       {/* Background with mouse move effect */}
