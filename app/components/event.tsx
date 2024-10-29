@@ -10,7 +10,7 @@ const Event = () => {
           <div className="flex justify-between items-center px-12">
             <p className="text-white text-4xl font-bold">OTHER IEEE FLAGSHIP EVENTS</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white text-base font-bold text-3xl">02</p>
+            <p className="text-white text-base font-bold ">02</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 mt-20 px-32">
             <Card/>

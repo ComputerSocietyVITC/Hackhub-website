@@ -1,9 +1,15 @@
 'use client';
 import React from 'react';
+import Image from 'next/image'
 
 const Homepage: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen relative">
+      <div
+        className="bg-center bg-no-repeat bg-contain h-[2vh] w-[28vw] absolute"
+        style={{
+          backgroundImage: 'url(/images/line1.webp)', top: '23%', left: '47%',transform: 'translate(-50%, -50%)' }}/>
+
       {/* Hackhub Logo */}
       <div
         className="bg-center bg-no-repeat bg-contain h-[50vh] w-[50vw] absolute homepage-logo"
