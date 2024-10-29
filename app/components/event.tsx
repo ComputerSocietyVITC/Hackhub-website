@@ -12,7 +12,7 @@ const Event = () => {
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
             <p className="text-white text-base font-bold ">02</p>
           </div>
-          <div className="grid grid-cols-1 mt-20 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 xl:gap-12 px-12 xl:px-40">
+          <div className="grid grid-cols-4 mt-20 sm:grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 px-12 xl:px-40">
             <Card/>
             <Card/>
             <Card/>
