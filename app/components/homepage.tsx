@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Weight } from 'lucide-react';
 
+
 const Homepage: React.FC = () => {
   return (
    <div className="flex flex-col items-center justify-center h-screen w-screen relative">
