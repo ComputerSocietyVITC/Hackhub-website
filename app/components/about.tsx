@@ -41,7 +41,7 @@ const Aboutpage = () => {
           <div className="flex justify-center mt-0 md:mt-48  ">
             <button
               onClick={toggleExpand}
-              className="flex bg-transparent text-white border border-gray-300 rounded-full px-6 py-2 hover:bg-[#FFFFFF17] transition-all duration-300 text-sm tracking-widest"
+              className="flex bg-transparent text-white border border-gray-400 rounded-full px-6 py-2 hover:bg-[#FFFFFF17] transition-all duration-300 text-sm tracking-widest"
              >
               {isExpanded ? 'SHOW LESS' : 'LEARN MORE'}
             </button>
