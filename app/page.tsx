@@ -33,13 +33,13 @@ export default function Home() {
           <Sponsors />
         </GlobalLayout>
       </div>
-{/*
+
       <div>
         <GlobalLayout backgroundImage="/images/Background_5.png">
            <FaqPage />
         </GlobalLayout>
       </div>
-*/}
+
       <div className="navbar-container">
         <NavBar />
       </div>
