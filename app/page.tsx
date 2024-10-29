@@ -5,6 +5,7 @@ import Event from "./components/event";
 import Sponsors from "./components/sponsors";
 import GlobalLayout from "./components/GlobalLayout";
 import NavBar from "./components/ui/navbar";
+import Team from "./components/teampage"
 
 export default function Home() {
   return (
@@ -30,6 +31,12 @@ export default function Home() {
       <div id="sponsors">
         <GlobalLayout backgroundImage="/images/Background_4.png">
           <Sponsors />
+        </GlobalLayout>
+      </div>
+
+      <div id="team" className="w-full">
+        <GlobalLayout backgroundImage="/images/bgtrack2.webp">
+          <Team />
         </GlobalLayout>
       </div>
 
