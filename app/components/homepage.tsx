@@ -7,8 +7,7 @@ const Homepage: React.FC = () => {
     <div className="flex flex-col items-center justify-center h-screen w-screen relative">
       <div
         className="bg-center bg-no-repeat bg-contain h-[2vh] w-[28vw] absolute"
-        style={{
-          backgroundImage: 'url(/images/line1.webp)', top: '23%', left: '47%',transform: 'translate(-50%, -50%)' }}/>
+       />
 
       {/* Hackhub Logo */}
       <div

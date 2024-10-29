@@ -21,19 +21,11 @@ const Aboutpage = () => {
             className="relative"
             style={{ top: '18%', left: '85%' }}
           >
-            <a className="bg-transparent text-white border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-700 hover:border-gray-700 transition-all">
-              LEARN MORE
+              <a className="flex flexrows bg-transparent text-white border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-700 hover:border-gray-700 transition-all">
+                LEARN MORE
             </a>
             </div>
-          <div
-          className="bg-center bg-no-repeat bg-contain h-[1vh] w-[63vw] relative"
-          style={{
-            backgroundImage: 'url(/images/line2.webp)', // path to your .webp file
-            top: '16%', // Adjust this position as needed
-            left: '52%',
-            transform: 'translate(-50%, -50%)'
-          }}
-        />
+      
           </div>
         </div>
       </div>
