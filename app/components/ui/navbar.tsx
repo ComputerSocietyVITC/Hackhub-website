@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
         {navItems.map(({ name, id }) => (
           <li key={name} className="flex justify-center w-full md:w-auto">
             <button
-              onClick={() => scrollToSection(id)}
+           
               className="text-white w-full md:w-auto px-6 py-1 rounded-full border border-gray-400 hover:bg-[#FFFFFF17] text-center"
             >
               {name}
