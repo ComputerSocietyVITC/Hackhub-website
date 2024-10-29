@@ -1,0 +1,303 @@
+// data/team-members.ts
+
+export interface TeamMember {
+    name: string;
+    image: string;
+    linkedin: string;
+    role: string;
+    group: 'board' | 'core' | 'webdev' | 'techsupport' | 'social' | 'management';
+  }
+  
+  export const teamMembers: TeamMember[] = [
+    // Board Members (6 members)
+    {
+      name: 'Anirudh Sridhar',
+      role: 'Management Lead',
+      image: '/images/people/BoardMembers/anirudhsridhar.jpg',
+      linkedin: 'https://www.linkedin.com/in/anirudh-sridhar-07bb02298/',
+      group: 'board'
+    },
+    {
+      name: 'Harshit Singh',
+      role: 'Chairperson',
+      image: '/images/people/BoardMembers/harshitsingh.jpg',
+      linkedin: 'https://www.linkedin.com/in/michaelrodriguez',
+      group: 'board'
+    },
+    {
+      name: 'Anvesha',
+      role: 'General Secretary',
+      image: '/images/people/BoardMembers/anvesha.jpg',
+      linkedin: 'https://www.linkedin.com/in/anvesha-singh-330ba9260/',
+      group: 'board'
+    },
+    {
+      name: 'Aditya Jyoti',
+      role: 'Joint General Secretary',
+      image: '/images/people/BoardMembers/adityajyoti.jpg',
+      linkedin: 'https://www.linkedin.com/in/aditya-jyoti/',
+      group: 'board'
+    },
+    {
+      name: 'Reuben Philip',
+      role: 'Joint Technical Head',
+      image: '/images/people/BoardMembers/reubenphilip.jpg',
+      linkedin: 'https://www.linkedin.com/in/reuben-philip-a96b67284/',
+      group: 'board'
+    },
+    {
+      name: 'Teeshta Parmar',
+      role: 'Social Media Lead',
+      image: '/images/people/BoardMembers/teeshthaparmar.jpg',
+      linkedin: 'https://www.linkedin.com/in/teeshta-parmar-446b59285/',
+      group: 'board'
+    },
+  
+    // Core Team Members (7 members)
+    {
+      name: 'Mrithula',
+      role: 'Design Lead',
+      image: '/images/people/BoardMembers/mrithula.jpg',
+      linkedin: 'https://www.linkedin.com/in/mariagarcia',
+      group: 'core'
+    },
+    {
+      name: 'Sandeep Ravishankar',
+      role: 'Treasurer',
+      image: '/images/people/BoardMembers/sandeepravishankar.jpg',
+      linkedin: 'https://www.linkedin.com/in/sandeep-ravisankar-9113a5271/',
+      group: 'core'
+    },
+    {
+      name: 'Rachel Lee',
+      role: 'Head of Innovation',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/rachellee',
+      group: 'core'
+    },
+    {
+      name: 'Daniel Martinez',
+      role: 'Security Director',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/danielmartinez',
+      group: 'core'
+    },
+    {
+      name: 'Sophie Anderson',
+      role: 'Quality Assurance Lead',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/sophieanderson',
+      group: 'core'
+    },
+    {
+      name: 'Omar Hassan',
+      role: 'Infrastructure Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/omarhassan',
+      group: 'core'
+    },
+    {
+      name: 'Nina Patel',
+      role: 'Research Director',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/ninapatel',
+      group: 'core'
+    },
+  
+    // WebDev Team (5 members)
+    {
+      name: 'John Smith',
+      role: 'Frontend Lead',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/johnsmith',
+      group: 'webdev'
+    },
+    {
+      name: 'Ana Santos',
+      role: 'Backend Developer',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/anasantos',
+      group: 'webdev'
+    },
+    {
+      name: 'Mark Johnson',
+      role: 'Full Stack Developer',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/markjohnson',
+      group: 'webdev'
+    },
+    {
+      name: 'Priya Sharma',
+      role: 'UI/UX Developer',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/priyasharma',
+      group: 'webdev'
+    },
+    {
+      name: 'Tom Wilson',
+      role: 'DevOps Engineer',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/tomwilson',
+      group: 'webdev'
+    },
+    {
+        name: 'Marcus Lee',
+        role: 'Core Team Leader',
+        image: '/images/people/personx.jpg',
+        linkedin: 'https://www.linkedin.com/in/marcuslee',
+        group: 'webdev'
+    },
+    {
+        name: 'Ana Gutierrez',
+        role: 'Board Member',
+        image: '/images/people/personx.jpg',
+        linkedin: 'https://www.linkedin.com/in/anagutierrez',
+        group: 'webdev'
+    },
+    {
+        name: 'Tom Nguyen',
+        role: 'Technical Support Engineer',
+        image: '/images/people/personx.jpg',
+        linkedin: 'https://www.linkedin.com/in/tomnguyen',
+        group: 'webdev'
+    },
+    {
+        name: 'Sarah Johnson',
+        role: 'Digital Marketing Specialist',
+        image: '/images/people/personx.jpg',
+        linkedin: 'https://www.linkedin.com/in/sarahjohnson',
+        group: 'webdev'
+    },
+  
+    // Tech Support Team (3 members)
+    {
+      name: 'Chris Taylor',
+      role: 'Support Lead',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/christaylor',
+      group: 'techsupport'
+    },
+    {
+      name: 'Maya Patel',
+      role: 'Technical Support Specialist',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/mayapatel',
+      group: 'techsupport'
+    },
+    {
+      name: 'Luis Rodriguez',
+      role: 'IT Support Engineer',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/luisrodriguez',
+      group: 'techsupport'
+    },
+    {
+        name: 'Emily Chen',
+        role: 'Project Manager',
+        image: '/images/people/personx.jpg',
+        linkedin: 'https://www.linkedin.com/in/emilychen',
+        group: 'techsupport'
+    },
+    {
+        name: 'Raj Patel',
+        role: 'Full Stack Developer',
+        image: '/images/people/personx.jpg',
+        linkedin: 'https://www.linkedin.com/in/rajpatel',
+        group: 'techsupport'
+    },
+    {
+        name: 'Sofia Martinez',
+        role: 'Social Media Strategist',
+        image: '/images/people/personx.jpg',
+        linkedin: 'https://www.linkedin.com/in/sofiamartinez',
+        group: 'techsupport'
+    },
+  
+    // Social Media Team (6 members)
+    {
+      name: 'Emma Brown',
+      role: 'Social Media Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/emmabrown',
+      group: 'social'
+    },
+    {
+      name: 'Aiden Murphy',
+      role: 'Content Creator',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/aidenmurphy',
+      group: 'social'
+    },
+    {
+      name: 'Sofia Garcia',
+      role: 'Community Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/sofiagarcia',
+      group: 'social'
+    },
+    {
+      name: 'Lucas Kim',
+      role: 'Digital Marketing Specialist',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/lucaskim',
+      group: 'social'
+    },
+    {
+      name: 'Isabella Chen',
+      role: 'Brand Strategist',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/isabellachen',
+      group: 'social'
+    },
+    {
+      name: 'Ryan Peters',
+      role: 'Content Coordinator',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/ryanpeters',
+      group: 'social'
+    },
+  
+    // Management and Marketing (6 members)
+    {
+      name: 'Victoria Adams',
+      role: 'Marketing Director',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/victoriaadams',
+      group: 'management'
+    },
+    {
+      name: 'Nathan Lee',
+      role: 'Operations Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/nathanlee',
+      group: 'management'
+    },
+    {
+      name: 'Julia Martinez',
+      role: 'HR Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/juliamartinez',
+      group: 'management'
+    },
+    {
+      name: 'Robert Zhang',
+      role: 'Business Development Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/robertzhang',
+      group: 'management'
+    },
+    {
+      name: 'Sarah Thompson',
+      role: 'Product Marketing Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/sarahthompson',
+      group: 'management'
+    },
+    {
+      name: 'Kevin O\'Brien',
+      role: 'Strategy Manager',
+      image: '/images/people/personx.jpg',
+      linkedin: 'https://www.linkedin.com/in/kevinobrien',
+      group: 'management'
+    }
+  ];
