@@ -6,6 +6,9 @@ import Sponsors from "./components/sponsors";
 import GlobalLayout from "./components/GlobalLayout";
 import NavBar from "./components/ui/navbar";
 
+import FaqPage from "./components/FaqPage";
+
+
 export default function Home() {
   return (
     <div>
@@ -32,7 +35,13 @@ export default function Home() {
           <Sponsors />
         </GlobalLayout>
       </div>
-
+{/*
+      <div>
+        <GlobalLayout backgroundImage="/images/Background_5.png">
+           <FaqPage />
+        </GlobalLayout>
+      </div>
+*/}
       <div className="navbar-container">
         <NavBar />
       </div>

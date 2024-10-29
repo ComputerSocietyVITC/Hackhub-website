@@ -21,7 +21,7 @@ const Aboutpage = () => {
             className="relative"
             style={{ top: '50%', left: '85%' }}
           >
-              <a className="inline-flex bg-transparent text-white border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-700 hover:border-gray-700 transition-all">
+              <a className="inline-flex bg-transparent text-white border border-gray-300 rounded-full px-4 py-2 hover:bg-[#FFFFFF17]  transition-all">
                 LEARN MORE
             </a>
             </div>
