@@ -28,25 +28,21 @@ const Aboutpage = () => {
             }}
           >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis mauris eget lorem rhoncus finibus. Fusce volutpat metus sed lorem ultricies gravida. Nulla pulvinar tempus elit a commodo.
-              {isExpanded && (
-                <span> Fusce volutpat metus sed lorem. Donec vel orci condimentum, tristique tortor eget, viverra quam. Sed euismod, ex eget laoreet auctor, arcu eros ullamcorper odio, vel hendrerit sapien urna ut ex.</span>
-              )}
-            </p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis mauris eget lorem rhoncus finibus. Fusce volutpat metus sed lorem ultricies gravida. Nulla pulvinar tempus elit a commodo. Fusce volutpat metus sed lorem. Donec vel orci condimentum, tristique tortor eget, viverra quam. Sed euismod, ex eget laoreet auctor, arcu eros ullamcorper odio, vel hendrerit sapien urna ut ex.</p>
           </div>
           </div>
             
 
-          {/* Button to toggle expand/collapse */}
+         {/* 
           <div className="flex justify-center mt-0 md:mt-48  ">
             <button
               onClick={toggleExpand}
               className="flex bg-transparent text-white border border-gray-400 rounded-full px-6 py-2 hover:bg-[#FFFFFF17] transition-all duration-300 text-sm tracking-widest"
              >
-              {/* Conditional rendering of button text based on isExpanded state */}
+              
               {isExpanded ? 'SHOW LESS' : 'LEARN MORE'}
             </button>
-          </div>
+          </div>  */}
         
           </div>
         </div>
