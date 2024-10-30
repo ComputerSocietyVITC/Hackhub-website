@@ -24,12 +24,13 @@ export default function Component() {
         {/* Centered Accordion Section */}
         <div className="flex justify-center mt-8">
           <div className="w-full max-w-7xl px-6">
-            <Accordion type="multiple" className="space-y-4">
+            <Accordion type="multiple" className="space-y-5">
               {[
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
+                'What is a Hackhub ? ',
+                'Who can participate in this Hackathon',
+                'What are the tracks for this Hackathon?',
+                'What kind of support will be provided to participants?',
+                'How can I register for  Hackhub?',
               ].map((question, index) => (
                 <AccordionItem
                   key={index}
@@ -40,7 +41,35 @@ export default function Component() {
                     {question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400 pl-4 pb-4">
-                    Your answer here...
+                  {index === 0 && (
+                      <p>
+                         A Hackhub is an intensive event where participants collaborate to solve specific problems or build innovative products within a limited timeframe.
+
+                      </p>
+                    )}
+                    {index === 1 && (
+                      <p>
+                        Students, researchers, and industry professionals with a passion for technology are encouraged to participate.
+
+                      </p>
+                    )}
+                    {index === 2 && (
+                      <p>
+                        The Hackathon will feature tracks in AI/ML, Web3, Open Innovation, Health, and Environmental Sustainability.
+
+                      </p>
+                    )}
+                    {index === 3 && (
+                      <p>
+                         Participants will have access to technical resources, mentorship, and a conducive environment to foster creativity and innovation.
+
+                      </p>
+                    )}
+                    {index === 4 && (
+                      <p>
+                        For registration and further information, please follow our official channels.
+                      </p>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}

@@ -35,7 +35,7 @@ const Homepage: React.FC = () => {
        }} ></Image>
       {/* Hackhub Logo */}
       <div
-        className="bg-center bg-no-repeat bg-contain h-[10vh] w-[50vw] absolute homepage-logo"
+        className="bg-center bg-no-repeat bg-contain h-[50vh] w-[50vw] absolute homepage-logo"
         style={{
           backgroundImage: 'url(images/Hackhub_logo.svg)',
           top: '50%', 
@@ -46,7 +46,7 @@ const Homepage: React.FC = () => {
 
       {/* 2025 Logo */}
       <div
-        className="bg-no-repeat bg-contain h-[10vh] w-[10vw] top-[50%] left-[10%]  relative homepage-2025-logo transform -translate-x-1/2 -translate-y-1/2 md:top-[20%] md:-left-[5%]"
+        className="bg-no-repeat bg-contain h-[10vh] w-[10vw] top-[50%] left-[10%]  relative homepage-2025-logo transform -translate-x-1/2 -translate-y-1/2 md:top-[20%] md:-left-[15%]"
         style={{
           backgroundImage: 'url(images/2025.svg)',
         }}

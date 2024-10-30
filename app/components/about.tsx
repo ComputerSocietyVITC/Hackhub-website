@@ -17,7 +17,7 @@ const Aboutpage = () => {
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
             <p className="text-white text-4xl font-bold ">ABOUT</p>
             <div
-            className="absolute text-gray-300 leading-relaxed font-Archivo text-justify transition-all duration-500 ease-in-out"
+            className="absolute text-gray-300 leading-relaxed font-archivoNarrow text-justify transition-all duration-500 ease-in-out"
             style={{
               width: '70%',
               height: isExpanded ? 'auto' : '10%', // Dynamic height based on expanded state
@@ -25,10 +25,11 @@ const Aboutpage = () => {
               left: '9%',
               opacity: '1',
               fontSize: '140%',
+              fontWeight:"400"
             }}
           >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis mauris eget lorem rhoncus finibus. Fusce volutpat metus sed lorem ultricies gravida. Nulla pulvinar tempus elit a commodo. Fusce volutpat metus sed lorem. Donec vel orci condimentum, tristique tortor eget, viverra quam. Sed euismod, ex eget laoreet auctor, arcu eros ullamcorper odio, vel hendrerit sapien urna ut ex.</p>
+            The IEEE Computer Society Club from VIT Chennai is organizing a Hackathon with exciting tracks like AI/ML, Web3, Open Innovation, Health, and Environmental Sustainability. This is a great opportunity to learn new skills, network with experts, and build innovative solutions. Participants will have access to mentors, resources, and technical support. For registration and further information, please follow our official channels.</p>
           </div>
           </div>
             

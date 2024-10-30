@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap');
+
+
+
 ::-webkit-scrollbar {
   width: 0px;  /* WebkKit hide scrollbar */
 }

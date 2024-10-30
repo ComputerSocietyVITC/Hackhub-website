@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       <div id="events">
-        <GlobalLayout backgroundImage="/images/Background_2.png">
+        <GlobalLayout backgroundImage="/images/bgtrack2.webp">
           <Event />
         </GlobalLayout>
       </div>
