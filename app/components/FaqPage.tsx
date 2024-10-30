@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { FaXing, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 import {
   Accordion,
@@ -11,14 +11,6 @@ import {
 import Image from 'next/image';
 
 export default function Component() {
-  const [openItems, setOpenItems] = useState<number[]>([]);
-
-  const toggleItem = (index: number) => {
-    setOpenItems((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
-  };
-
   return (
     <div className="min-h-screen w-full flex flex-col">
       <div className="flex-1 w-full flex flex-col justify-center px-10 pb-20">
@@ -37,10 +29,14 @@ export default function Component() {
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?'
+                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
               ].map((question, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-600">
-                  <AccordionTrigger onClick={() => toggleItem(index)} className="text-lg font-medium py-4 text-white hover:text-gray-300 transition">
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border-b border-gray-600"
+                >
+                  <AccordionTrigger className="text-lg font-medium py-4 text-white hover:text-gray-300 transition">
                     {question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400 pl-4 pb-4">

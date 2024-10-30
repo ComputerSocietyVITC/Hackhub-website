@@ -1,13 +1,14 @@
 'use client';
+
 import React, { useState } from 'react';
 import { teamMembers } from '../components/data/team-members';
+import Image from 'next/image';
 
 const TeamPage = () => {
   const [showFullTeam, setShowFullTeam] = useState(false);
 
   // Filter members by group
   const boardMembers = teamMembers.filter(member => member.group === 'board');
-
   const webDevTeam = teamMembers.filter(member => member.group === 'webdev');
   const techSupportTeam = teamMembers.filter(member => member.group === 'techsupport');
   const socialMediaTeam = teamMembers.filter(member => member.group === 'social');
@@ -39,7 +40,13 @@ const TeamPage = () => {
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
                     <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">
                       <div className="absolute inset-0 w-full h-full">
-                        <img src={member.image} alt={member.name} className="absolute inset-0 w-full h-full object-cover rounded-[22px] transition-transform duration-300 group-hover:scale-110" />
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-[22px] transition-transform duration-300 group-hover:scale-110"
+                        />
                         <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-colors duration-300">
                           <div className="text-white text-lg font-semibold p-2 rounded-b-[22px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="text-center">
@@ -69,7 +76,13 @@ const TeamPage = () => {
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
                     <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">
                       <div className="absolute inset-0 w-full h-full">
-                        <img src={member.image} alt={member.name} className="absolute inset-0 w-full h-full object-cover rounded-[22px] transition-transform duration-300 group-hover:scale-110" />
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-[22px] transition-transform duration-300 group-hover:scale-110"
+                        />
                         <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-colors duration-300">
                           <div className="text-white text-lg font-semibold p-2 rounded-b-[22px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="text-center">
@@ -103,7 +116,6 @@ const TeamPage = () => {
         {/* Board Members Section */}
         <TeamSection title="THE BOARD MEMBERS" members={boardMembers} maxColumns={6} />
         
-       
         {/* Meet the whole team button */}
         <div className="flex justify-center mt-12 mb-8">
           <button
@@ -128,3 +140,4 @@ const TeamPage = () => {
 };
 
 export default TeamPage;
+  
