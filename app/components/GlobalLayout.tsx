@@ -52,8 +52,9 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }
   return (
     <section
       ref={sectionRef} 
-      className="min-h-screen w-screen relative overflow-x-hidden"
-      style={{ perspective: '2000px' }} 
+
+      className="min-h-screen w-screen relative overflow-hidden flex items-center justify-center"
+
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
