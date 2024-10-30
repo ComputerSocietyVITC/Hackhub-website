@@ -5,18 +5,11 @@ export interface TeamMember {
     image: string;
     linkedin: string;
     role: string;
-    group: 'board' | 'core' | 'webdev' | 'techsupport' | 'social' | 'management';
+    group: 'board' | 'webdev' | 'techsupport' | 'social' | 'management';
   }
   
   export const teamMembers: TeamMember[] = [
     // Board Members (6 members)
-    {
-      name: 'Anirudh Sridhar',
-      role: 'Management Lead',
-      image: '/images/people/BoardMembers/anirudhsridhar.jpg',
-      linkedin: 'https://www.linkedin.com/in/anirudh-sridhar-07bb02298/',
-      group: 'board'
-    },
     {
       name: 'Harshit Singh',
       role: 'Chairperson',
@@ -24,6 +17,16 @@ export interface TeamMember {
       linkedin: 'https://www.linkedin.com/in/michaelrodriguez',
       group: 'board'
     },
+   
+    {
+      name: 'Anirudh Sridhar',
+      role: 'Management Lead',
+      image: '/images/people/BoardMembers/anirudhsridhar.jpg',
+      linkedin: 'https://www.linkedin.com/in/anirudh-sridhar-07bb02298/',
+      group: 'board'
+    },
+    
+   
     {
       name: 'Anvesha',
       role: 'General Secretary',
@@ -48,61 +51,64 @@ export interface TeamMember {
     {
       name: 'Teeshta Parmar',
       role: 'Social Media Lead',
-      image: '/images/people/BoardMembers/teeshthaparmar.jpg',
+      image: '/images/people/BoardMembers/Teeshta_parmar.jpeg',
       linkedin: 'https://www.linkedin.com/in/teeshta-parmar-446b59285/',
       group: 'board'
     },
+    {
+      name: 'Faiz Abid',
+      role: 'Vice-Chairperson',
+      image: '/images/people/BoardMembers/Faiz_abid.jpg',
+      linkedin: 'https://www.linkedin.com/in/mohammad-faiz-abid-875371194/',
+      group: 'board'
+    },
+    
   
-    // Core Team Members (7 members)
+   
     {
       name: 'Mrithula',
       role: 'Design Lead',
       image: '/images/people/BoardMembers/mrithula.jpg',
       linkedin: 'https://www.linkedin.com/in/mariagarcia',
-      group: 'core'
+      group: 'board'
     },
     {
       name: 'Sandeep Ravishankar',
       role: 'Treasurer',
       image: '/images/people/BoardMembers/sandeepravishankar.jpg',
       linkedin: 'https://www.linkedin.com/in/sandeep-ravisankar-9113a5271/',
-      group: 'core'
+      group: 'board'
     },
     {
-      name: 'Rachel Lee',
-      role: 'Head of Innovation',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/rachellee',
-      group: 'core'
+      name: 'Sam Shervin',
+      role: 'Technical Head',
+      image: '/images/people/BoardMembers/Sam_shervin.jpeg',
+      linkedin: 'https://www.linkedin.com/in/sam-shervin/',
+      group: 'board'
     },
     {
       name: 'Daniel Martinez',
       role: 'Security Director',
       image: '/images/people/personx.jpg',
       linkedin: 'https://www.linkedin.com/in/danielmartinez',
-      group: 'core'
+      group: 'board'
     },
     {
       name: 'Sophie Anderson',
       role: 'Quality Assurance Lead',
       image: '/images/people/personx.jpg',
       linkedin: 'https://www.linkedin.com/in/sophieanderson',
-      group: 'core'
+      group: 'board'
     },
     {
       name: 'Omar Hassan',
       role: 'Infrastructure Manager',
       image: '/images/people/personx.jpg',
       linkedin: 'https://www.linkedin.com/in/omarhassan',
-      group: 'core'
+      group: 'board'
     },
-    {
-      name: 'Nina Patel',
-      role: 'Research Director',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/ninapatel',
-      group: 'core'
-    },
+    
+  
   
     // WebDev Team (5 members)
     {

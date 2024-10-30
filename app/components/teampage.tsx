@@ -7,7 +7,7 @@ const TeamPage = () => {
 
   // Filter members by group
   const boardMembers = teamMembers.filter(member => member.group === 'board');
-  const coreTeam = teamMembers.filter(member => member.group === 'core');
+
   const webDevTeam = teamMembers.filter(member => member.group === 'webdev');
   const techSupportTeam = teamMembers.filter(member => member.group === 'techsupport');
   const socialMediaTeam = teamMembers.filter(member => member.group === 'social');
@@ -58,7 +58,7 @@ const TeamPage = () => {
             {/* Last row - centered */}
             <div className="flex justify-center">
               <div
-                className="grid gap-8"
+                className="grid gap-7"
                 style={{
                   display: 'grid',
                   gridTemplateColumns: `repeat(${lastRowItems}, minmax(0, 1fr))`,
@@ -97,17 +97,13 @@ const TeamPage = () => {
         <div className="flex justify-between items-center mb-12">
           <p className="text-white text-4xl font-bold">THE HACKHUB TEAM</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-base font-bold text-3xl">04</p>
+          <p className="text-white  font-bold text-3xl">04</p>
         </div>
 
         {/* Board Members Section */}
         <TeamSection title="THE BOARD MEMBERS" members={boardMembers} maxColumns={6} />
         
-        {/* Core Team Section */}
-        <div className="max-w-full mx-auto mt-6">
-          <TeamSection title="" members={coreTeam} maxColumns={7} />
-        </div>
-
+       
         {/* Meet the whole team button */}
         <div className="flex justify-center mt-12 mb-8">
           <button
