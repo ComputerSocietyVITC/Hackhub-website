@@ -23,6 +23,7 @@ const NavBar: React.FC = () => {
         top: '8px',
         maxWidth: '100%',
         width: '772px',
+        zIndex:50,
       }}
       className="p-4 rounded-lg"
     >

@@ -7,7 +7,7 @@ import GlobalLayout from "./components/GlobalLayout";
 import NavBar from "./components/ui/navbar";
 
 import FaqPage from "./components/FaqPage";
-
+import TeamPage from "./components/teampage";
 
 export default function Home() {
   return (
@@ -31,17 +31,22 @@ export default function Home() {
       </div>
 
       <div id="sponsors">
-        <GlobalLayout backgroundImage="/images/Background_4.png">
+        <GlobalLayout >
           <Sponsors />
         </GlobalLayout>
       </div>
-{/*
+      <div id="team" className="w-full">
+        <GlobalLayout backgroundImage="/images/bgtrack2.webp">
+          <TeamPage />
+        </GlobalLayout>
+      </div>
+
       <div>
         <GlobalLayout backgroundImage="/images/Background_5.png">
            <FaqPage />
         </GlobalLayout>
       </div>
-*/}
+
       <div className="navbar-container">
         <NavBar />
       </div>
