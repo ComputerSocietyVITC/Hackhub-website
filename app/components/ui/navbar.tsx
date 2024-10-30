@@ -22,14 +22,17 @@ const NavBar: React.FC = () => {
         transform: 'translateX(-50%)',
         top: '8px',
         maxWidth: '100%',
-        width: '772px',
-        zIndex:50,
+        width: '500px',
+        zIndex: 50,
+        backdropFilter: 'blur(10px)', // Added blur effect
+        backgroundColor: 'rgba(0, 0, 0, 0.4)', // Semi-transparent background color
+        borderRadius:'50px',
+        overflow:'hidden'
       }}
       className="p-4 rounded-lg"
     >
       <ul className="flex flex-col md:flex-row items-center justify-center md:space-x-4 space-y-2 md:space-y-0">
         {navItems.map(({ name, id }) => (
-          
           <li key={name} className="flex justify-center w-full md:w-auto">
             <button
               onClick={() => scrollToSection(id)}

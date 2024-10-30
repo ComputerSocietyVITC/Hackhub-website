@@ -20,7 +20,7 @@ const Aboutpage = () => {
             className="absolute text-gray-300 leading-relaxed font-Archivo text-justify transition-all duration-500 ease-in-out"
             style={{
               width: '70%',
-              height: isExpanded ? '40%' : '10%', // Expand height when expanded
+              height: isExpanded ? 'auto' : '10%', // Dynamic height based on expanded state
               top: '30%',
               left: '9%',
               opacity: '1',
@@ -43,6 +43,7 @@ const Aboutpage = () => {
               onClick={toggleExpand}
               className="flex bg-transparent text-white border border-gray-400 rounded-full px-6 py-2 hover:bg-[#FFFFFF17] transition-all duration-300 text-sm tracking-widest"
              >
+              {/* Conditional rendering of button text based on isExpanded state */}
               {isExpanded ? 'SHOW LESS' : 'LEARN MORE'}
             </button>
           </div>
