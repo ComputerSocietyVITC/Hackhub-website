@@ -46,7 +46,7 @@ const Homepage: React.FC = () => {
 
       {/* 2025 Logo */}
       <div
-        className="bg-no-repeat bg-contain h-[10vh] w-[10vw] top-[50%] left-[10%]  relative homepage-2025-logo transform -translate-x-1/2 -translate-y-1/2 md:top-[20%] md:-left-[15%]"
+        className="bg-no-repeat bg-contain h-[10vh] w-[10vw] top-[50%] left-[10%]  relative homepage-2025-logo transform -translate-x-1/2 -translate-y-1/2  md:top-[20%] md:-left-[15%]"
         style={{
           backgroundImage: 'url(images/2025.svg)',
         }}

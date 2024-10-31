@@ -16,9 +16,9 @@ export default function Component() {
       <div className="flex-1 w-full flex flex-col justify-center px-10 pb-20">
         {/* Header Section with 05 and FAQ */}
         <div className="flex justify-between items-center px-12">
-          <p className="text-white text-base font-bold">05</p>
-          <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-4xl font-bold">FAQ</p>
+          <p className="text-white text-base font-bold hidden sm:block">05</p>
+          <div className="flex-1 h-[1px] bg-white mx-4 hidden sm:block"></div>
+          <p className="text-white text-4xl font-bold sm:text-center ml-20">FAQ</p>
         </div>
 
         {/* Centered Accordion Section */}

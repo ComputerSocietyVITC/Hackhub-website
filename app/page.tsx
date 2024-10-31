@@ -19,13 +19,13 @@ export default function Home() {
       </div>
 
       <div id="about">
-        <GlobalLayout backgroundImage="/images/bgtrack2.webp">
+        <GlobalLayout>
           <Aboutpage />
         </GlobalLayout>
       </div>
 
       <div id="events">
-        <GlobalLayout backgroundImage="/images/bgtrack2.webp">
+        <GlobalLayout >
           <Event />
         </GlobalLayout>
       </div>
@@ -36,7 +36,7 @@ export default function Home() {
         </GlobalLayout>
       </div>
       <div id="team" className="w-full">
-        <GlobalLayout backgroundImage="/images/bgtrack2.webp">
+        <GlobalLayout >
           <TeamPage />
         </GlobalLayout>
       </div>
