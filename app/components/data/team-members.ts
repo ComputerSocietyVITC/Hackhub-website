@@ -14,7 +14,7 @@ export interface TeamMember {
       name: 'Harshit Singh',
       role: 'Chairperson',
       image: '/images/people/BoardMembers/harshitsingh.jpg',
-      linkedin: 'https://www.linkedin.com/in/michaelrodriguez',
+      linkedin: 'https://www.linkedin.com/in/harshitkumarsingh25',
       group: 'board'
     },
    
@@ -87,17 +87,17 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Daniel Martinez',
-      role: 'Security Director',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/danielmartinez',
+      name: 'Shashwat Mishra',
+      role: 'Projects Lead',
+      image: '/images/people/BoardMembers/shashwat.jpg',
+      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-4779a927a/',
       group: 'board'
     },
     {
-      name: 'Sophie Anderson',
-      role: 'Quality Assurance Lead',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/sophieanderson',
+      name: 'Jasmine Tresa Jose',
+      role: 'UI/UX Lead',
+      image: '/images/people/BoardMembers/jasmine.jpg',
+      linkedin: 'https://www.linkedin.com/in/jasmine-tresa-jose-488385252/',
       group: 'board'
     },
     {
@@ -112,38 +112,38 @@ export interface TeamMember {
   
     // WebDev Team (5 members)
     {
-      name: 'John Smith',
+      name: 'Reuben Philip',
       role: 'Frontend Lead',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/johnsmith',
+      image: '/images/people/BoardMembers/reubenphilip.jpg',
+      linkedin: 'https://www.linkedin.com/in/reuben-philip-a96b67284/',
       group: 'webdev'
     },
     {
-      name: 'Ana Santos',
-      role: 'Backend Developer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/anasantos',
+      name: 'Ishaan Sawant',
+      role: 'Frontend Developer',
+      image: '/images/people/webdev/ishaan.jpg',
+      linkedin: 'https://www.linkedin.com/in/ishaan-sawant',
       group: 'webdev'
     },
     {
-      name: 'Mark Johnson',
-      role: 'Full Stack Developer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/markjohnson',
+      name: 'Shriansh Tripathi',
+      role: 'Frontend Developer',
+      image: '/images/people/webdev/shrianshtripathi.jpg',
+      linkedin: 'https://www.linkedin.com/in/shriansh-tripathi-74b8b930b',
       group: 'webdev'
     },
     {
-      name: 'Priya Sharma',
-      role: 'UI/UX Developer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/priyasharma',
+      name: 'Shivam Kumar',
+      role: 'Frontend Developer',
+      image: '/images/people/webdev/shivam.jpg',
+      linkedin: 'https://www.linkedin.com/in/shivamkr-dev',
       group: 'webdev'
     },
     {
-      name: 'Tom Wilson',
-      role: 'DevOps Engineer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/tomwilson',
+      name: 'Abhinav Kumar',
+      role: 'Frontend Developer',
+      image: '/images/people/webdev/abhinav.jpg',
+      linkedin: 'https://www.linkedin.com/in/abhinav-kumar-v/',
       group: 'webdev'
     },
     {
