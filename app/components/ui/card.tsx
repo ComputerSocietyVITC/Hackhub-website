@@ -7,7 +7,7 @@ type CardProps = {
 };
 
 const Card: React.FC<CardProps> = ({ imgUrl,alt,description }) => (
-  <div className="min-h-[350px] relative max-h-[450px] group border border-gray-600 rounded-[22px] col-span-1 bg-white/10 group overflow-hidden ">
+  <div className="relative md:h-[350px] lg:h-[400px] xl:h-[550px] group border border-gray-600 rounded-[28px] col-span-1 bg-white/10 group overflow-hidden ">
     
     <img
       src={imgUrl}
