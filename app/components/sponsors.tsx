@@ -5,7 +5,7 @@ import React from 'react';
 
 const Sponsors = () => {
   return (
-    <div className="bg-cover bg-center h-screen w-screen flex  relative justify-center">
+    <div className="bg-cover bg-center h-screen w-screen flex  relative justify-center mt-7">
         <div className="min-h-screen w-full flex justify-center">
         <div className="mt-12 w-full px-5">
           <div className="flex justify-between items-center px-12">
