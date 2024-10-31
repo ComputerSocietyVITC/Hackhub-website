@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import ScrollFade from './ScrollFade';
 
 interface GlobalLayoutProps {
-  backgroundImage: string;
+  backgroundImage?: string;
   children: React.ReactNode;
 }
 

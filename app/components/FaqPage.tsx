@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { FaXing, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 import {
   Accordion,
@@ -11,14 +11,6 @@ import {
 import Image from 'next/image';
 
 export default function Component() {
-  const [openItems, setOpenItems] = useState<number[]>([]);
-
-  const toggleItem = (index: number) => {
-    setOpenItems((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
-  };
-
   return (
     <div className="min-h-screen w-full flex flex-col">
       <div className="flex-1 w-full flex flex-col justify-center px-10 pb-20">
@@ -32,19 +24,52 @@ export default function Component() {
         {/* Centered Accordion Section */}
         <div className="flex justify-center mt-8">
           <div className="w-full max-w-7xl px-6">
-            <Accordion type="multiple" className="space-y-4">
+            <Accordion type="multiple" className="space-y-5">
               {[
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?',
-                'Lorem ipsum dolor sit amet consectetur adipiscing elit?'
+                'What is a Hackhub ? ',
+                'Who can participate in this Hackathon',
+                'What are the tracks for this Hackathon?',
+                'What kind of support will be provided to participants?',
+                'How can I register for  Hackhub?',
               ].map((question, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-600">
-                  <AccordionTrigger onClick={() => toggleItem(index)} className="text-lg font-medium py-4 text-white hover:text-gray-300 transition">
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border-b border-gray-600"
+                >
+                  <AccordionTrigger className="text-lg font-medium py-4 text-white hover:text-gray-300 transition">
                     {question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400 pl-4 pb-4">
-                    Your answer here...
+                  {index === 0 && (
+                      <p>
+                         A Hackhub is an intensive event where participants collaborate to solve specific problems or build innovative products within a limited timeframe.
+
+                      </p>
+                    )}
+                    {index === 1 && (
+                      <p>
+                        Students, researchers, and industry professionals with a passion for technology are encouraged to participate.
+
+                      </p>
+                    )}
+                    {index === 2 && (
+                      <p>
+                        The Hackathon will feature tracks in AI/ML, Web3, Open Innovation, Health, and Environmental Sustainability.
+
+                      </p>
+                    )}
+                    {index === 3 && (
+                      <p>
+                         Participants will have access to technical resources, mentorship, and a conducive environment to foster creativity and innovation.
+
+                      </p>
+                    )}
+                    {index === 4 && (
+                      <p>
+                        For registration and further information, please follow our official channels.
+                      </p>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}

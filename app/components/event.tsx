@@ -12,9 +12,16 @@ const Event = () => {
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
             <p className="text-white text-base font-bold ">02</p>
           </div>
+
           <div className="grid md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1100px] mx-auto pt-16 md:pt-24 grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 px-6 sm:px-12 md:px-24 xl:px-44">
             <Card imgUrl='/images/paradox.png' alt="XYZ" description="Paradox24 is a competitive Capture The Flag (CTF) event organized by the IEEE Computer Society at VITC, designed to challenge participants across multiple tracks, including Reverse Engineering, Cryptography, Forensics, and OSINT."/>
             <Card imgUrl='/images/bitwars.png' alt="XYZ" description="BitWars is an annual coding competition hosted by the IEEE Computer Society at VITC, where participants showcase their programming and problem-solving skills. The event includes challenges in algorithms, data structures, and software development, promoting innovation and collaboration among aspiring developers."/>
+
+          <div className="grid max-w-[1800px] mx-auto mt-8 md:mt-40 grid-cols-1 sm:grid-cols-4 md:grid-cols-3 gap-8 md:gap-6 lg:gap-24 xl:gap-22 px-6 sm:px-20 md:px-24 lg:px-36 xl:px-44">
+            <Card/>
+            <Card/>
+            <Card/>
+
           </div>
         </div>
       </div>

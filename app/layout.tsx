@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Hamburger } from "./components/ui/hamburger";
 import Stars from "./components/stars/stars";
+import Head from 'next/head';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <Head>
+        {/* Add Google Font link for Archivo Narrow */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
