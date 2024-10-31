@@ -147,17 +147,17 @@ export interface TeamMember {
       group: 'webdev'
     },
     {
-        name: 'Marcus Lee',
+        name: 'Aarav tandon',
         role: '',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/marcuslee',
+        image: '/images/people/webdev/aarav.jpg',
+        linkedin: 'https://www.linkedin.com/in/aarav-tandon-a7a369293/',
         group: 'webdev'
     },
     {
-        name: 'Ana Gutierrez',
+        name: 'Samar Singh',
         role: '',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/anagutierrez',
+        image: '/images/people/webdev/samar_singh.jpg',
+        linkedin: 'https://www.linkedin.com/in/samar-singh-17421b28b/',
         group: 'webdev'
     },
    
