@@ -101,10 +101,10 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Omar Hassan',
-      role: 'Infrastructure Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/omarhassan',
+      name: 'Aryan Kumar',
+      role: 'Creative lead',
+      image: '/images/people/BoardMembers/aryan_kumar.jpg',
+      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
       group: 'board'
     },
     
