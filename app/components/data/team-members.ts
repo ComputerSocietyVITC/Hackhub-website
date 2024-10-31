@@ -14,7 +14,7 @@ export interface TeamMember {
       name: 'Harshit Singh',
       role: 'Chairperson',
       image: '/images/people/BoardMembers/harshitsingh.jpg',
-      linkedin: 'https://www.linkedin.com/in/michaelrodriguez',
+      linkedin: 'https://www.linkedin.com/in/harshitkumarsingh25',
       group: 'board'
     },
    
@@ -87,24 +87,24 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Daniel Martinez',
-      role: 'Security Director',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/danielmartinez',
+      name: 'Shashwat Mishra',
+      role: 'Projects Lead',
+      image: '/images/people/BoardMembers/shashwat.jpg',
+      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-4779a927a/',
       group: 'board'
     },
     {
-      name: 'Sophie Anderson',
-      role: 'Quality Assurance Lead',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/sophieanderson',
+      name: 'Jasmine Tresa Jose',
+      role: 'UI/UX Lead',
+      image: '/images/people/BoardMembers/jasmine.jpg',
+      linkedin: 'https://www.linkedin.com/in/jasmine-tresa-jose-488385252/',
       group: 'board'
     },
     {
-      name: 'Omar Hassan',
-      role: 'Infrastructure Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/omarhassan',
+      name: 'Aryan Kumar',
+      role: 'Creative lead',
+      image: '/images/people/BoardMembers/aryan_kumar.jpg',
+      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
       group: 'board'
     },
     
@@ -112,69 +112,55 @@ export interface TeamMember {
   
     // WebDev Team (5 members)
     {
-      name: 'John Smith',
-      role: 'Frontend Lead',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/johnsmith',
+      name: 'Reuben Philip',
+      role: '',
+      image: '/images/people/BoardMembers/reubenphilip.jpg',
+      linkedin: 'https://www.linkedin.com/in/reuben-philip-a96b67284/',
       group: 'webdev'
     },
     {
-      name: 'Ana Santos',
-      role: 'Backend Developer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/anasantos',
+      name: 'Ishaan Sawant',
+      role: '',
+      image: '/images/people/webdev/ishaan.jpg',
+      linkedin: 'https://www.linkedin.com/in/ishaan-sawant',
       group: 'webdev'
     },
     {
-      name: 'Mark Johnson',
-      role: 'Full Stack Developer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/markjohnson',
+      name: 'Shriansh Tripathi',
+      role: '',
+      image: '/images/people/webdev/shrianshtripathi.jpg',
+      linkedin: 'https://www.linkedin.com/in/shriansh-tripathi-74b8b930b',
       group: 'webdev'
     },
     {
-      name: 'Priya Sharma',
-      role: 'UI/UX Developer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/priyasharma',
+      name: 'Shivam Kumar',
+      role: '',
+      image: '/images/people/webdev/shivam.jpg',
+      linkedin: 'https://www.linkedin.com/in/shivamkr-dev',
       group: 'webdev'
     },
     {
-      name: 'Tom Wilson',
-      role: 'DevOps Engineer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/tomwilson',
+      name: 'Abhinav Kumar',
+      role: '',
+      image: '/images/people/webdev/abhinav.jpg',
+      linkedin: 'https://www.linkedin.com/in/abhinav-kumar-v/',
       group: 'webdev'
     },
     {
-        name: 'Marcus Lee',
-        role: 'Core Team Leader',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/marcuslee',
+        name: 'Aarav tandon',
+        role: '',
+        image: '/images/people/webdev/aarav.jpg',
+        linkedin: 'https://www.linkedin.com/in/aarav-tandon-a7a369293/',
         group: 'webdev'
     },
     {
-        name: 'Ana Gutierrez',
-        role: 'Board Member',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/anagutierrez',
+        name: 'Samar Singh',
+        role: '',
+        image: '/images/people/webdev/samar_singh.jpg',
+        linkedin: 'https://www.linkedin.com/in/samar-singh-17421b28b/',
         group: 'webdev'
     },
-    {
-        name: 'Tom Nguyen',
-        role: 'Technical Support Engineer',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/tomnguyen',
-        group: 'webdev'
-    },
-    {
-        name: 'Sarah Johnson',
-        role: 'Digital Marketing Specialist',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/sarahjohnson',
-        group: 'webdev'
-    },
-  
+   
     // Tech Support Team (3 members)
     {
       name: 'Chris Taylor',

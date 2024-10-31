@@ -40,7 +40,7 @@ export default function Component() {
                   <AccordionTrigger className="text-lg font-medium py-4 text-white hover:text-gray-300 transition">
                     {question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-400 pl-4 pb-4">
+                  <AccordionContent className="text-white font-sans pl-4 pb-4">
                   {index === 0 && (
                       <p>
                          A Hackhub is an intensive event where participants collaborate to solve specific problems or build innovative products within a limited timeframe.
