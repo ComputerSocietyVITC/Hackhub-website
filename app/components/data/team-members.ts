@@ -113,68 +113,54 @@ export interface TeamMember {
     // WebDev Team (5 members)
     {
       name: 'Reuben Philip',
-      role: 'Frontend Lead',
+      role: '',
       image: '/images/people/BoardMembers/reubenphilip.jpg',
       linkedin: 'https://www.linkedin.com/in/reuben-philip-a96b67284/',
       group: 'webdev'
     },
     {
       name: 'Ishaan Sawant',
-      role: 'Frontend Developer',
+      role: '',
       image: '/images/people/webdev/ishaan.jpg',
       linkedin: 'https://www.linkedin.com/in/ishaan-sawant',
       group: 'webdev'
     },
     {
       name: 'Shriansh Tripathi',
-      role: 'Frontend Developer',
+      role: '',
       image: '/images/people/webdev/shrianshtripathi.jpg',
       linkedin: 'https://www.linkedin.com/in/shriansh-tripathi-74b8b930b',
       group: 'webdev'
     },
     {
       name: 'Shivam Kumar',
-      role: 'Frontend Developer',
+      role: '',
       image: '/images/people/webdev/shivam.jpg',
       linkedin: 'https://www.linkedin.com/in/shivamkr-dev',
       group: 'webdev'
     },
     {
       name: 'Abhinav Kumar',
-      role: 'Frontend Developer',
+      role: '',
       image: '/images/people/webdev/abhinav.jpg',
       linkedin: 'https://www.linkedin.com/in/abhinav-kumar-v/',
       group: 'webdev'
     },
     {
         name: 'Marcus Lee',
-        role: 'Core Team Leader',
+        role: '',
         image: '/images/people/personx.jpg',
         linkedin: 'https://www.linkedin.com/in/marcuslee',
         group: 'webdev'
     },
     {
         name: 'Ana Gutierrez',
-        role: 'Board Member',
+        role: '',
         image: '/images/people/personx.jpg',
         linkedin: 'https://www.linkedin.com/in/anagutierrez',
         group: 'webdev'
     },
-    {
-        name: 'Tom Nguyen',
-        role: 'Technical Support Engineer',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/tomnguyen',
-        group: 'webdev'
-    },
-    {
-        name: 'Sarah Johnson',
-        role: 'Digital Marketing Specialist',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/sarahjohnson',
-        group: 'webdev'
-    },
-  
+   
     // Tech Support Team (3 members)
     {
       name: 'Chris Taylor',
