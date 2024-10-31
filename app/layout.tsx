@@ -34,6 +34,12 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
           rel="stylesheet"
         />
+         {/* add analytics */}
+        <script 
+          defer 
+          data-domain="hackhub25.ieeecsvitc.com" 
+          src="https://analytics.adityajyoti.com/js/script.js">
+        </script>
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
