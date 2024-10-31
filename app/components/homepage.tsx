@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Weight } from 'lucide-react';
+
 
 
 const Homepage: React.FC = () => {

@@ -1,13 +1,9 @@
 'use client'
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const Aboutpage = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
+  
   return (
     <div className="bg-cover bg-center h-screen w-screen flex items-center justify-center">
       <div className="min-h-screen w-full flex justify-center">
@@ -20,7 +16,7 @@ const Aboutpage = () => {
             className="absolute text-gray-300 leading-relaxed font-archivoNarrow text-justify transition-all duration-500 ease-in-out"
             style={{
               width: '70%',
-              height: isExpanded ? 'auto' : '10%', // Dynamic height based on expanded state
+              height: '10%', 
               top: '30%',
               left: '9%',
               opacity: '1',

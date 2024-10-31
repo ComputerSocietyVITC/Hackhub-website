@@ -42,7 +42,7 @@ export default function Home() {
       </div>
 
       <div>
-        <GlobalLayout backgroundImage="/images/Background_5.png">
+        <GlobalLayout>
            <FaqPage />
         </GlobalLayout>
       </div>
