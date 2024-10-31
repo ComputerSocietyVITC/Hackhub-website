@@ -1,4 +1,15 @@
 import React from 'react';
+import localFont from "next/font/local";
+
+
+
+
+
+const archivoNarrow = localFont({
+  src: "../../fonts/ArchivoNarrow-VariableFont_wght.ttf",
+  variable: "--font-archivo-narrow",
+  weight: "200",
+});
 
 type CardProps = {
   imgUrl: string,
@@ -17,7 +28,7 @@ const Card: React.FC<CardProps> = ({ imgUrl,alt,description }) => (
 
 
     <div className=" p-6 text-xs md:text-sm xl:text-base z-1 absolute bottom-0 left-0 w-full h-max lg:translate-y-full lg:group-hover:translate-y-0 bg-black/50 text-neutral-100 transition-all ease-in duration-150">
-        <p>{description}</p>
+        <p className={archivoNarrow.className}>{description}</p>
     </div>
 
   </div>
