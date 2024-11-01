@@ -4,11 +4,11 @@ import Card from './ui/card';
 
 const Event = () => {
   return (
-    <div className="bg-cover bg-center w-screen flex items-center justify-center pb-4">
+    <div className="bg-cover bg-center w-screen flex items-center justify-center pb-4 mt-7  ">
       <div className="min-h-screen w-full flex justify-center ">
         <div className="mt-12 w-full px-5">
           <div className="flex justify-between items-center px-12">
-            <p className="text-white text-4xl font-bold">OTHER IEEE FLAGSHIP EVENTS</p>
+            <p className="text-white text-4xl font-bold ">OTHER IEEE FLAGSHIP EVENTS</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
             <p className="text-white text-base font-bold ">02</p>
           </div>
