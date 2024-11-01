@@ -86,15 +86,15 @@ export default function Component() {
           </div>
           <div className="flex justify-end px-12">
             <div className="flex space-x-6">
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              {/*<a href="#" className="text-white hover:text-gray-300 transition-colors">
                 <FaXing className="w-5 h-5" />
-              </a>
+              </a>*/}
               <a href="https://www.linkedin.com/company/ieee-computer-society-vit-chennai/" className="text-white hover:text-gray-300 transition-colors">
                 <FaLinkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              {/*<a href="#" className="text-white hover:text-gray-300 transition-colors">
                 <FaFacebook className="w-5 h-5" />
-              </a>
+              </a>*/}
               <a href="https://www.instagram.com/compsoc.vitcc?igsh=NTc4MTIwNjQ2YQ==" className="text-white hover:text-gray-300 transition-colors">
                 <FaInstagram className="w-5 h-5" />
               </a>
