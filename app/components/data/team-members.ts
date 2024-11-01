@@ -19,10 +19,10 @@ export interface TeamMember {
     },
    
     {
-      name: 'Anirudh Sridhar',
-      role: 'Management Lead',
-      image: '/images/people/BoardMembers/anirudhsridhar.jpg',
-      linkedin: 'https://www.linkedin.com/in/anirudh-sridhar-07bb02298/',
+      name: 'Faiz Abid',
+      role: 'Vice-Chairperson',
+      image: '/images/people/BoardMembers/Faiz_abid.jpg',
+      linkedin: 'https://www.linkedin.com/in/mohammad-faiz-abid-875371194/',
       group: 'board'
     },
     
@@ -35,17 +35,17 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Aditya Jyoti',
-      role: 'Joint General Secretary',
-      image: '/images/people/BoardMembers/adityajyoti.jpg',
-      linkedin: 'https://www.linkedin.com/in/aditya-jyoti/',
+      name: 'Sandeep Ravishankar',
+      role: 'Treasurer',
+      image: '/images/people/BoardMembers/sandeepravishankar.jpg',
+      linkedin: 'https://www.linkedin.com/in/sandeep-ravisankar-9113a5271/',
       group: 'board'
     },
     {
-      name: 'Reuben Philip',
-      role: 'Joint Technical Head',
-      image: '/images/people/BoardMembers/reubenphilip.jpg',
-      linkedin: 'https://www.linkedin.com/in/reuben-philip-a96b67284/',
+      name: 'Jasmine Tresa Jose',
+      role: 'UI/UX Lead',
+      image: '/images/people/BoardMembers/jasmine.jpg',
+      linkedin: 'https://www.linkedin.com/in/jasmine-tresa-jose-488385252/',
       group: 'board'
     },
     {
@@ -56,10 +56,10 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Faiz Abid',
-      role: 'Vice-Chairperson',
-      image: '/images/people/BoardMembers/Faiz_abid.jpg',
-      linkedin: 'https://www.linkedin.com/in/mohammad-faiz-abid-875371194/',
+      name: 'Aryan Kumar',
+      role: 'Creative lead',
+      image: '/images/people/BoardMembers/aryan_kumar.jpg',
+      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
       group: 'board'
     },
     
@@ -73,10 +73,10 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Sandeep Ravishankar',
-      role: 'Treasurer',
-      image: '/images/people/BoardMembers/sandeepravishankar.jpg',
-      linkedin: 'https://www.linkedin.com/in/sandeep-ravisankar-9113a5271/',
+      name: 'Anirudh Sridhar',
+      role: 'Management Lead',
+      image: '/images/people/BoardMembers/anirudhsridhar.jpg',
+      linkedin: 'https://www.linkedin.com/in/anirudh-sridhar-07bb02298/',
       group: 'board'
     },
     {
@@ -94,17 +94,17 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Jasmine Tresa Jose',
-      role: 'UI/UX Lead',
-      image: '/images/people/BoardMembers/jasmine.jpg',
-      linkedin: 'https://www.linkedin.com/in/jasmine-tresa-jose-488385252/',
+      name: 'Reuben Philip',
+      role: 'Joint Technical Head',
+      image: '/images/people/BoardMembers/reubenphilip.jpg',
+      linkedin: 'https://www.linkedin.com/in/reuben-philip-a96b67284/',
       group: 'board'
     },
     {
-      name: 'Aryan Kumar',
-      role: 'Creative lead',
-      image: '/images/people/BoardMembers/aryan_kumar.jpg',
-      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
+      name: 'Aditya Jyoti',
+      role: 'Joint General Secretary',
+      image: '/images/people/BoardMembers/adityajyoti.jpg',
+      linkedin: 'https://www.linkedin.com/in/aditya-jyoti/',
       group: 'board'
     },
     
