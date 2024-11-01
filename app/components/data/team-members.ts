@@ -56,10 +56,10 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Aryan Kumar',
-      role: 'Creative lead',
-      image: '/images/people/BoardMembers/aryan_kumar.jpg',
-      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
+      name: 'Shashwat Mishra',
+      role: 'Projects Lead',
+      image: '/images/people/BoardMembers/shashwat.jpg',
+      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-4779a927a/',
       group: 'board'
     },
     
@@ -87,10 +87,10 @@ export interface TeamMember {
       group: 'board'
     },
     {
-      name: 'Shashwat Mishra',
-      role: 'Projects Lead',
-      image: '/images/people/BoardMembers/shashwat.jpg',
-      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-4779a927a/',
+      name: 'Aryan Kumar',
+      role: 'Creative lead',
+      image: '/images/people/BoardMembers/aryan_kumar.jpg',
+      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
       group: 'board'
     },
     {
