@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { FaXing, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin ,FaInstagram } from 'react-icons/fa';
 import {
   Accordion,
   AccordionItem,
