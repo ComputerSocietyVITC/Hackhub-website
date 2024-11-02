@@ -1,14 +1,13 @@
 'use client';
 
-import React from 'react';
-import { FaLinkedin ,FaInstagram } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import {
   Accordion,
+  AccordionContent,
   AccordionItem,
   AccordionTrigger,
-  AccordionContent,
 } from '../components/ui/accordion';
-import Image from 'next/image';
 
 export default function Component() {
   return (
@@ -24,7 +23,7 @@ export default function Component() {
         {/* Centered Accordion Section */}
         <div className="flex justify-center mt-8">
           <div className="w-full max-w-7xl px-6">
-            <Accordion type="multiple" className="space-y-5">
+            <Accordion type="multiple" className="space-y-5 duration-500">
               {[
                 'What is a Hackhub ? ',
                 'Who can participate in this Hackathon',

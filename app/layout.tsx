@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import { Hamburger } from "./components/ui/hamburger";
-import Stars from "./components/stars/stars";
 import Head from 'next/head';
+import Stars from "./components/stars/stars";
+import { Hamburger } from "./components/ui/hamburger";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
