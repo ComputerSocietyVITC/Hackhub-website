@@ -1,9 +1,9 @@
-import React from "react";
-import Homepage from "./components/homepage";
 import Aboutpage from "./components/about";
+import AlternateLayout from "./components/AlternateLayout";
 import Event from "./components/event";
-import Sponsors from "./components/sponsors";
 import GlobalLayout from "./components/GlobalLayout";
+import Homepage from "./components/homepage";
+import Sponsors from "./components/sponsors";
 import NavBar from "./components/ui/navbar";
 
 import FaqPage from "./components/FaqPage";
@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <div>
       <div id="home">
-        <GlobalLayout backgroundImage="/images/Background_1.png" >
+        <AlternateLayout bgImage="/images/Background_1.png" >
           <Homepage />
-        </GlobalLayout>
+        </AlternateLayout>
       </div>
 
       <div id="about">

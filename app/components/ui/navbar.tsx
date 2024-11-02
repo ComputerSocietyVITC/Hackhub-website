@@ -7,6 +7,7 @@ const NavBar: React.FC = () => {
     { name: 'About', id: 'about' },
     { name: 'Events', id: 'events' },
     { name: 'Sponsors', id: 'sponsors' },
+    { name: 'The Team', id: 'team' }
   ];
 
   const scrollToSection = (id: string) => {
@@ -22,7 +23,6 @@ const NavBar: React.FC = () => {
         transform: 'translateX(-50%)',
         top: '8px',
         maxWidth: '100%',
-        width: '500px',
         zIndex: 50,
         backdropFilter: 'blur(10px)', // Added blur effect
         backgroundColor: 'rgba(0, 0, 0, 0.4)', // Semi-transparent background color
@@ -36,7 +36,7 @@ const NavBar: React.FC = () => {
           <li key={name} className="flex justify-center w-full md:w-auto">
             <button
               onClick={() => scrollToSection(id)}
-              className="text-white w-full md:w-auto px-6 py-1 rounded-full  hover:bg-[#FFFFFF17] text-center"
+              className="text-white w-full md:w-auto px-6 py-1 rounded-full font-bold duration-300 hover:bg-[#FFFFFF17] text-center"
             >
               {name}
             </button>

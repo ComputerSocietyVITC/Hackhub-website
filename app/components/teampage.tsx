@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
-import { teamMembers } from '../components/data/team-members';
 import Image from 'next/image';
+import { useState } from 'react';
+import { teamMembers } from '../components/data/team-members';
 
 const TeamPage = () => {
   const [showFullTeam, setShowFullTeam] = useState(false);
@@ -44,9 +44,8 @@ const TeamPage = () => {
                         <Image
                           src={member.image}
                           alt={member.name}
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-[22px] transition-transform duration-300 group-hover:scale-110"
+                          fill={true}
+                          className="rounded-[22px] object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-colors duration-300">
                           <div className="text-white text-lg font-semibold p-2 rounded-b-[22px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -68,21 +67,18 @@ const TeamPage = () => {
               <div
                 className="grid gap-7"
                 style={{
-                  display: 'grid',
                   gridTemplateColumns: `repeat(${lastRowItems}, minmax(0, 1fr))`,
-                  width: `12rem`,
                 }}
               >
                 {members.slice(completeRowsCount * maxColumns).map((member) => (
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
-                    <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">
+                    <div className="relative w-[300px] h-[300px] overflow-hidden rounded-[22px]">
                       <div className="absolute inset-0 w-full h-full">
                         <Image
                           src={member.image}
                           alt={member.name}
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-[22px] transition-transform duration-300 group-hover:scale-110"
+                          fill={true}
+                          className="rounded-[22px] object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-colors duration-300">
                           <div className="text-white text-lg font-semibold p-2 rounded-b-[22px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -105,7 +101,7 @@ const TeamPage = () => {
   };
 
   return (
-    <div className="bg-cover bg-center min-h-screen w-full">
+    <div className="bg-cover bg-center min-h-screen w-full mt-10">
       <div className="max-w-full mx-auto px-4 py-8">
         {/* Header section */}
         <div className="flex justify-between items-center mb-12">
