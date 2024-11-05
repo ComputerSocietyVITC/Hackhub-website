@@ -5,7 +5,7 @@ export interface TeamMember {
     image: string;
     linkedin: string;
     role: string;
-    group: 'board' | 'webdev' | 'techsupport' | 'social' | 'management';
+    group: 'board' | 'webdev' | 'techsupport' | 'social' | 'management' | 'design';
   }
   
   export const teamMembers: TeamMember[] = [
@@ -159,6 +159,22 @@ export interface TeamMember {
         image: '/images/people/webdev/samar_singh.jpg',
         linkedin: 'https://www.linkedin.com/in/samar-singh-17421b28b/',
         group: 'webdev'
+    },
+
+    // Design Team
+    {
+      name: 'Aryan Kumar',
+      role: '',
+      image: '/images/people/BoardMembers/aryan_kumar.jpg',
+      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
+      group: 'design'
+    },
+    {
+      name: 'Shruti S',
+      role: '',
+      image: '/images/people/design/shruti_s.jpg',
+      linkedin: 'https://www.linkedin.com/in/shrutiselvakkumar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      group: 'design'
     },
    
     // Tech Support Team (3 members)

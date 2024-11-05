@@ -10,6 +10,7 @@ const TeamPage = () => {
   // Filter members by group
   const boardMembers = teamMembers.filter(member => member.group === 'board');
   const webDevTeam = teamMembers.filter(member => member.group === 'webdev');
+  const designTeam = teamMembers.filter(member => member.group === 'design');
  /* const techSupportTeam = teamMembers.filter(member => member.group === 'techsupport');
   const socialMediaTeam = teamMembers.filter(member => member.group === 'social');
   const managementTeam = teamMembers.filter(member => member.group === 'management');
@@ -127,6 +128,7 @@ const TeamPage = () => {
         {/* Full Team Sections */}
         <div className={`${showFullTeam ? 'block' : 'hidden'} space-y-8`}>
           <TeamSection title="WebDev Team" members={webDevTeam} maxColumns={6} />
+          <TeamSection title="Design Team" members={designTeam} maxColumns={6} />
         {/*  <TeamSection title="Tech. Support Team" members={techSupportTeam} maxColumns={6} />
           <TeamSection title="Social Media Team" members={socialMediaTeam} maxColumns={6} />
           <TeamSection title="Management and Marketing" members={managementTeam} maxColumns={6} />
