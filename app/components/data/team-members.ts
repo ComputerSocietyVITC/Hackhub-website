@@ -205,47 +205,19 @@ export interface TeamMember {
         group: 'techsupport'
     },
   
-    // Social Media Team (6 members)
+    // Design Team (2 members)
     {
-      name: 'Emma Brown',
-      role: 'Social Media Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/emmabrown',
+      name: 'Aryan Kumar',
+      role: '',
+      image: '/images/people/BoardMembers/aryan_kumar.jpg',
+      linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
       group: 'social'
     },
     {
-      name: 'Aiden Murphy',
-      role: 'Content Creator',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/aidenmurphy',
-      group: 'social'
-    },
-    {
-      name: 'Sofia Garcia',
-      role: 'Community Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/sofiagarcia',
-      group: 'social'
-    },
-    {
-      name: 'Lucas Kim',
-      role: 'Digital Marketing Specialist',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/lucaskim',
-      group: 'social'
-    },
-    {
-      name: 'Isabella Chen',
-      role: 'Brand Strategist',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/isabellachen',
-      group: 'social'
-    },
-    {
-      name: 'Ryan Peters',
-      role: 'Content Coordinator',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/ryanpeters',
+      name: 'Shruti S',
+      role: '',
+      image: '/images/people/Design/shruti_s.jpg',
+      linkedin: 'https://www.linkedin.com/in/shrutiselvakkumar',
       group: 'social'
     },
   
