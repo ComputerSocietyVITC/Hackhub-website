@@ -59,7 +59,7 @@ export interface TeamMember {
       name: 'Shashwat Mishra',
       role: 'Projects Lead',
       image: '/images/people/BoardMembers/shashwat.jpg',
-      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-4779a927a/',
+      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-a6ba78267/',
       group: 'board'
     },
     

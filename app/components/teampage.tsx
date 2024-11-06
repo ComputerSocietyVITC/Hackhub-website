@@ -33,7 +33,7 @@ const TeamPage = () => {
           <div className="grid gap-8">
             {/* Complete rows */}
             {completeRowsCount > 0 && (
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
                 {members.slice(0, completeRowsCount * maxColumns).map((member) => (
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
                     <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">

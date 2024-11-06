@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-
+import Button from './ui/button';
 
 
 const Sponsors = () => {
@@ -13,7 +13,12 @@ const Sponsors = () => {
             <div className="flex-1 h-[1px] bg-white mx-4 hidden sm:block"></div>
             <p className="text-white text-4xl font-bold sm:text-center ml-6">SPONSORS</p>
           </div>
+          <div className="flex justify-center items-center h-screen">
+          <Button/>
           </div>
+          </div>
+
+          
           </div>
     </div>
      
