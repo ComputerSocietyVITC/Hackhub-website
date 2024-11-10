@@ -21,11 +21,11 @@ export default function Component() {
         </div>
 
         {/* Centered Accordion Section */}
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-start mt-8">
           <div className="w-full max-w-7xl px-4 sm:px-6">
             <Accordion type="multiple" className="space-y-5 text-semibold font-sans duration-500">
               {[
-                'What is a Hackhub?',
+                'What is Hackhub?',
                 'Who can participate in this Hackathon?',
                 'What are the tracks for this Hackathon?',
                 'What support will participants receive?',
