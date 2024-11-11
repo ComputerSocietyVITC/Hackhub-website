@@ -5,7 +5,7 @@ export interface TeamMember {
     image: string;
     linkedin: string;
     role: string;
-    group: 'board' | 'webdev' | 'techsupport' | 'social' | 'management';
+    group: 'board' | 'webdev' | 'techsupport' | 'social' | 'management' | 'design';
   }
   
   export const teamMembers: TeamMember[] = [
@@ -59,7 +59,7 @@ export interface TeamMember {
       name: 'Shashwat Mishra',
       role: 'Projects Lead',
       image: '/images/people/BoardMembers/shashwat.jpg',
-      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-4779a927a/',
+      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-a6ba78267/',
       group: 'board'
     },
     
@@ -160,108 +160,20 @@ export interface TeamMember {
         linkedin: 'https://www.linkedin.com/in/samar-singh-17421b28b/',
         group: 'webdev'
     },
-   
-    // Tech Support Team (3 members)
-    {
-      name: 'Chris Taylor',
-      role: 'Support Lead',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/christaylor',
-      group: 'techsupport'
-    },
-    {
-      name: 'Maya Patel',
-      role: 'Technical Support Specialist',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/mayapatel',
-      group: 'techsupport'
-    },
-    {
-      name: 'Luis Rodriguez',
-      role: 'IT Support Engineer',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/luisrodriguez',
-      group: 'techsupport'
-    },
-    {
-        name: 'Emily Chen',
-        role: 'Project Manager',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/emilychen',
-        group: 'techsupport'
-    },
-    {
-        name: 'Raj Patel',
-        role: 'Full Stack Developer',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/rajpatel',
-        group: 'techsupport'
-    },
-    {
-        name: 'Sofia Martinez',
-        role: 'Social Media Strategist',
-        image: '/images/people/personx.jpg',
-        linkedin: 'https://www.linkedin.com/in/sofiamartinez',
-        group: 'techsupport'
-    },
-  
-    // Design Team (2 members)
+
+    // Design Team
     {
       name: 'Aryan Kumar',
       role: '',
       image: '/images/people/BoardMembers/aryan_kumar.jpg',
       linkedin: 'https://www.linkedin.com/in/aryan-kumar-029abb289/',
-      group: 'social'
+      group: 'design'
     },
     {
       name: 'Shruti S',
       role: '',
-      image: '/images/people/Design/shruti_s.jpg',
-      linkedin: 'https://www.linkedin.com/in/shrutiselvakkumar',
-      group: 'social'
-    },
-  
-    // Management and Marketing (6 members)
-    {
-      name: 'Victoria Adams',
-      role: 'Marketing Director',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/victoriaadams',
-      group: 'management'
-    },
-    {
-      name: 'Nathan Lee',
-      role: 'Operations Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/nathanlee',
-      group: 'management'
-    },
-    {
-      name: 'Julia Martinez',
-      role: 'HR Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/juliamartinez',
-      group: 'management'
-    },
-    {
-      name: 'Robert Zhang',
-      role: 'Business Development Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/robertzhang',
-      group: 'management'
-    },
-    {
-      name: 'Sarah Thompson',
-      role: 'Product Marketing Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/sarahthompson',
-      group: 'management'
-    },
-    {
-      name: 'Kevin O\'Brien',
-      role: 'Strategy Manager',
-      image: '/images/people/personx.jpg',
-      linkedin: 'https://www.linkedin.com/in/kevinobrien',
-      group: 'management'
+      image: '/images/people/design/shruti_s.jpg',
+      linkedin: 'https://www.linkedin.com/in/shrutiselvakkumar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      group: 'design'
     }
   ];

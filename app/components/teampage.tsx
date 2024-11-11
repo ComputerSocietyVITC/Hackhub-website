@@ -10,11 +10,7 @@ const TeamPage = () => {
   // Filter members by group
   const boardMembers = teamMembers.filter(member => member.group === 'board');
   const webDevTeam = teamMembers.filter(member => member.group === 'webdev');
-  const DesignTeam = teamMembers.filter(member => member.group === 'social');
- /* const techSupportTeam = teamMembers.filter(member => member.group === 'techsupport');
-  
-  const managementTeam = teamMembers.filter(member => member.group === 'management');
- */ 
+  const designTeam = teamMembers.filter(member => member.group === 'design');
 
   const TeamSection = ({
     title,
@@ -37,7 +33,7 @@ const TeamPage = () => {
           <div className="grid gap-8">
             {/* Complete rows */}
             {completeRowsCount > 0 && (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
                 {members.slice(0, completeRowsCount * maxColumns).map((member) => (
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
                     <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">
@@ -66,10 +62,10 @@ const TeamPage = () => {
             {/* Last row - centered */}
             <div className="flex justify-center">
               <div
-                className="grid gap-7"
-                style={{
+                className={title === "Design Team" ? "grid grid-cols-1 sm:grid-cols-2 gap-8" : "grid gap-7"}
+                style={title !== "Design Team" ? {
                   gridTemplateColumns: `repeat(${lastRowItems}, minmax(0, 1fr))`,
-                }}
+                } : undefined}
               >
                 {members.slice(completeRowsCount * maxColumns).map((member) => (
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
@@ -128,10 +124,9 @@ const TeamPage = () => {
         {/* Full Team Sections */}
         <div className={`${showFullTeam ? 'block' : 'hidden'} space-y-8`}>
           <TeamSection title="WebDev Team" members={webDevTeam} maxColumns={6} />
-          <TeamSection title="Design Team" members={DesignTeam} maxColumns={6} />
-        {/*  <TeamSection title="Tech. Support Team" members={techSupportTeam} maxColumns={6} />
-          <TeamSection title="Management and Marketing" members={managementTeam} maxColumns={6} />
-  */}
+          
+          {/* Design Team Section */}
+          <TeamSection title="Design Team" members={designTeam} maxColumns={2} />
         </div>
       </div>
     </div>
@@ -139,4 +134,3 @@ const TeamPage = () => {
 };
 
 export default TeamPage;
-  

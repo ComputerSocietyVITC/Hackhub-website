@@ -12,24 +12,24 @@ import {
 export default function Component() {
   return (
     <div className="min-h-screen w-full flex flex-col">
-      <div className="flex-1 w-full flex flex-col justify-center px-10 pb-20">
+      <div className="flex-1 w-full flex flex-col justify-center px-4 sm:px-10 pb-20">
         {/* Header Section with 05 and FAQ */}
-        <div className="flex justify-between items-center px-12">
+        <div className="flex justify-between items-center px-4 sm:px-12">
           <p className="text-white text-base font-bold hidden sm:block">05</p>
           <div className="flex-1 h-[1px] bg-white mx-4 hidden sm:block"></div>
-          <p className="text-white text-4xl font-bold sm:text-center ml-20">FAQ</p>
+          <p className="text-white text-4xl font-bold  sm:text-center mx-auto ">FAQ</p>
         </div>
 
         {/* Centered Accordion Section */}
-        <div className="flex justify-center mt-8">
-          <div className="w-full max-w-7xl px-6">
-            <Accordion type="multiple" className="space-y-5 duration-500">
+        <div className="flex justify-start mt-8">
+          <div className="w-full max-w-7xl px-4 sm:px-6">
+            <Accordion type="multiple" className="space-y-5 text-semibold font-sans duration-500">
               {[
-                'What is a Hackhub ? ',
-                'Who can participate in this Hackathon',
+                'What is Hackhub?',
+                'Who can participate in this Hackathon?',
                 'What are the tracks for this Hackathon?',
-                'What kind of support will be provided to participants?',
-                'How can I register for  Hackhub?',
+                'What support will participants receive?',
+                'How can I register for Hackhub?',
               ].map((question, index) => (
                 <AccordionItem
                   key={index}
@@ -40,28 +40,24 @@ export default function Component() {
                     {question}
                   </AccordionTrigger>
                   <AccordionContent className="text-white font-sans pl-4 pb-4">
-                  {index === 0 && (
+                    {index === 0 && (
                       <p>
-                         A Hackhub is an intensive event where participants collaborate to solve specific problems or build innovative products within a limited timeframe.
-
+                        A Hackhub is an intensive event where participants collaborate to solve specific problems or build innovative products within a limited timeframe.
                       </p>
                     )}
                     {index === 1 && (
                       <p>
                         Students, researchers, and industry professionals with a passion for technology are encouraged to participate.
-
                       </p>
                     )}
                     {index === 2 && (
                       <p>
                         The Hackathon will feature tracks in AI/ML, Web3, Open Innovation, Health, and Environmental Sustainability.
-
                       </p>
                     )}
                     {index === 3 && (
                       <p>
-                         Participants will have access to technical resources, mentorship, and a conducive environment to foster creativity and innovation.
-
+                        Participants will have access to technical resources, mentorship, and a conducive environment to foster creativity and innovation.
                       </p>
                     )}
                     {index === 4 && (
@@ -85,15 +81,9 @@ export default function Component() {
           </div>
           <div className="flex justify-end px-12">
             <div className="flex space-x-6">
-              {/*<a href="#" className="text-white hover:text-gray-300 transition-colors">
-                <FaXing className="w-5 h-5" />
-              </a>*/}
               <a href="https://www.linkedin.com/company/ieee-computer-society-vit-chennai/" className="text-white hover:text-gray-300 transition-colors">
                 <FaLinkedin className="w-5 h-5" />
               </a>
-              {/*<a href="#" className="text-white hover:text-gray-300 transition-colors">
-                <FaFacebook className="w-5 h-5" />
-              </a>*/}
               <a href="https://www.instagram.com/compsoc.vitcc?igsh=NTc4MTIwNjQ2YQ==" className="text-white hover:text-gray-300 transition-colors">
                 <FaInstagram className="w-5 h-5" />
               </a>
