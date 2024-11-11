@@ -18,6 +18,9 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Hackhub 25",
+  icons: {
+    icon: "/ICON.webp",
+  }
 
 };
 
