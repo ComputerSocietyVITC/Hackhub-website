@@ -11,7 +11,7 @@ const Aboutpage = () => {
           <div className="flex justify-between items-center px-12">
             <p className="text-white text-base font-bold hidden sm:block">01</p>
             <div className="flex-1 h-[1px] bg-white mx-4 hidden sm:block"></div>
-            <p className="text-white text-4xl font-bold sm:text-center sm:ml-10 md:text-center ml-20 ">ABOUT</p>
+            <p  className="text-white text-4xl font-bold xs:justify-between ">ABOUT</p>
             <div
             className="absolute text-gray-300 leading-relaxed font-archivoNarrow text-left transition-all duration-500 ease-in-out"
             style={{
@@ -20,7 +20,7 @@ const Aboutpage = () => {
               top: '30%',
               left: '9%',
               opacity: '1',
-              fontSize: '140%',
+              fontSize: '120%',
               fontWeight:"400"
             }}
           >
