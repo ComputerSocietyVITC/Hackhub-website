@@ -33,7 +33,7 @@ const TeamPage = () => {
           <div className="grid gap-8">
             {/* Complete rows */}
             {completeRowsCount > 0 && (
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3  xl:grid-cols-6 gap-8">
                 {members.slice(0, completeRowsCount * maxColumns).map((member) => (
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
                     <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">
@@ -69,7 +69,7 @@ const TeamPage = () => {
               >
                 {members.slice(completeRowsCount * maxColumns).map((member) => (
                   <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
-                    <div className="relative w-[300px] h-[300px] overflow-hidden rounded-[22px]">
+                    <div className="relative w-[200px] sm:w-[250px] md:w-[250px] lg:w-[370px] xl:w-[200px] 2xl:w-[300px] h-[300px] overflow-hidden rounded-[22px]">
                       <div className="absolute inset-0 w-full h-full">
                         <Image
                           src={member.image}
