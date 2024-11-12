@@ -21,15 +21,15 @@ export default function Component() {
         </div>
 
         {/* Centered Accordion Section */}
-        <div className="flex justify-start mt-8">
+        <div className="flex justify-start sm:justify-between mt-8">
           <div className="w-full max-w-7xl px-4 sm:px-6">
             <Accordion type="multiple" className="space-y-5 text-semibold font-sans duration-500">
               {[
-                'What is Hackhub?',
+                'What is Hackhub and how is it useful??',
                 'Who can participate in this Hackathon?',
                 'What are the tracks for this Hackathon?',
                 'What support will participants receive?',
-                'How can I register for Hackhub?',
+                'What is the Hackhub registration process?',
               ].map((question, index) => (
                 <AccordionItem
                   key={index}
