@@ -20,8 +20,8 @@ const Aboutpage = () => {
               top: '30%',
               left: '9%',
               opacity: '1',
-              fontSize: '120%',
-              fontWeight:"400"
+              fontSize: '110%',
+              fontWeight:"500"
             }}
           >
             <p>
