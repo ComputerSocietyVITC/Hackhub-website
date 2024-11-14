@@ -45,7 +45,7 @@ export default function RootLayout({
         </script>
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-black`}
       >
         
         {children}
