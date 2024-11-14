@@ -64,6 +64,19 @@ body {
   }
 }
 
+/* Custom CSS for screens larger than 1536px */
+@media (min-width: 1536px) {
+  .about-text-adjustment {
+    bottom: 70% !important;
+  }
+}
+
+@media(max-width: 640px){
+  .about-text-adjustment {
+    bottom: 80% ;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

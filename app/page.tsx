@@ -31,9 +31,11 @@ export default function Home() {
       </div>
 
       <div id="sponsors">
-        <GlobalLayout >
+      <AlternateLayout bgImage="/images/Background_2.png" >
+        
           <Sponsors />
-        </GlobalLayout>
+          </AlternateLayout>
+
       </div>
       <div id="team" className="w-full">
         <GlobalLayout >

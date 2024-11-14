@@ -27,11 +27,11 @@ const Homepage: React.FC = () => {
       >
        CompSoc
       </div> */}
-      <Image src='/images/compsoc.webp' alt="Background Track" width={90} height={90} 
+      <Image src='/images/compsoc.webp' alt="Background Track" width={95} height={95} 
       className="absolute"
           style={{
         top:'2%' ,
-        left:'3%'
+        left:'2%'
        }} ></Image>
       {/* Hackhub Logo */}
       <div

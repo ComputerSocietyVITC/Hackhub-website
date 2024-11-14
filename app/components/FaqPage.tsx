@@ -15,17 +15,18 @@ export default function Component() {
       <div className="flex-1 w-full flex flex-col justify-center px-4 sm:px-10 pb-20">
         {/* Header Section with 05 and FAQ */}
         <div className="flex justify-between items-center mb-12">
-        <p className="text-white  font-bold text-xl">05</p>
+          <p className="text-white font-bold text-xl">05</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
           <p className="text-white text-4xl font-bold">FAQ</p>
-          
         </div>
+
         {/* Centered Accordion Section */}
         <div className="flex justify-start sm:justify-between mt-8">
-          <div className="w-full max-w-7xl px-4 sm:px-6">
+          {/* Apply centering and max width for 2xl and above */}
+          <div className="w-full max-w-full lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto px-4 sm:px-6">
             <Accordion type="multiple" className="space-y-5 text-semibold font-sans duration-500">
               {[
-                'What is Hackhub and how is it useful??',
+                'What is Hackhub and how is it useful?',
                 'Who can participate in this Hackathon?',
                 'What are the tracks for this Hackathon?',
                 'What support will participants receive?',
@@ -75,11 +76,10 @@ export default function Component() {
         {/* Contact Section */}
         <div className="contact-section mt-16 pt-8">
           <div className="flex justify-between items-center mb-12">
-          <p className="text-white text-xl font-bold">GET IN TOUCH</p>
-          <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white  font-bold text-xl">06</p>
-          
-        </div>
+            <p className="text-white text-xl font-bold">GET IN TOUCH</p>
+            <div className="flex-1 h-[1px] bg-white mx-4"></div>
+            <p className="text-white font-bold text-xl">06</p>
+          </div>
           <div className="flex justify-end px-12">
             <div className="flex space-x-6">
               <a href="https://www.linkedin.com/company/ieee-computer-society-vit-chennai/" className="text-white hover:text-gray-300 transition-colors">
