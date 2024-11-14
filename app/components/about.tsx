@@ -9,16 +9,15 @@ const Aboutpage: React.FC = () => {
           <div className="flex justify-between items-center">
             <p className="text-white font-bold text-xl">01</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white text-4xl font-bold">ABOUT</p>
+            <p className="text-white text-xl sm:text-3xl font-bold">ABOUT</p>
           </div>
+
+         
           <div
-            className="absolute text-gray-300 leading-relaxed font-archivoNarrow text-left transition-all duration-500 ease-in-out"
+            className="flex flex-col items-center justify-center text-gray-300 leading-relaxed font-archivoNarrow text-left transition-all duration-500 ease-in-out mt-6"
             style={{
-              width: '85%',
-              height: '10%',
-              top: '40%', 
-              left: '5%',
-              opacity: '1',
+              width: '100%',
+              height: 'auto',
               fontWeight: '500',
             }}
           >
@@ -26,11 +25,11 @@ const Aboutpage: React.FC = () => {
               className="
                 text-sm  
                 sm:text-base
-                md:text-lg
+                md:text-xl
                 lg:text-xl 
                 xl:text-2xl 
                 2xl:text-3xl
-                relative
+                text-left
                 about-text-adjustment
               "
             >
