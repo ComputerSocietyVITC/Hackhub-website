@@ -17,7 +17,7 @@ export default function Component() {
         <div className="flex justify-between items-center mb-12">
           <p className="text-white font-bold text-xl">05</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-4xl font-bold">FAQ</p>
+          <p className="text-white text-xl sm:text-3xl font-bold">FAQ</p>
         </div>
 
         {/* Centered Accordion Section */}
@@ -105,7 +105,7 @@ export default function Component() {
               className="h-auto w-auto"
               priority
             />
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm text-center">
               © IEEE Computer Society VIT Chennai 2024 - All Rights Reserved
             </p>
           </div>

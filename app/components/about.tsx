@@ -9,7 +9,7 @@ const Aboutpage: React.FC = () => {
           <div className="flex justify-between items-center">
             <p className="text-white font-bold text-xl">01</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white text-4xl font-bold">ABOUT</p>
+            <p className="text-white text-xl sm:text-3xl font-bold">ABOUT</p>
           </div>
           <div
             className="absolute text-gray-300 leading-relaxed font-archivoNarrow text-left transition-all duration-500 ease-in-out"
