@@ -14,12 +14,12 @@ export default function Component() {
     <div className="min-h-screen w-full flex flex-col">
       <div className="flex-1 w-full flex flex-col justify-center px-4 sm:px-10 pb-20">
         {/* Header Section with 05 and FAQ */}
-        <div className="flex justify-between items-center px-4 sm:px-12">
-          <p className="text-white text-base font-bold hidden sm:block">05</p>
-          <div className="flex-1 h-[1px] bg-white mx-4 hidden sm:block"></div>
-          <p className="text-white text-4xl font-bold  sm:text-center mx-auto ">FAQ</p>
+        <div className="flex justify-between items-center mb-12">
+        <p className="text-white  font-bold text-xl">05</p>
+          <div className="flex-1 h-[1px] bg-white mx-4"></div>
+          <p className="text-white text-4xl font-bold">FAQ</p>
+          
         </div>
-
         {/* Centered Accordion Section */}
         <div className="flex justify-start sm:justify-between mt-8">
           <div className="w-full max-w-7xl px-4 sm:px-6">
@@ -39,7 +39,7 @@ export default function Component() {
                   <AccordionTrigger className="text-lg font-medium py-4 text-white hover:text-gray-300 transition">
                     {question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-white font-sans pl-4 pb-4">
+                  <AccordionContent className="text-white font-sans pb-4">
                     {index === 0 && (
                       <p>
                         A Hackhub is an intensive event where participants collaborate to solve specific problems or build innovative products within a limited timeframe.
@@ -74,11 +74,12 @@ export default function Component() {
 
         {/* Contact Section */}
         <div className="contact-section mt-16 pt-8">
-          <div className="flex justify-between items-center px-12 mb-8">
-            <h2 className="text-xl font-bold text-white">GET IN TOUCH</h2>
-            <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white text-base font-bold">06</p>
-          </div>
+          <div className="flex justify-between items-center mb-12">
+          <p className="text-white text-xl font-bold">GET IN TOUCH</p>
+          <div className="flex-1 h-[1px] bg-white mx-4"></div>
+          <p className="text-white  font-bold text-xl">06</p>
+          
+        </div>
           <div className="flex justify-end px-12">
             <div className="flex space-x-6">
               <a href="https://www.linkedin.com/company/ieee-computer-society-vit-chennai/" className="text-white hover:text-gray-300 transition-colors">

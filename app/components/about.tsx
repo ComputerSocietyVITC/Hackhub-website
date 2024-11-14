@@ -8,20 +8,22 @@ const Aboutpage = () => {
     <div className="bg-cover bg-center h-screen w-screen flex items-center justify-center">
       <div className="min-h-screen w-full flex justify-center">
         <div className="mt-40 w-full px-5">
-          <div className="flex justify-between items-center px-12">
-            <p className="text-white text-base font-bold hidden sm:block">01</p>
-            <div className="flex-1 h-[1px] bg-white mx-4 hidden sm:block"></div>
-            <p  className="text-white text-4xl font-bold xs:justify-between ">ABOUT</p>
+        <div className="flex justify-between items-center">
+        <p className="text-white  font-bold text-xl">01</p>
+          <div className="flex-1 h-[1px] bg-white mx-4"></div>
+          <p className="text-white text-4xl font-bold">ABOUT</p>
+          
+        </div>
             <div
             className="absolute text-gray-300 leading-relaxed font-archivoNarrow text-left transition-all duration-500 ease-in-out"
             style={{
-              width: '80%',
+              width: '85%',
               height: '10%', 
               top: '30%',
-              left: '9%',
+              left: '5%',
               opacity: '1',
               fontSize: '120%',
-              fontWeight:"400"
+              fontWeight:"500"
             }}
           >
             <p>
@@ -43,7 +45,7 @@ const Aboutpage = () => {
         
           </div>
         </div>
-        </div>
+        
   );
 };
 
