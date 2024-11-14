@@ -102,7 +102,7 @@ const TeamPage = () => {
       <div className="max-w-full mx-auto px-4 py-8">
         {/* Header section */}
         <div className="flex justify-between items-center mb-12">
-          <p className="text-white text-4xl font-bold">THE HACKHUB TEAM</p>
+          <p className="text-white text-xl sm:text-3xl font-bold">THE HACKHUB TEAM</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
           <p className="text-white  font-bold text-xl">04</p>
         </div>

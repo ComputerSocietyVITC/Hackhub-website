@@ -8,7 +8,7 @@ const Event = () => {
       <div className="min-h-screen w-full flex justify-center ">
         <div className="mt-12 w-full px-5">
         <div className="flex justify-between items-center mb-12">
-          <p className="text-white text-3xl sm:text-3xl font-bold">IEEE FLAGSHIP EVENTS</p>
+          <p className="text-white text-xl sm:text-3xl font-bold">IEEE FLAGSHIP EVENTS</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
           <p className="text-white  font-bold text-xl">02</p>
         </div>
