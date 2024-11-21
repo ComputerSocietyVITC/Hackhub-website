@@ -20,6 +20,14 @@ const sections = [
     id: "sponsors",
     name: "Sponsors",
   },
+  {
+    id: "prizes",
+    name: "Prizes",
+  },
+  {
+    id: "team",
+    name: "Team",
+  }
 ];
 
 export function Hamburger() {
@@ -48,10 +56,10 @@ export function Hamburger() {
               <a
                 key={section.id}
                 href={`#${section.id}`}
-                className={`text-white text-xl flex items-center p-4 rounded-md justify-center w-full max-w-sm transition-transform duration-200 ${
+                className={`text-white text-2xl font-bold flex items-center p-4 rounded-md justify-center w-full max-w-sm transition-transform duration-200 ${
                   activeSection === section.id
                     ? "text-gray-300"
-                    : "hover:bg-gray-600 hover:text-white"
+                    : "hover:bg-gray-400 hover:text-white"
                 }`}
                 onClick={(e) => {
                   e.preventDefault();

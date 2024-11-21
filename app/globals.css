@@ -77,6 +77,50 @@ body {
   }
 }
 
+
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+.marquee-container {
+  width: 100%;
+  position: relative; 
+  bottom: 0; 
+  left: 0; 
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.marquee-image {
+  width: 110%;
+  height: 70px; 
+  background-image: url("/images/track.png"); 
+  background-size: cover;
+  background-position: center;
+  animation: marquee-animation 7s linear infinite;
+}
+
+@media (min-width: 1024px) { /* lg screens */
+  .marquee-image {
+    height: 50px;
+  }
+} 
+
+@media (min-width: 1280px) { /* xl screens */
+  .marquee-image {
+    height: 80px;
+  }
+}
+
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

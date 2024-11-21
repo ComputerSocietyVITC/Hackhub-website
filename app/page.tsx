@@ -8,6 +8,7 @@ import NavBar from "./components/ui/navbar";
 
 import FaqPage from "./components/FaqPage";
 import TeamPage from "./components/teampage";
+import Prizes from "./components/prizes";
 
 export default function Home() {
   return (
@@ -37,6 +38,14 @@ export default function Home() {
           </AlternateLayout>
 
       </div>
+
+      <div id="prizes">
+      <GlobalLayout >
+        <Prizes/>
+        </GlobalLayout>
+      </div>
+
+
       <div id="team" className="w-full">
         <GlobalLayout >
           <TeamPage />
