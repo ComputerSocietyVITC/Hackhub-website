@@ -39,12 +39,12 @@ export default function Home() {
 
       </div>
 
-      <div id="prizes">
+   {/*   <div id="prizes">
       <GlobalLayout >
         <Prizes/>
         </GlobalLayout>
       </div>
-
+  */}
 
       <div id="team" className="w-full">
         <GlobalLayout >
