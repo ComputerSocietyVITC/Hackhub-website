@@ -15,9 +15,9 @@ export default function Component() {
       <div className="flex-1 w-full flex flex-col justify-center px-4 sm:px-10 pb-20">
         {/* Header Section with 05 and FAQ */}
         <div className="flex justify-between items-center mb-12">
-          <p className="text-white font-bold text-xl">05</p>
+        <p className="text-white text-xl sm:text-3xl font-bold">FAQ</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-xl sm:text-3xl font-bold">FAQ</p>
+          <p className="text-white font-bold text-xl">06</p>
         </div>
 
         {/* Centered Accordion Section */}
@@ -43,12 +43,12 @@ export default function Component() {
                   <AccordionContent className="text-white font-sans pb-4">
                     {index === 0 && (
                       <p>
-                        A Hackhub is an intensive event where participants collaborate to solve specific problems or build innovative products within a limited timeframe.
+                        Hackhub is an intensive event where participants collaborate to address specific challenges or develop innovative products within a limited timeframe.
                       </p>
                     )}
                     {index === 1 && (
                       <p>
-                        Students, researchers, and industry professionals with a passion for technology are encouraged to participate.
+                        Students, researchers, and industry professionals with a passion for technology are encouraged to join.
                       </p>
                     )}
                     {index === 2 && (
@@ -76,9 +76,10 @@ export default function Component() {
         {/* Contact Section */}
         <div className="contact-section mt-16 pt-8">
           <div className="flex justify-between items-center mb-12">
-            <p className="text-white text-xl font-bold">GET IN TOUCH</p>
+          <p className="text-white font-bold text-xl">07</p>
+            
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white font-bold text-xl">06</p>
+            <p className="text-white text-xl font-bold">GET IN TOUCH</p>
           </div>
           <div className="flex justify-end px-12">
             <div className="flex space-x-6">
