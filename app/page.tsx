@@ -1,6 +1,6 @@
 import Aboutpage from "./components/about";
 import AlternateLayout from "./components/AlternateLayout";
-import Event from "./components/event";
+import PrevEditions from "./components/event";
 import GlobalLayout from "./components/GlobalLayout";
 import Homepage from "./components/homepage";
 import Sponsors from "./components/sponsors";
@@ -26,8 +26,8 @@ export default function Home() {
       </div>
 
       <div id="events">
-        <GlobalLayout >
-          <Event />
+        <GlobalLayout height="auto">
+          <PrevEditions />
         </GlobalLayout>
       </div>
 
