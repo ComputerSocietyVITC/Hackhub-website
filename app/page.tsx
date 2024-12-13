@@ -114,20 +114,11 @@ export default function Home() {
             <button
               className="absolute bottom-2 right-2 text-white hover:text-gray-300 transition-colors"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M14.752 11.168l-9.193-5.195a1 1 0 00-1.46.85v10.345a1 1 0 001.459.85l9.194-5.195a1 1 0 000-1.7z"
-                />
-              </svg>
+              <img
+                src="/images/image.png"  
+                alt="Send" 
+                className="h-5 w-5"  
+              />
             </button>
           </div>
         </div>
