@@ -7,7 +7,7 @@ import Sponsors from "./components/sponsors";
 import NavBar from "./components/ui/navbar";
 import Domains from "./components/domains";
 
-import FaqPage from "./components/FaqPage";
+
 import TeamPage from "./components/teampage";
 import Prizes from "./components/prizes";
 import Link from "next/link";
