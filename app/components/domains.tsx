@@ -1,6 +1,13 @@
 'use client'
 
 import { useState, useCallback } from "react"
+import { Montserrat } from 'next/font/google';
+
+// Import Montserrat ExtraBold
+const montserrat = Montserrat({
+  weight: ["800"], // Use 800 for ExtraBold
+  subsets: ["latin"],
+});
 
 const domains = [
   "AIML",
@@ -8,18 +15,18 @@ const domains = [
   "HEALTH",
   "OPEN&nbsp;INNOVATION",
   "ENVIRONMENTAL&nbsp;SUSTAINABILITY"
-]
+];
 
 export default function Domains() {
-  const [hoveredDomain, setHoveredDomain] = useState<number | null>(null)
+  const [hoveredDomain, setHoveredDomain] = useState<number | null>(null);
 
   const handleMouseEnter = useCallback((idx: number) => {
-    setHoveredDomain(idx)
-  }, [])
+    setHoveredDomain(idx);
+  }, []);
 
   const handleMouseLeave = useCallback(() => {
-    setHoveredDomain(null)
-  }, [])
+    setHoveredDomain(null);
+  }, []);
 
   return (
     <div className="w-full px-4 py-8">
@@ -35,7 +42,7 @@ export default function Domains() {
             <a
               key={domain}
               href="#"
-              className="relative block overflow-hidden whitespace-nowrap text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase"
+              className={`relative block overflow-hidden whitespace-nowrap text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase ${montserrat.className}`}
               style={{ 
                 lineHeight: 1,
                 letterSpacing: '-0.02em',
@@ -59,8 +66,6 @@ export default function Domains() {
                             : 'translateY(0)',
                           transitionDelay: `${(i * part.length + j) * 20}ms`,
                           willChange: 'transform',
-                          WebkitFontSmoothing: 'antialiased',
-                          textRendering: 'optimizeLegibility'
                         }}
                       >
                         {letter}
@@ -103,6 +108,5 @@ export default function Domains() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
