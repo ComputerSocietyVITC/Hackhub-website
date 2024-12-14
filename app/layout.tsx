@@ -51,24 +51,26 @@ export default function RootLayout({
         <link rel="preload" href="/images/EventImages/3.jpg" as="image" />
         <link rel="preload" href="/images/EventImages/4.jpg" as="image" />
         <link rel="preload" href="/images/EventImages/5.jpg" as="image" />
-        <link rel="preload" href="/images/EventImages/6.jpg" as="image" />
-        <link rel="preload" href="/images/EventImages/7.jpg" as="image" />
-        <link rel="preload" href="/images/EventImages/8.jpg" as="image" />
-        <link rel="preload" href="/images/EventImages/9.jpg" as="image" />
+        
+
+  
         
       </Head>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-black`}
       >
         <Loader>
+        
         {children}
         <Stars starCount={130} />
         <div className="hamburger-container">
           <Hamburger />
         </div>
+       
         </Loader>
-
       </body>
+      
     </html>
   );
 }
