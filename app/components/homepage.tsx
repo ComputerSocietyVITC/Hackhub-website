@@ -1,7 +1,6 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-
+"use client";
+import React from "react";
+import Image from "next/image";
 
 const Homepage: React.FC = () => {
   return (
@@ -27,20 +26,25 @@ const Homepage: React.FC = () => {
       >
        CompSoc
       </div> */}
-      <Image src='/images/compsoc.webp' alt="Background Track" width={95} height={95} 
-      className="absolute"
-          style={{
-        top:'2%' ,
-        left:'2%'
-       }} ></Image>
+      <Image
+        src="/images/compsoc.webp"
+        alt="Background Track"
+        width={95}
+        height={95}
+        className="absolute"
+        style={{
+          top: "2%",
+          left: "2%",
+        }}
+      ></Image>
       {/* Hackhub Logo */}
       <div
         className="bg-center bg-no-repeat bg-contain h-[50vh] w-[50vw] absolute homepage-logo z-10"
         style={{
-          backgroundImage: 'url(images/Hackhub_logo.svg)',
-          top: '50%', 
-          left: '50%',
-          transform: 'translate(-50%, -50%)'
+          backgroundImage: "url(images/Hackhub_logo.svg)",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
         }}
       />
 
@@ -52,16 +56,15 @@ const Homepage: React.FC = () => {
                    top-[calc(44%+10vh)]
                    md:left-[calc(31%)] md:top-[calc(45%+15vh)]"
         style={{
-          backgroundImage: 'url(images/2025.svg)',
+          backgroundImage: "url(images/2025.svg)",
         }}
       />
-       {/*<div
+      {/*<div
         className="absolute text-white text-sm font-Archivo Narrow line-clamp-2 hidden md:block"
         style={{ width: '13%', height: '10%', top: '60%', left: '62%', gap: '0px', opacity: '1', fontSize: '90%' }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </div>*/}
     </div>
-   
   );
 };
 

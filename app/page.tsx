@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <div id="home">
-        <AlternateLayout bgImage="/images/bgtrack1.webp" >
+        <AlternateLayout bgImage="/images/bgtrack1.webp">
           <Homepage />
         </AlternateLayout>
       </div>
@@ -26,35 +26,32 @@ export default function Home() {
       </div>
 
       <div id="events">
-        <GlobalLayout >
+        <GlobalLayout>
           <Event />
         </GlobalLayout>
       </div>
 
       <div id="sponsors">
-      <AlternateLayout bgImage="/images/Background_2.png" >
-        
+        <AlternateLayout bgImage="/images/Background_2.png">
           <Sponsors />
-          </AlternateLayout>
-
+        </AlternateLayout>
       </div>
 
       <div id="prizes">
-      <GlobalLayout >
-        <Prizes/>
+        <GlobalLayout>
+          <Prizes />
         </GlobalLayout>
       </div>
 
-
       <div id="team" className="w-full">
-        <GlobalLayout >
+        <GlobalLayout>
           <TeamPage />
         </GlobalLayout>
       </div>
 
       <div>
         <GlobalLayout>
-           <FaqPage />
+          <FaqPage />
         </GlobalLayout>
       </div>
 

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Head from 'next/head';
+import Head from "next/head";
 import Stars from "./components/stars/stars";
 import { Hamburger } from "./components/ui/hamburger";
+import Loader from "./components/loader";
+import Script from "next/script";
+
 import "./globals.css";
 
 const geistSans = localFont({
@@ -20,8 +23,7 @@ export const metadata: Metadata = {
   title: "Hackhub 25",
   icons: {
     icon: "/ICON.webp",
-  }
-
+  },
 };
 
 export default function RootLayout({
@@ -31,28 +33,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <Head>
+      <Head>
         {/* Add Google Font link for Archivo Narrow */}
         <link
           href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
           rel="stylesheet"
         />
-         {/* add analytics */}
-        <script 
-          defer 
-          data-domain="hackhub25.ieeecsvitc.com" 
-          src="https://analytics.adityajyoti.com/js/script.js">
-        </script>
+        {/* add analytics */}
+        <Script
+          defer
+          data-domain="hackhub25.ieeecsvitc.com"
+          src="https://analytics.adityajyoti.com/js/script.js"
+        ></Script>
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-black`}
       >
-        
-        {children}
-        <Stars starCount={130} />
-        <div className="hamburger-container">
-          <Hamburger />
-        </div>
+        <Loader>
+          {children}
+
+          <Stars starCount={130} />
+          <div className="hamburger-container">
+            <Hamburger />
+          </div>
+        </Loader>
       </body>
     </html>
   );

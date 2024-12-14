@@ -3,19 +3,17 @@
 @tailwind utilities;
 
 /* styles/globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap");
 
 ::-webkit-scrollbar {
-  width: 0px;  /* WebkKit hide scrollbar */
+  width: 0px; /* WebkKit hide scrollbar */
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0; /* Ensure there's no body margin */
-  -ms-overflow-style: none;  /* IE and Edge hide scrollbar */
-  scrollbar-width: none;  /* Firefox hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge hide scrollbar */
+  scrollbar-width: none; /* Firefox hide scrollbar */
 }
 
 .hamburger-container {
@@ -25,7 +23,6 @@ body {
 .navbar-container {
   display: none;
 }
-
 
 @media (max-width: 768px) {
   .hamburger-container {
@@ -71,55 +68,52 @@ body {
   }
 }
 
-@media(max-width: 640px){
+@media (max-width: 640px) {
   .about-text-adjustment {
-    bottom: 80% ;
+    bottom: 80%;
   }
 }
 
-
-
 @keyframes marquee-animation {
   0% {
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%); 
+    transform: translateX(-100%);
   }
 }
 
 .marquee-container {
   width: 100%;
-  position: relative; 
-  bottom: 0; 
-  left: 0; 
+  position: relative;
+  bottom: 0;
+  left: 0;
   padding: 20px 0;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .marquee-image {
   width: 110%;
-  height: 70px; 
-  background-image: url("/images/track.png"); 
+  height: 70px;
+  background-image: url("/images/track.png");
   background-size: cover;
   background-position: center;
   animation: marquee-animation 7s linear infinite;
 }
 
-@media (min-width: 1024px) { /* lg screens */
+@media (min-width: 1024px) {
+  /* lg screens */
   .marquee-image {
     height: 50px;
   }
-} 
+}
 
-@media (min-width: 1280px) { /* xl screens */
+@media (min-width: 1280px) {
+  /* xl screens */
   .marquee-image {
     height: 80px;
   }
 }
-
-
-
 
 @layer base {
   :root {
