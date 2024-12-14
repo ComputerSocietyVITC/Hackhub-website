@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Head from 'next/head';
 import Stars from "./components/stars/stars";
 import { Hamburger } from "./components/ui/hamburger";
+import Loader from "./components/ui/loader";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -59,12 +60,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-black`}
       >
-        
+        <Loader>
         {children}
         <Stars starCount={130} />
         <div className="hamburger-container">
           <Hamburger />
         </div>
+        </Loader>
+
       </body>
     </html>
   );
