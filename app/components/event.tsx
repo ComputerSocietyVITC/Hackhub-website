@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 
 const PrevEditions = () => {
 
@@ -72,21 +72,70 @@ const MobileCarousel: React.FC<ImageGridProps> = ({ images, setImages }) => {
   };
 
   const handleTouchEnd = () => {
-    const touchDifference = touchStartX.current - touchEndX.current;
-    const swipeThreshold = window.innerWidth * 0.1; // 10% of window width
 
-    if (touchDifference > swipeThreshold) {
-      const newImages = [...images.slice(1), images[0]];
-      if (setImages) {
-        setImages(newImages);
-      }
-    } else if (touchDifference < -swipeThreshold) {
-      const newImages = [images[images.length - 1], ...images.slice(0, images.length - 1)];
-      if (setImages) {
-        setImages(newImages);
-      }
-    }
+    // UNSTABLE CODE
+
+    // const touchDifference = touchStartX.current - touchEndX.current;
+    // const swipeThreshold = window.innerWidth * 0.1; // 10% of window width
+
+    // if (touchDifference > swipeThreshold) {
+
+    //   if (carouselRef.current) {
+    //     const children = carouselRef.current.childNodes;
+    //     children.forEach((child: any) => {
+    //       child.classList.remove('carouselAnimLeft');
+    //       child.classList.remove('carouselAnimRight');
+    //       setTimeout(() => {
+    //         child.classList.add('carouselAnimLeft')
+    //       }
+    //         , 100);
+    //     });
+
+    //   }
+
+    //   const newImages = [...images.slice(1), images[0]];
+    //   if (setImages) {
+    //     setImages(newImages);
+
+    //   }
+    // } else if (touchDifference < -swipeThreshold) {
+
+    //   if (carouselRef.current) {
+
+
+    //     const children = carouselRef.current.childNodes;
+    //     children.forEach((child: any) => {
+    //       child.classList.remove('carouselAnimRight');
+    //       child.classList.remove('carouselAnimLeft');
+    //       setTimeout(() => {
+    //         child.classList.add('carouselAnimRight')
+    //       }
+    //         , 100);
+    //     });
+    //   }
+
+    //   const newImages = [images[images.length - 1], ...images.slice(0, images.length - 1)];
+    //   if (setImages) {
+    //     setImages(newImages);
+
+    //   }
+    // }
   };
+
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      const children = carouselRef.current.childNodes;
+      children.forEach((child: any) => {
+        child.classList.add('carouselAnim');
+        setTimeout(() => {
+          child.classList.remove('carouselAnim')
+        }
+          , 1000);
+      });
+
+    }
+  }, [images])
 
   return (
     <div
@@ -142,23 +191,23 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
 
   return (
     <div className="grid w-full max-w-[1400px] mx-auto h-[430px] grid-cols-5 grid-rows-6 gap-5 mt-[100px]" ref={carouselRef}>
-      <div className="col-span-1 row-start-2 row-span-4 bg-slate-100 rounded-xl filter grayscale hover:filter-none transform hover:scale-105 transition duration-300"
-        style={{ backgroundImage: `url(${images[0]})`, backgroundSize: 'cover', backgroundPosition: 'center', animationDuration: '0s' }}
+      <div className="col-span-1 row-start-2 row-span-4 bg-slate-100 rounded-xl filter hover:filter-none transform hover:scale-105 transition bg-cover bg-center"
+        style={{ backgroundImage: `url(${images[0]})`, animationDuration: '0.65s' }}
       ></div>
-      <div className="col-span-1 col-start-2 row-start-1 row-span-2 bg-slate-800 rounded-xl filter grayscale hover:filter-none transform hover:scale-105 transition duration-300"
-        style={{ backgroundImage: `url(${images[1]})`, backgroundSize: 'cover', backgroundPosition: 'center', animationDuration: '0.2s' }}
+      <div className="col-span-1 col-start-2 row-start-1 row-span-2 bg-slate-800 rounded-xl filter hover:filter-none transform hover:scale-105 transition bg-cover bg-center"
+        style={{ backgroundImage: `url(${images[1]})`, animationDuration: '0.5s' }}
       ></div>
-      <div className="col-span-1 col-start-2 row-start-3 row-span-2 bg-slate-800 rounded-xl filter grayscale hover:filter-none transform hover:scale-105 transition duration-300"
-        style={{ backgroundImage: `url(${images[2]})`, backgroundSize: 'cover', backgroundPosition: 'center', animationDuration: '0.35s' }}
+      <div className="col-span-1 col-start-2 row-start-3 row-span-2 bg-slate-800 rounded-xl filter hover:filter-none transform hover:scale-105 transition bg-cover bg-center"
+        style={{ backgroundImage: `url(${images[2]})`, animationDuration: '0.35s' }}
       ></div>
-      <div className="col-span-1 col-start-2 row-start-5 row-span-2 bg-slate-800 rounded-xl filter grayscale hover:filter-none transform hover:scale-105 transition duration-300"
-        style={{ backgroundImage: `url(${images[3]})`, backgroundSize: 'cover', backgroundPosition: 'center', animationDuration: '0.50s' }}
+      <div className="col-span-1 col-start-2 row-start-5 row-span-2 bg-slate-800 rounded-xl filter hover:filter-none transform hover:scale-105 transition bg-cover bg-center"
+        style={{ backgroundImage: `url(${images[3]})`, animationDuration: '0.3s' }}
       ></div>
-      <div className="col-span-2 col-start-3 row-start-1 row-span-6 bg-slate-800 rounded-xl filter grayscale hover:filter-none transform hover:scale-105 transition duration-300"
-        style={{ backgroundImage: `url(${images[4]})`, backgroundSize: 'cover', backgroundPosition: 'center', animationDuration: '0.65s' }}
+      <div className="col-span-2 col-start-3 row-start-1 row-span-6 bg-slate-800 rounded-xl filter hover:filter-none transform hover:scale-105 transition bg-cover bg-center"
+        style={{ backgroundImage: `url(${images[4]})`, animationDuration: '0.2s' }}
       ></div>
-      <div className="col-span-1 row-start-2 row-span-4 bg-slate-800 rounded-xl filter grayscale hover:filter-none transform hover:scale-105 transition duration-300"
-        style={{ backgroundImage: `url(${images[5]})`, backgroundSize: 'cover', backgroundPosition: 'center', animationDuration: '0.8s' }}
+      <div className="col-span-1 row-start-2 row-span-4 bg-slate-800 rounded-xl filter hover:filter-none transform hover:scale-105 transition bg-cover bg-center"
+        style={{ backgroundImage: `url(${images[5]})`, animationDuration: '0.5s' }}
       ></div>
     </div>
   );

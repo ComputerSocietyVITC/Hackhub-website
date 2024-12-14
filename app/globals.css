@@ -89,17 +89,25 @@ body {
 }
 
 .carouselAnim{
-  animation: carouselAnimation 0.5s ease-in-out forwards;
+  animation: carouselAnimationLeft 0.5s ease-in-out forwards;
 }
 
-@keyframes carouselAnimation {
+
+@keyframes carouselAnimationLeft {
   0%{
     opacity: 0;
+    transform: translateX(20px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(-10px);
   }
   100%{
     opacity: 1;
+    transform: translateX(0px);
   }
 }
+
 
 .marquee-container {
   width: 100%;
