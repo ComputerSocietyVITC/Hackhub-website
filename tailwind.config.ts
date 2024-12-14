@@ -60,6 +60,7 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)'
       },
       keyframes: {
+        
         shimmer: {
           from: {
             "backgroundPosition": "0 0"
@@ -83,13 +84,19 @@ const config: Config = {
           to: {
             height: '0'
           }
+        },
+
+        flip: {
+          '0%, 100%': { transform: 'rotateX(0deg)' },
+          '50%': { transform: 'rotateX(-90deg)' },
         }
         
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-         shimmer: "shimmer 2s linear infinite"
+         shimmer: "shimmer 2s linear infinite",
+         'flip': 'flip 0.6s ease-in-out',
       }
     }
   },
