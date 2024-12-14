@@ -22,16 +22,11 @@ const Prizes = () => {
         </div>
 
         {/* Main Content Section */}
-        <div className="flex justify-between items-start mb-12 sm:items-center lg:flex-row flex-col gap-8">
-          {/* Winners Section - Left Side */}
-          <div className="flex lg:justify-start justify-center lg:w-1/6 w-full lg:mt-40 ">
-            <p className="text-white text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-montserrat font-bold opacity-75 lg:mt-[-150px]">
-              Winners
-            </p>
-          </div>
+        <div className="flex  mb-12 sm:items-center lg:flex-row flex-col gap-8 justify-center">
+        
 
           {/* Cards Section - Right Side */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full sm:w-1/2 md:w-full lg:w-2/3">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full sm:w-1/2 md:w-full lg:w-2/3 justify-center">
             {/* Card 1 */}
             <div
               className="bg-cover bg-center h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
