@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       <div id="home">
-        <AlternateLayout bgImage="/images/bgtrack1.webp" >
+        <AlternateLayout >
           <Homepage />
         </AlternateLayout>
       </div>
