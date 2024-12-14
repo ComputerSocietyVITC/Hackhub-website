@@ -42,7 +42,7 @@ export default function Domains() {
             <a
               key={domain}
               href="#"
-              className={`relative block overflow-hidden whitespace-nowrap text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase ${montserrat.className}`}
+              className={`relative block overflow-hidden whitespace-nowrap text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-bold uppercase ${montserrat.className}`}
               style={{ 
                 lineHeight: 1,
                 letterSpacing: '-0.02em',

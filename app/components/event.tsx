@@ -5,7 +5,7 @@ import Card from './ui/card';
 const Event = () => {
   return (
     <div className="bg-cover bg-center w-screen flex items-center justify-center pb-4 mt-7  ">
-      <div className="min-h-screen w-full flex justify-center ">
+      <div className=" w-full flex justify-center ">
         <div className="mt-12 w-full px-5">
         <div className="flex justify-between items-center mb-12">
           <p className="text-white text-xl sm:text-3xl font-bold">IEEE FLAGSHIP EVENTS</p>
