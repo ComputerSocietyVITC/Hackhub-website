@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         archivoNarrow: ['"Archivo Narrow"', 'sans-serif'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -83,13 +84,19 @@ const config: Config = {
           to: {
             height: '0'
           }
+        },
+
+        flip: {
+          '0%': { transform: 'rotateY(90deg)' },
+          '100%': { transform: 'rotateX(0deg)' },
         }
         
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-         shimmer: "shimmer 2s linear infinite"
+         shimmer: "shimmer 2s linear infinite",
+         'flip': 'flip 0.6s ease-in-out',
       }
     }
   },

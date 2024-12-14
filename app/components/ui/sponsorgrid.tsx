@@ -1,15 +1,21 @@
 import React from 'react';
-import '@fontsource/montserrat'; 
+import { Montserrat } from 'next/font/google';
+
+// Load Montserrat font with Extra Bold weight
+const montserrat = Montserrat({
+  weight: ['800'], // Use 800 for ExtraBold
+  subsets: ['latin'], // Latin subset
+});
 
 const SponsorGrid = () => {
   return (
-    <div className="max-w-full mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12">
+    <div className={`max-w-full mx-auto px-4 py-8 ${montserrat.className}`}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-14">
         {/* Cards */}
         {[1, 2, 3, 4, 5, 6].map((sponsor) => (
           <div
             key={sponsor}
-            className="w-full h-80 rounded-lg shadow-lg border bg-[#373737] p-4 sm:p-2 flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-110"
+            className="w-70 h-70 rounded-lg shadow-lg bg-[#373737] p-4 sm:p-2 flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-110"
           >
             {/* Top Section */}
             <div className="flex justify-between items-start">
@@ -18,16 +24,16 @@ const SponsorGrid = () => {
                 {/* Placeholder for logo */}
               </div>
               {/* Sponsor Text */}
-              <h1 className="text-white text-2xl font-montserrat font-bold mt-4 ">Sponsor {sponsor}</h1>
+              <h1 className="text-[#141414] text-2xl font-extrabold mt-4">Sponsor {sponsor}</h1>
             </div>
 
             {/* Tracks and Prize Section */}
             <div className="mb-20 text-center">
-              <p className="text-white text-lg font-montserrat font-bold">
-                <span className="font -montserrat font-bold">Tracks:</span> TBD
+              <p className="text-white text-lg font-extrabold mt-2">
+                <span>Tracks:</span> TBA
               </p>
-              <p className="text-white text-lg font-montserrat  font-bold mt-2">
-                <span className="font-montserrat font-bold">Prize:</span> TBD
+              <p className="text-white text-lg font-extrabold mt-2">
+                <span>Prize:</span> TBA
               </p>
             </div>
           </div>

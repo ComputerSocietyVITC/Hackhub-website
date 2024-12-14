@@ -52,9 +52,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }
   return (
     <section
       ref={sectionRef} 
-
-      className="min-h-screen w-screen relative overflow-hidden flex items-center justify-center"
-
+      className="w-screen relative overflow-hidden flex items-center justify-center"
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -70,7 +68,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }
 
       <ScrollFade />
 
-      <div className="relative z-10 w-full h-full flex items-center justify-center">
+      <div className="relative z-10 w-full flex items-center justify-center">
         {children}
       </div>
     </section>
