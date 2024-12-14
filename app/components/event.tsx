@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 const PrevEditions = () => {
 
-  
+
   // Creating the references to the images
   const imagesInit = Array.from({ length: 9 }, (_, i) => `/images/EventImages/${i + 1}.jpg`);
 
@@ -29,7 +29,9 @@ const PrevEditions = () => {
       if (firstImage) {
         newImages.push(firstImage);
       }
-      setImages(newImages);
+      if (setImages) {
+        setImages(newImages);
+      }
     }, 5000);
     return () => clearTimeout(timer);
   }, [images])
@@ -73,18 +75,16 @@ const MobileCarousel: React.FC<ImageGridProps> = ({ images, setImages }) => {
     const touchDifference = touchStartX.current - touchEndX.current;
     const swipeThreshold = window.innerWidth * 0.1; // 10% of window width
 
-    // console.log(touchDifference,touchStartX.current,touchEndX.current,swipeThreshold);
-
     if (touchDifference > swipeThreshold) {
-      // Swipe left
       const newImages = [...images.slice(1), images[0]];
-      setImages(newImages);
-      console.log('swipe left');
+      if (setImages) {
+        setImages(newImages);
+      }
     } else if (touchDifference < -swipeThreshold) {
-      // Swipe right
       const newImages = [images[images.length - 1], ...images.slice(0, images.length - 1)];
-      setImages(newImages);
-      console.log('swipe right');
+      if (setImages) {
+        setImages(newImages);
+      }
     }
   };
 
