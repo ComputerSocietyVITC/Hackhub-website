@@ -18,6 +18,22 @@ export default function Loader({
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    const handleReadyStateChange = () => {
+      const body = document.querySelector("body") as HTMLElement | null;
+      const loader = document.querySelector("#loader") as HTMLElement | null;
+
+      if (document.readyState !== "complete") {
+        if (body) body.style.visibility = "hidden";
+        if (loader) loader.style.visibility = "visible";
+      } else {
+        if (loader) loader.style.display = "none";
+        if (body) body.style.visibility = "visible";
+      }
+    };
+
+    // Attach the ready state change handler
+    document.onreadystatechange = handleReadyStateChange;
+
     const loadImage = (image: HTMLImageElement) => {
       return new Promise<void>((resolve, reject) => {
         if (image.complete) {
@@ -52,18 +68,26 @@ export default function Loader({
         ]);
 
         setIsLoading(false);
+        handleReadyStateChange(); // Call explicitly to ensure cleanup
       } catch (error) {
         console.error("Error loading assets:", error);
         setIsLoading(false);
+        handleReadyStateChange();
       }
     };
 
     loadAllAssets();
+
+    // Cleanup event listener on unmount
+    return () => {
+      document.onreadystatechange = null;
+    };
   }, [fallbackTimeout]);
 
   if (isLoading) {
     return (
       <div
+        id="loader"
         className={`min-h-screen flex flex-col items-center justify-center bg-black text-white transition-opacity duration-500 ease-in-out ${montserrat.className}`}
       >
         <div className="text-center space-y-6">
