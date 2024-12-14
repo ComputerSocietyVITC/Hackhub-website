@@ -157,19 +157,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex justify-between items-center text-white text-sm">
-            <div className="absolute bottom-4 left-8">
-              <p className="font-bold">FACULTY CO-ORDINATORS</p>
-              <p>Dr. Abraham Sudharson Ponraj</p>
-              <p>Dr. Christy Jackson</p>
-            </div>
-
-            <div className="absolute bottom-4 right-8 text-right">
-              <p className="font-bold">STUDENT CO-ORDINATORS</p>
-              <p>Name1</p>
-              <p>Name2</p>
-            </div>
-          </div>
+      
 
           <div className="text-center text-gray-400 text-sm mt-6">
             © IEEE Computer Society VIT Chennai 2024 - All Rights Reserved
