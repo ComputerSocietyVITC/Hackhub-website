@@ -1,5 +1,5 @@
 'use client'
-import React, { use, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const PrevEditions = () => {
 
@@ -24,7 +24,7 @@ const PrevEditions = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      let newImages = [...images];
+      const newImages = [...images];
       const firstImage = newImages.shift();
       if (firstImage) {
         newImages.push(firstImage);
@@ -58,7 +58,7 @@ interface ImageGridProps {
 }
 
 
-const MobileCarousel: React.FC<ImageGridProps> = ({ images, setImages }) => {
+const MobileCarousel: React.FC<ImageGridProps> = ({ images }) => {
   const carouselRef = React.useRef<HTMLDivElement>(null);
   const touchStartX = React.useRef<number>(0);
   const touchEndX = React.useRef<number>(0);
@@ -126,12 +126,13 @@ const MobileCarousel: React.FC<ImageGridProps> = ({ images, setImages }) => {
   useEffect(() => {
     if (carouselRef.current) {
       const children = carouselRef.current.childNodes;
-      children.forEach((child: any) => {
-        child.classList.add('carouselAnim');
-        setTimeout(() => {
-          child.classList.remove('carouselAnim')
+      children.forEach((child) => {
+        if (child instanceof HTMLElement) {
+          child.classList.add('carouselAnim');
+          setTimeout(() => {
+            child.classList.remove('carouselAnim');
+          }, 1000);
         }
-          , 1000);
       });
 
     }
@@ -177,15 +178,14 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
   useEffect(() => {
     if (carouselRef.current) {
       const children = carouselRef.current.childNodes;
-      children.forEach((child: any) => {
-        child.classList.add('carouselAnim');
+      children.forEach((child) => {
+        if (child instanceof HTMLElement) {
+          child.classList.add('carouselAnim');
+          setTimeout(() => {
+            child.classList.remove('carouselAnim');
+          }, 1000);
+        }
       });
-
-      setTimeout(() => {
-        children.forEach((child: any) => {
-          child.classList.remove('carouselAnim');
-        });
-      }, 3000);
     }
   }, [images])
 
