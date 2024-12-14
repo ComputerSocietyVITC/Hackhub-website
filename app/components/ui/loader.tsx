@@ -57,7 +57,7 @@ export default function Loader({
 
         // Minimum display time for loader (e.g., 2 seconds)
         const minDisplayTime = new Promise<void>((resolve) =>
-          setTimeout(resolve, 2000)
+          setTimeout(resolve, 5000)
         );
 
         await Promise.race([
