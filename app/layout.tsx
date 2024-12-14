@@ -43,6 +43,18 @@ export default function RootLayout({
           data-domain="hackhub25.ieeecsvitc.com" 
           src="https://analytics.adityajyoti.com/js/script.js">
         </script>
+
+        {/* Preload carousel images */}
+        <link rel="preload" href="/images/EventImages/1.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/2.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/3.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/4.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/5.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/6.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/7.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/8.jpg" as="image" />
+        <link rel="preload" href="/images/EventImages/9.jpg" as="image" />
+        
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-black`}
