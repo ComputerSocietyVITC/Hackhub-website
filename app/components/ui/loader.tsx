@@ -18,11 +18,11 @@ export default function Loader({
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const handleReadyStateChange = () => {
+    const handleLoaderDisplay = (show: boolean) => {
       const body = document.querySelector("body") as HTMLElement | null;
       const loader = document.querySelector("#loader") as HTMLElement | null;
 
-      if (document.readyState !== "complete") {
+      if (show) {
         if (body) body.style.visibility = "hidden";
         if (loader) loader.style.visibility = "visible";
       } else {
@@ -30,9 +30,6 @@ export default function Loader({
         if (body) body.style.visibility = "visible";
       }
     };
-
-    // Attach the ready state change handler
-    document.onreadystatechange = handleReadyStateChange;
 
     const loadImage = (image: HTMLImageElement) => {
       return new Promise<void>((resolve, reject) => {
@@ -54,33 +51,38 @@ export default function Loader({
           if (document.readyState === "complete") {
             resolve();
           } else {
-            window.addEventListener(
-              "load",
-              () => resolve(),
-              { once: true } // Ensure the event listener only fires once
-            );
+            window.addEventListener("load", () => resolve(), { once: true });
           }
         });
 
+        // Minimum display time for loader (e.g., 2 seconds)
+        const minDisplayTime = new Promise<void>((resolve) =>
+          setTimeout(resolve, 2000)
+        );
+
         await Promise.race([
-          Promise.all([...imagePromises, windowLoadPromise]),
-          new Promise<void>((resolve) => setTimeout(resolve, fallbackTimeout)),
+          Promise.all([windowLoadPromise, ...imagePromises, minDisplayTime]),
+          new Promise<void>((resolve) =>
+            setTimeout(resolve, fallbackTimeout)
+          ),
         ]);
 
         setIsLoading(false);
-        handleReadyStateChange(); // Call explicitly to ensure cleanup
+        handleLoaderDisplay(false); // Hide loader explicitly
       } catch (error) {
         console.error("Error loading assets:", error);
         setIsLoading(false);
-        handleReadyStateChange();
+        handleLoaderDisplay(false);
       }
     };
 
+    // Show loader initially
+    handleLoaderDisplay(true);
     loadAllAssets();
 
-    // Cleanup event listener on unmount
     return () => {
-      document.onreadystatechange = null;
+      // Clean up loader styles on unmount
+      handleLoaderDisplay(false);
     };
   }, [fallbackTimeout]);
 
