@@ -41,8 +41,7 @@ export default function Home() {
           <Timeline />
         </GlobalLayout>
       </div>
-
-
+        
       <div id="events">
         <GlobalLayout >
           <Event />
@@ -184,3 +183,4 @@ export default function Home() {
     </div>
   );
 }
+

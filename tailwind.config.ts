@@ -61,6 +61,7 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)'
       },
       keyframes: {
+        
         shimmer: {
           from: {
             "backgroundPosition": "0 0"
