@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       <div id="home">
-        <AlternateLayout >
+        <AlternateLayout  >
           <Homepage />
         </AlternateLayout>
       </div>
@@ -157,7 +157,7 @@ export default function Home() {
             />
           </div>
 
-      
+         
 
           <div className="text-center text-gray-400 text-sm mt-6">
             © IEEE Computer Society VIT Chennai 2024 - All Rights Reserved
