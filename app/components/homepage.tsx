@@ -9,11 +9,12 @@ const Homepage: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen relative tracking-tighter shadow-white">
       <div
-        className="absolute text-white md:text-4xl text-2xl font-extrabold italic
-                    top-[37%] left-[30%]  
+        className="absolute text-white md:text-4xl text-xl font-extrabold italic
+                    top-[36%] left-[35%]  
                    md:top-[25.5%] md:left-[67.5%] md:transform-x-1/2 "
       >
-       IEEE <span className=" text-stroke  text-stroke-white text-black font-extrabold">COMPSOC</span> 
+       IEEE <span className=" text-stroke md:[-webkit-text-stroke:0] lg:[-webkit-text-stroke:1px_white] font-extrabold md:text-black">COMPSOC</span> 
+
       
 
        
@@ -44,7 +45,7 @@ const Homepage: React.FC = () => {
         }}
       >
        <span className="md:text-2xl text-base ">FLAGSHIP EVENT </span>
-       <span className='font-extrabold md:text-3xl text-lg italic'>2025</span>
+       <span className='font-extrabold md:text-3xl text-lg italic '>2025</span>
       </div> 
       <div
         className="bg-center bg-no-repeat bg-contain h-[25vh] w-[38vw] md:top-[58.5%] md:left-[58%] hidden lg:block absolute "
@@ -55,27 +56,20 @@ const Homepage: React.FC = () => {
       />
     <Stopwatch
         targetDate="2025-12-31T23:59:59"
-        top="75%"
+        top="70%"
         left="50%"
-    
-      />
+        
+        />
         <a
         href="/school-registration"
-        className="absolute px-14 py-2 rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center hidden lg:block"
-        style={{
-          top: '85%',
-          left: '31%',
-        }}
+        className="absolute md:top-[80%] md:left-[31%] top-[75%] left-[50%] md:px-20 md:py-2 px-10 py-0.5 rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center font-archivoNarrow "
       >
-        SCHOOL REGISTRATION
+        REGISTRATION
       </a>
       <a
         href="/join-our-community"
-        className="absolute px-14 py-2 rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center hidden lg:block"
-        style={{
-          top: '85%',
-          left: '51%',
-        }}
+        className="absolute md:px-14 md:py-2 md:top-[80%] md:left-[51%] px-2 py-0.5 top-[75%] left-[2%] rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center font-archivoNarrow "
+  
       >
         JOIN OUR COMMUNITY
       </a>
