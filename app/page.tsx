@@ -4,8 +4,9 @@ import PrevEditions from "./components/event";
 import GlobalLayout from "./components/GlobalLayout";
 import Homepage from "./components/homepage";
 import Sponsors from "./components/sponsors";
-import NavBar from "./components/ui/navbar";
+import NavBar from "./components/ui/navbar";  
 import Domains from "./components/domains";
+import Timeline from "./components/timeline";
 
 
 import TeamPage from "./components/teampage";
@@ -32,6 +33,13 @@ export default function Home() {
       <div id="domains">
         <GlobalLayout>
           <Domains />
+        </GlobalLayout>
+      </div>
+
+
+      <div id="timeline">
+        <GlobalLayout>
+          <Timeline />
         </GlobalLayout>
       </div>
 
