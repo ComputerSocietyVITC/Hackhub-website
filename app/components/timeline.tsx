@@ -63,7 +63,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className={`relative w-full min-h-screen bg-black ${montserrat.variable} ${archivo.variable} font-montserrat`}>
+    <div className={`relative w-full min-h-screen  ${montserrat.variable} ${archivo.variable} font-montserrat`}>
       {/* Header Section */}
       <div className="relative w-full mb-12 px-4 md:px-16">
         <div className="absolute left-0 top-1/2 -translate-y-1/2 pl-4 md:pl-0">

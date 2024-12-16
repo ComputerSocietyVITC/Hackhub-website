@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import gsap from 'gsap';
 import Image from 'next/image';
+import Stopwatch from './ui/stopwatch';
 
 const Homepage: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -27,11 +28,11 @@ const Homepage: React.FC = () => {
 
     // Starfield
     const starGeometry = new THREE.BufferGeometry();
-    const starCount = 10000;
+    const starCount = 5000;
     const starPositions = new Float32Array(starCount * 3);
 
     for (let i = 0; i < starCount * 3; i++) {
-      starPositions[i] = (Math.random() - 0.5) * 2000; // Random star positions
+      starPositions[i] = (Math.random() - 0.5) * 2000;
     }
 
     starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
@@ -64,10 +65,10 @@ const Homepage: React.FC = () => {
     const animateStars = () => {
       const positions = stars.geometry.attributes.position.array;
       for (let i = 0; i < positions.length; i += 3) {
-        positions[i + 1] -= 0.05; // Move stars downward
+        positions[i + 1] -= 0.05;
 
         if (positions[i + 1] < -1000) {
-          positions[i + 1] = 1000; // Reset star position
+          positions[i + 1] = 1000;
         }
       }
       stars.geometry.attributes.position.needsUpdate = true;
@@ -112,44 +113,72 @@ const Homepage: React.FC = () => {
           left: 0,
         }}
       ></canvas>
-      
 
-      {/* Hackhub Logo */}
-      <div
-        className="bg-center bg-no-repeat bg-contain h-[50vh] w-[50vw] absolute homepage-logo z-10"
-        style={{
-          backgroundImage: 'url(images/Hackhub_logo.svg)',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-        }}
-      />
-      <div>
-        
-      <Image src='/images/compsoc.webp' alt="Background Track" width={95} height={95} 
-      className="absolute"
-          style={{
-        top:'2%' ,
-        left:'2%'
-       }} ></Image>
+      {/* COMPSOC Logo */}
+      <div className="absolute top-4 left-4 z-10">
+        <Image
+          src="/images/compsoc.webp"
+          alt="COMPSOC Logo"
+          width={100}
+          height={95}
+        />
       </div>
 
-      {/* 2025 Logo */}
-      <div
-        className="bg-no-repeat bg-contain absolute z-0
-                   h-[calc(12vh)] w-[calc(12vw)] 
-                   left-1/2 -translate-x-1/2 
-                   top-[calc(44%+10vh)]
-                   md:left-[calc(31%)] md:top-[calc(45%+15vh)]"
-        style={{
-          backgroundImage: 'url(images/2025.svg)',
-        }}
-      />
+      {/* Content */}
+<div className="flex flex-col items-center justify-center z-10">
+  {/* Combined Flex Box */}
+  <div className="flex flex-col items-center text-center justify-center  w-full">
+  <div className='responsive-heading'>
+    {/* IEEE COMPSOC */}
+    <div className="text-white text-xl sm:text-2xl md:text-4xl xl:text-5xl font-extrabold italic flex flex-row justify-center items-center -mb-16 sm:-mb-0 lg:justify-end w-full">
+      IEEE{' '}
+      <span className="text-stroke md:[-webkit-text-stroke:0] lg:[-webkit-text-stroke:1px_white] font-extrabold md:text-white lg:text-black">
+        COMPSOC
+      </span>
+    </div>
+    </div>
+
+    {/* Hackhub Logo */}
+    <div className="responsive-container">
+    <div
+      className="bg-center bg-no-repeat bg-contain sm:h-[10vh] sm:w-[68vw] h-[18vh]  md:h-[15vh] md:w-[70vw] lg:h-[26vh] mx-auto  homepage-logo w-[80vw]"
+      style={{
+        backgroundImage: 'url(images/hackhub_logo.png)',
+      }}
+    ></div>
+    </div>
+
+    {/* Year */}
+    <div className=" font-extrabold italic text-lg gap-2  sm:text-3xl md:text-5xl  lg:text-6xl lg:text-left text-white w-full z-15">
+      2025
+    </div>
+    
+  </div>
+</div>
+
+
+      {/* Stopwatch */}
+      <div className="flex justify-center items-center mt-20 lg:mt-15 transform -translate-x-1/2 -translate-y-1/2">
+        <Stopwatch targetDate="2025-12-31T23:59:59" />
+      </div>
+
+      {/* Buttons */}
+      <div className="absolute flex flex-col lg:flex-row gap-4  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mt-10 lg:mt-12">
+        <a
+          href="/school-registration"
+          className="w-40 h-12 flex items-center justify-center rounded-full border border-white text-white bg-black duration-300 hover:bg-white/10 transition-all text-center font-archivoNarrow"
+        >
+          REGISTRATION
+        </a>
+        <a
+          href="/join-our-community"
+          className="w-40 h-12 flex items-center justify-center rounded-full border border-white text-white bg-black duration-300 hover:bg-white/10 transition-all text-center font-archivoNarrow"
+        >
+          JOIN OUR COMMUNITY
+        </a>
+      </div>
     </div>
   );
 };
 
 export default Homepage;
-
-
-

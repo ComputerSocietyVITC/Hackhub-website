@@ -139,6 +139,20 @@ body {
   }
 }
 
+/* targeting ipad pros */
+@media (min-width: 1024px) and (height: 1370px) {
+  .responsive-container {
+    /* Add your styles here */
+  height:17vh;
+  }
+}
+/* fixing the ieee compsoc heading on ipad pros*/
+@media (min-width: 1024px) and (height: 1370px) {
+  .responsive-heading {
+    /* Add your styles here */
+  margin-bottom:-17;
+  }
+}
 
 
 

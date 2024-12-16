@@ -36,13 +36,13 @@ export default function Domains() {
         <div className="flex-1 h-[1px] bg-white"></div>
         <span className="text-white font-bold text-xl">02</span>
       </div>
-      <div className="bg-black text-white p-8">
+      <div className=" text-white p-8">
         <div className="space-y-6 sm:ml-10">
           {domains.map((domain, idx) => (
             <a
               key={domain}
               href="#"
-              className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase ${montserrat.className} text-ellipsis overflow-hidden`}
+              className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-bold uppercase ${montserrat.className} text-ellipsis overflow-hidden`}
               style={{ 
                 lineHeight: 1.2,
                 letterSpacing: '-0.02em',
