@@ -107,9 +107,10 @@ const Homepage: React.FC = () => {
       <div
         className="absolute text-white md:text-4xl text-xl font-extrabold italic
                     top-[36%] left-[35%]  
-                   md:top-[25.5%] md:left-[67.5%] md:transform-x-1/2 "
+                    md:top-[32%] md:left-[35%]
+                   lg:top-[25.5%] lg:left-[67.5%] lg:transform-x-1/2 "
       >
-       IEEE <span className=" text-stroke md:[-webkit-text-stroke:0] lg:[-webkit-text-stroke:1px_white] font-extrabold md:text-black">COMPSOC</span> 
+       IEEE <span className=" text-stroke sm:[-webkit-text-stroke:0] md:[-webkit-text-stroke:1px_white] font-extrabold lg:text-black">COMPSOC</span> 
 
       
 
@@ -126,19 +127,6 @@ const Homepage: React.FC = () => {
           left: 0,
         }}
       ></canvas>
-      
-
-      {/* Hackhub Logo */}
-      <div
-        className="bg-center bg-no-repeat bg-contain h-[50vh] w-[50vw] absolute homepage-logo z-10"
-        style={{
-          backgroundImage: 'url(images/Hackhub_logo.svg)',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-        }}
-      />
-      <div>
         
       <Image src='/images/compsoc.webp' alt="Background Track" width={95} height={95} 
       className="absolute"
@@ -161,13 +149,13 @@ const Homepage: React.FC = () => {
       {/* FLAGSHIP AND 2025 Logo */}
       
       <div
-        className="absolute  text-white   font-archivoNarrow tracking-wide md:top-[56%] md:left-[27.25%] top-[46.5%] left-[53%] "
+        className="absolute text-white   font-archivoNarrow tracking-wide lg:top-[56%] lg:left-[27.25%] md:top-[49%] md:left-[51.5%] top-[46.5%] left-[53%] "
         style={{
           transform: 'translateX(-50%)'
         }}
       >
-       <span className="md:text-2xl text-base ">FLAGSHIP EVENT </span>
-       <span className='font-extrabold md:text-3xl text-lg italic '>2025</span>
+       <span className="md:text-3xl text-base ">FLAGSHIP EVENT </span>
+       <span className='font-extrabold md:text-4xl text-lg italic '>2025</span>
       </div> 
       <div
         className="bg-center bg-no-repeat bg-contain h-[25vh] w-[38vw] md:top-[58.5%] md:left-[58%] hidden lg:block absolute "
@@ -182,22 +170,23 @@ const Homepage: React.FC = () => {
         left="50%"
         
         />
-        <a
+      <div className="absolute flex flex-wrap items-center justify-center lg:top-[80%] md:top-[78%] top-[75%] w-full">
+      <a
         href="/school-registration"
-        className="absolute md:top-[80%] md:left-[31%] top-[75%] left-[50%] md:px-20 md:py-2 px-10 py-0.5 rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center font-archivoNarrow "
+        className="lg:px-24 lg:py-2 md:px-24 md:py-1 px-10 py-0.5 rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center font-archivoNarrow mx-2"
       >
         REGISTRATION
       </a>
       <a
         href="/join-our-community"
-        className="absolute md:px-14 md:py-2 md:top-[80%] md:left-[51%] px-2 py-0.5 top-[75%] left-[2%] rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center font-archivoNarrow "
-  
+        className="lg:px-16 lg:py-2 md:px-20 md:py-1 px-6 py-0.5 rounded-full border border-white text-white bg-black duration-300 hover:bg-gray-500 hover:text-black transition-all text-center font-archivoNarrow mx-2"
       >
         JOIN OUR COMMUNITY
       </a>
-    </div>
+      </div>
 
     </div>
+
   );
 };
 
