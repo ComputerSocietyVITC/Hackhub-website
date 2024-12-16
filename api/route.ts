@@ -1,4 +1,4 @@
-import { supabase } from '../../utils/supabaseClient';
+import { supabase } from '../utils/supabaseClient';
 
 interface FormData {
   Name: string;
