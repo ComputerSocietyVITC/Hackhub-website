@@ -9,7 +9,7 @@ const Sponsors = () => {
         <div className="mt-12 w-full px-5">
 
         <div className="flex justify-between items-center mb-12">
-        <p className="text-white  font-bold text-xl">03</p>
+        <p className="text-white  font-bold text-xl">05</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
           <p className="text-white text-xl sm:text-3xl font-bold">SPONSORS</p>
           

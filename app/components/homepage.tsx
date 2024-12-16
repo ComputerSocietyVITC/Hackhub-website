@@ -163,7 +163,7 @@ const Homepage: React.FC = () => {
       </div>
 
       {/* Buttons */}
-      <div className="absolute flex flex-col lg:flex-row gap-4  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mt-10 lg:mt-12">
+      <div className="absolute flex flex-col lg:flex-row gap-10  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mt-10 lg:mt-12">
         <a
           href="/school-registration"
           className="w-40 h-12 flex items-center justify-center rounded-full border border-white text-white bg-black duration-300 hover:bg-white/10 transition-all text-center font-archivoNarrow"
