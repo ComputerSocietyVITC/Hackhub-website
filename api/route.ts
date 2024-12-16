@@ -1,5 +1,7 @@
 import { supabase } from '../utils/supabaseClient';
 
+export const runtime = 'edge';
+
 interface FormData {
   Name: string;
   Phone_No: string;
