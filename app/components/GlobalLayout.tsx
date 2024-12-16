@@ -6,9 +6,10 @@ import ScrollFade from './ScrollFade';
 interface GlobalLayoutProps {
   backgroundImage?: string;
   children: React.ReactNode;
+  height?: string;
 }
 
-const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }) => {
+const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children, height }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMobile, setIsMobile] = useState(false);
   const requestRef = useRef<number | null>(null);
@@ -52,9 +53,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children }
   return (
     <section
       ref={sectionRef} 
-
-      className="min-h-screen w-screen relative overflow-hidden flex items-center justify-center"
-
+      className={`${(height !== "auto" || !isMobile) && "min-h-screen"} w-screen relative overflow-hidden flex items-center justify-center`}
     >
       <div
         className="absolute inset-0 bg-cover bg-center"

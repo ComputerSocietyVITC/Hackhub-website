@@ -98,20 +98,17 @@ const TeamPage = () => {
   };
 
   return (
-    <div className="bg-cover bg-center min-h-screen w-full mt-10">
-      <div className="max-w-full mx-auto px-4 py-8">
+    <div className="bg-cover bg-center w-full">
+      <div className="max-w-full mx-auto px-4 pb-24">
         {/* Header section */}
-        <div className="flex justify-between items-center mb-12">
-        <p className="text-white  font-bold text-xl">05</p>
+        <div className="flex justify-between items-center mb-8">
+          <p className="text-white font-bold text-xl">05</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
           <p className="text-white text-xl sm:text-3xl font-bold">THE HACKHUB TEAM</p>
         </div>
-
-        {/* Board Members Section */}
-        <TeamSection title="THE BOARD MEMBERS" members={boardMembers} maxColumns={6} />
-        
-        {/* Meet the whole team button */}
-        <div className="flex justify-center mt-12 mb-8">
+  
+        {/* Show entire team button */}
+        <div className="flex justify-center mb-2">
           <button
             onClick={() => setShowFullTeam(!showFullTeam)}
             className="px-12 py-3 text-white border border-white/20 rounded-full 
@@ -120,14 +117,15 @@ const TeamPage = () => {
             {showFullTeam ? 'SHOW LESS' : 'MEET THE WHOLE TEAM'}
           </button>
         </div>
-
-        {/* Full Team Sections */}
-        <div className={`${showFullTeam ? 'block' : 'hidden'} space-y-8`}>
-          <TeamSection title="WebDev Team" members={webDevTeam} maxColumns={6} />
-          
-          {/* Design Team Section */}
-          <TeamSection title="Design Team" members={designTeam} maxColumns={2} />
-        </div>
+  
+        {/* Conditionally Render Team Sections */}
+        {showFullTeam && (
+          <div className="space-y-8">
+            <TeamSection title="THE BOARD MEMBERS" members={boardMembers} maxColumns={6} />
+            <TeamSection title="WebDev Team" members={webDevTeam} maxColumns={6} />
+            <TeamSection title="Design Team" members={designTeam} maxColumns={2} />
+          </div>
+        )}
       </div>
     </div>
   );

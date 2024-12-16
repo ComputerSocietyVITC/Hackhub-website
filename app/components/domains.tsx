@@ -29,22 +29,22 @@ export default function Domains() {
   }, []);
 
   return (
-    <div className="w-full px-4 py-8">
+    <div className="w-full h-full px-4 py-8">
       {/* Section Header */}
       <div className="flex items-center gap-4 mb-8">
         <span className="text-white font-bold text-xl">DOMAINS</span>
         <div className="flex-1 h-[1px] bg-white"></div>
         <span className="text-white font-bold text-xl">02</span>
       </div>
-      <div className="min-h-screen bg-black text-white p-8">
-        <div className="space-y-6">
+      <div className="bg-black text-white p-8">
+        <div className="space-y-6 sm:ml-10">
           {domains.map((domain, idx) => (
             <a
               key={domain}
               href="#"
-              className={`relative block overflow-hidden whitespace-nowrap text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase ${montserrat.className}`}
+              className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase ${montserrat.className} text-ellipsis overflow-hidden`}
               style={{ 
-                lineHeight: 1,
+                lineHeight: 1.2,
                 letterSpacing: '-0.02em',
                 transform: 'translateZ(0)',
               }}

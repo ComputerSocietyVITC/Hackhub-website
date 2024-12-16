@@ -1,11 +1,12 @@
 import Aboutpage from "./components/about";
 import AlternateLayout from "./components/AlternateLayout";
-import Event from "./components/event";
+import PrevEditions from "./components/event";
 import GlobalLayout from "./components/GlobalLayout";
 import Homepage from "./components/homepage";
 import Sponsors from "./components/sponsors";
-import NavBar from "./components/ui/navbar";
+import NavBar from "./components/ui/navbar";  
 import Domains from "./components/domains";
+import Timeline from "./components/timeline";
 
 
 import TeamPage from "./components/teampage";
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <div id="home">
-        <AlternateLayout bgImage="/images/bgtrack1.webp" >
+        <AlternateLayout  >
           <Homepage />
         </AlternateLayout>
       </div>
@@ -35,9 +36,16 @@ export default function Home() {
         </GlobalLayout>
       </div>
 
+
+      <div id="timeline">
+        <GlobalLayout>
+          <Timeline />
+        </GlobalLayout>
+      </div>
+
       <div id="events">
-        <GlobalLayout >
-          <Event />
+        <GlobalLayout height="auto">
+          <PrevEditions />
         </GlobalLayout>
       </div>
 
@@ -62,13 +70,16 @@ export default function Home() {
         </GlobalLayout>
       </div>
 
+      
       {/* Link to FAQ */}
       <div className="my-10 text-center">
         <Link
           href="/faq"
-          className="text-white font-bold text-lg hover:underline"
+          passHref
         >
-          Go to FAQ
+          <button className="px-12 py-3 text-white border border-white/20 rounded-full hover:bg-white/10 transition-colors duration-300 text-sm tracking-widest">
+            Go to FAQ
+          </button>
         </Link>
       </div>
 
@@ -154,19 +165,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex justify-between items-center text-white text-sm">
-            <div className="absolute bottom-4 left-8">
-              <p className="font-bold">FACULTY CO-ORDINATORS</p>
-              <p>Dr. Abraham Sudharson Ponraj</p>
-              <p>Dr. Christy Jackson</p>
-            </div>
-
-            <div className="absolute bottom-4 right-8 text-right">
-              <p className="font-bold">STUDENT CO-ORDINATORS</p>
-              <p>Name1</p>
-              <p>Name2</p>
-            </div>
-          </div>
+         
 
           <div className="text-center text-gray-400 text-sm mt-6">
             © IEEE Computer Society VIT Chennai 2024 - All Rights Reserved

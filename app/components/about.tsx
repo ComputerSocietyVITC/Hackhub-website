@@ -4,8 +4,8 @@ import React from 'react';
 const Aboutpage: React.FC = () => {
   return (
     <div className="bg-cover bg-center h-screen w-screen flex items-center justify-center">
-      <div className="min-h-screen w-full flex justify-center">
-        <div className="mt-40 w-full px-5">
+      <div className=" w-full flex justify-center">
+        <div className=" w-full px-5">
           <div className="flex justify-between items-center">
             <p className="text-white font-bold text-xl">01</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
