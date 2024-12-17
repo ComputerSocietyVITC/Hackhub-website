@@ -1,5 +1,6 @@
 import React from 'react';
 
+export const runtime = "edge";
 const Button = () => {
   return (
     <a

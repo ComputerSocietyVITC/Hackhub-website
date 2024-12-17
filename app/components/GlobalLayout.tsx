@@ -9,6 +9,8 @@ interface GlobalLayoutProps {
   height?: string;
 }
 
+export const runtime = "edge";
+
 const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children, height }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMobile, setIsMobile] = useState(false);

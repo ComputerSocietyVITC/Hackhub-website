@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 
+export const runtime = "edge";
+
 interface StopwatchProps {
   targetDate: string; // Target date for countdown
   top?: string;       // Adjustable top position

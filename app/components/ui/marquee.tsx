@@ -1,6 +1,8 @@
 
 import React from 'react';
 
+export const runtime = "edge";
+
 const Marquee = () => {
   return (
     <div className="marquee-container mb-8">

@@ -3,7 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { postData } from "../../api/route"; 
+import { postData } from "../../utils/postData"; 
+
+export const runtime = "edge";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({

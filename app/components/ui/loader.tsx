@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { Montserrat } from "next/font/google";
 
+export const runtime = "edge";
+
 const montserrat = Montserrat({
   weight: ["800"], // Use 800 for ExtraBold
   subsets: ["latin"],

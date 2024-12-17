@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { teamMembers } from '../components/data/team-members';
 
+export const runtime = "edge";
+
 const TeamPage = () => {
   const [showFullTeam, setShowFullTeam] = useState(false);
 

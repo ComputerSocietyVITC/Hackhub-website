@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import styles from "./stars.module.css";
 
+export const runtime = "edge";
+
 interface StarsProps {
   starCount?: number;
 }

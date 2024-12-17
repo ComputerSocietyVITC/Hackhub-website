@@ -1,4 +1,5 @@
 // data/team-members.ts
+export const runtime = "edge";
 
 export interface TeamMember {
     name: string;

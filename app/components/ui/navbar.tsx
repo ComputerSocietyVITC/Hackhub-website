@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 
+export const runtime = "edge";
+
 const NavBar: React.FC = () => {
   const navItems = [
     { name: 'Home', id: 'home' },

@@ -3,6 +3,8 @@
 import { cn } from "@/lib/utils";
 import React, { createContext, useContext, useRef, useState } from "react";
 
+export const runtime = "edge";
+
 type MouseEnterContextType = [boolean, React.Dispatch<React.SetStateAction<boolean>>];
 const MouseEnterContext = createContext<MouseEnterContextType | undefined>(undefined);
 

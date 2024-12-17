@@ -1,6 +1,8 @@
 import React from 'react';
 import { Montserrat } from 'next/font/google';
 
+export const runtime = "edge";
+
 // Load Montserrat font with Extra Bold weight
 const montserrat = Montserrat({
   weight: ['800'], // Use 800 for ExtraBold

@@ -5,6 +5,8 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import Stopwatch from './ui/stopwatch';
 
+export const runtime = "edge";
+
 const Homepage: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 

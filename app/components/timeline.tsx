@@ -4,6 +4,8 @@ import React, { useEffect, useRef, useCallback } from "react";
 import { Montserrat } from 'next/font/google';
 import { Archivo_Narrow } from 'next/font/google';
 
+export const runtime = "edge";
+
 const montserrat = Montserrat({ 
   subsets: ['latin'],
   weight: ['400', '700'],

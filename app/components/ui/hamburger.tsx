@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu } from "lucide-react";
 
+export const runtime = "edge";
+
 const sections = [
   {
     id: "home",

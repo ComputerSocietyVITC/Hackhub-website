@@ -2,6 +2,8 @@
 import React from 'react';
 import Button from './ui/button';
 
+export const runtime = "edge";
+
 const Sponsors = () => {
   return (
     <div className="bg-cover bg-center h-screen w-screen flex relative justify-center mt-7">

@@ -4,6 +4,8 @@ interface ScrollFadeProps {
   children?: React.ReactNode;
 }
 
+export const runtime = "edge";
+
 const ScrollFade: React.FC<ScrollFadeProps> = ({ children }) => {
   const [opacity, setOpacity] = useState(0); 
   const sectionRef = useRef<HTMLDivElement>(null);

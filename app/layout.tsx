@@ -17,6 +17,8 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Hackhub 25",
   icons: {

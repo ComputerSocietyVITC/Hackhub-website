@@ -7,6 +7,8 @@ import {
   AccordionTrigger,
 } from '../components/ui/accordion';
 
+export const runtime = "edge";
+
 export default function FaqPage() {
   return (
     <div className="min-h-screen w-full flex flex-col">

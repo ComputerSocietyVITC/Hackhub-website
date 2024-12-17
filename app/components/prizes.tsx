@@ -4,6 +4,8 @@ import '@fontsource/montserrat';
 import Marquee from './ui/marquee';
 import SponsorGrid from './ui/sponsorgrid';
 
+export const runtime = "edge";
+
 const Prizes = () => {
   return (
     <div className="min-h-screen w-full mt-10">

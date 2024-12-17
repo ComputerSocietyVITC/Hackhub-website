@@ -1,6 +1,4 @@
-import { supabase } from '../utils/supabaseClient';
-
-export const runtime = 'edge';
+import { supabase } from './supabaseClient';
 
 interface FormData {
   Name: string;
@@ -16,8 +14,7 @@ export const postData = async (data: FormData) => {
       .insert([data]);
 
     if (error) {
-      console.log('Details have not been sent:');
-      //console.error(error);
+      console.error('Details have not been sent:', error.message);
     } else {
       console.log('Details have been sent:', result);
     }

@@ -1,6 +1,8 @@
 'use client'
 import React from 'react';
 
+export const runtime = "edge";
+
 const Aboutpage: React.FC = () => {
   return (
     <div className="bg-cover bg-center h-screen w-screen flex items-center justify-center">

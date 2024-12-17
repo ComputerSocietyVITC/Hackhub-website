@@ -14,6 +14,8 @@ import Prizes from "./components/prizes";
 import Link from "next/link";
 
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <div>
