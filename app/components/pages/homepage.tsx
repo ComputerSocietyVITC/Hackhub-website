@@ -161,11 +161,11 @@ const Homepage: React.FC = () => {
 
       {/* Stopwatch */}
       <div className="flex justify-center items-center mt-20 lg:mt-15 transform -translate-x-1/2 -translate-y-1/2">
-        <Stopwatch targetDate="2025-12-31T23:59:59" />
+        <Stopwatch targetDate="2025-03-09T23:59:59" />
       </div>
 
       {/* Buttons */}
-      <div className="absolute flex flex-col lg:flex-row gap-10  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mt-10 lg:mt-12">
+      <div className="absolute flex flex-col gap-3 lg:flex-row lg:gap-10  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mb-5 lg:mt-12 z-10">
         <a
           href="/school-registration"
           className="w-40 h-12 flex items-center justify-center rounded-full border border-white text-white bg-black duration-300 hover:bg-white/10 transition-all text-center font-archivoNarrow"
