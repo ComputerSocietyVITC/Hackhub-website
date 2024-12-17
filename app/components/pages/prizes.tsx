@@ -1,8 +1,8 @@
 // components/Prizes.tsx
 import React from 'react';
 import '@fontsource/montserrat'; 
-import Marquee from './ui/marquee';
-import SponsorGrid from './ui/sponsorgrid';
+import Marquee from '../ui/marquee';
+import SponsorGrid from '../ui/sponsorgrid';
 
 export const runtime = "edge";
 

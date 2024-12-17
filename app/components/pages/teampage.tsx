@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { teamMembers } from '../components/data/team-members';
+import { teamMembers } from '../data/team-members';
 
 export const runtime = "edge";
 

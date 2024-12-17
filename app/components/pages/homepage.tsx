@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import gsap from 'gsap';
 import Image from 'next/image';
-import Stopwatch from './ui/stopwatch';
+import Stopwatch from '../ui/stopwatch';
 
 export const runtime = "edge";
 

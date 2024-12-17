@@ -1,16 +1,16 @@
 import Aboutpage from "./components/about";
 import AlternateLayout from "./components/AlternateLayout";
-import PrevEditions from "./components/event";
+import PrevEditions from "./components/pages/event";
 import GlobalLayout from "./components/GlobalLayout";
-import Homepage from "./components/homepage";
-import Sponsors from "./components/sponsors";
+import Homepage from "./components/pages/homepage";
+import Sponsors from "./components/pages/sponsors";
 import NavBar from "./components/ui/navbar";  
-import Domains from "./components/domains";
-import Timeline from "./components/timeline";
-import ContactSection from "./components/form";
-import PrevSponsors from "./components/prevSponsors";
-import TeamPage from "./components/teampage";
-import Prizes from "./components/prizes";
+import Domains from "./components/pages/domains";
+import Timeline from "./components/pages/timeline";
+import ContactSection from "./components/pages/form";
+import PrevSponsors from "./components/pages/prevSponsors";
+import TeamPage from "./components/pages/teampage";
+import Prizes from "./components/pages/prizes";
 import Link from "next/link";
 
 
@@ -26,22 +26,20 @@ export default function Home() {
       </div>
 
       <div id="about">
-        <GlobalLayout>
+      
           <Aboutpage />
-        </GlobalLayout>
+      
       </div>
 
       <div id="domains">
-        <GlobalLayout>
+        
           <Domains />
-        </GlobalLayout>
+      
       </div>
 
 
-      <div id="timeline">
-        <GlobalLayout>
+      <div id="timeline">      
           <Timeline />
-        </GlobalLayout>
       </div>
 
       <div id="events">
