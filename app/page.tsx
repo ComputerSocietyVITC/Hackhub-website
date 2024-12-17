@@ -8,7 +8,7 @@ import NavBar from "./components/ui/navbar";
 import Domains from "./components/domains";
 import Timeline from "./components/timeline";
 import ContactSection from "./components/form";
-
+import PrevSponsors from "./components/prevSponsors";
 import TeamPage from "./components/teampage";
 import Prizes from "./components/prizes";
 import Link from "next/link";
@@ -49,6 +49,12 @@ export default function Home() {
           <PrevEditions />
         </GlobalLayout>
       </div>
+
+      <div>
+        <GlobalLayout>
+          <PrevSponsors/>
+        </GlobalLayout>
+        </div>
 
       <div id="sponsors">
       <AlternateLayout bgImage="/images/Background_2.png" >
