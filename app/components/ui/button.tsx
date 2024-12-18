@@ -17,7 +17,7 @@ const Button = () => {
     <div
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
-      data-aos-delay="50"
+      data-aos-delay="52"
       className="flex justify-center"
     >
       <a
