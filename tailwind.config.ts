@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         archivoNarrow: ['"Archivo Narrow"', 'sans-serif'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -87,9 +88,9 @@ const config: Config = {
         },
 
         flip: {
-          '0%, 100%': { transform: 'rotateX(0deg)' },
-          '50%': { transform: 'rotateX(-90deg)' },
-        }
+          '0%': { transform: 'rotateY(90deg)' },
+          '100%': { transform: 'rotateY(0deg)' },
+        },
         
       },
       animation: {
