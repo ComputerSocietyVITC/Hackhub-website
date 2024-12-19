@@ -165,7 +165,7 @@ const Homepage: React.FC = () => {
         }}
       />
     <Stopwatch
-        targetDate="2025-12-31T23:59:59"
+        targetDate="2025-03-09T23:59:59"
         top="70%"
         left="50%"
         
