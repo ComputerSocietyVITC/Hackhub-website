@@ -20,12 +20,19 @@ const geistMono = localFont({
 export const runtime = "edge";
 
 export const metadata: Metadata = {
-  title: "Hackhub 25",
-  icons: {
-    icon: "/ICON.webp",
-  }
-
+  title: "HackHub 25 | Empowering Innovation",
+  description:
+    "HackHub 25 is the ultimate platform for innovation, collaboration, and technology-driven events. Join us to shape the future!",
+  keywords: [
+    "HackHub",
+    "innovation",
+    "hackathon",
+    "technology",
+    "collaboration",
+    "events",
+  ],
 };
+
 
 export default function RootLayout({
   children,
