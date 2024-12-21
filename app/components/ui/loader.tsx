@@ -101,7 +101,7 @@ export default function Loader({
           </h1>
           <div className="relative w-16 h-16 mx-auto mt-5">
             <div className="absolute inset-0 rounded-full border-t-4 border-b-4 border-white animate-spin"></div>
-            <div className="absolute inset-0 rounded-full border-t-4 border-b-4 border-gray-500 animate-spin-reverse"></div>
+            <div className="absolute inset-0 rounded-full border-t-4 border-b-6 border-gray-500 animate-spin-reverse"></div>
           </div>
           {/* Responsive paragraph text */}
           <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300">

@@ -1,6 +1,6 @@
-import Aboutpage from "./components/about";
+import Aboutpage from "./components/pages/about";
 import AlternateLayout from "./components/AlternateLayout";
-import PrevEditions from "./components/pages/event";
+import PrevEditions from "./components/pages/prevEditions";
 import GlobalLayout from "./components/GlobalLayout";
 import Homepage from "./components/pages/homepage";
 import Sponsors from "./components/pages/sponsors";
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
       <div id="sponsors">
-      <AlternateLayout bgImage="/images/Background_2.png" >
+      <AlternateLayout>
         
           <Sponsors />
           </AlternateLayout>
