@@ -55,7 +55,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ backgroundImage, children, 
   return (
     <section
       ref={sectionRef} 
-      className={`${(height !== "auto" || !isMobile) && "min-h-screen"} w-screen relative overflow-hidden flex items-center justify-center`}
+      className={`${(height !== "auto" || !isMobile)} w-screen relative overflow-hidden flex items-center justify-center`}
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
