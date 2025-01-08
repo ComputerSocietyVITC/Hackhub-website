@@ -30,7 +30,7 @@ const Sponsors = () => {
 
         {/* Button container */}
         <div className="flex flex-col items-center justify-center">
-          <Button />
+          <Button text='Sponsor US' href='https://forms.gle/J7wsFqay4miemAtc8'/>
         </div>
       </div>
     </section>

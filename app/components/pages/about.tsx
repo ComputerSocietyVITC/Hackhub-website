@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import Button from '../ui/button';
 
 export const runtime = "edge";
 
@@ -42,9 +43,15 @@ Get hands-on experience, collaborate with like-minded innovators, and build impa
 Don’t miss this chance to network, learn, and compete for exciting prizes! Visit our official channels for registration and more details.
             </p>
           </div>
+{/* Button container */}
+<div className="flex flex-col items-center justify-center mt-20">
+          <Button text='Learn More' href='/Hackhub_Broucher_gallery.pdf'/>
         </div>
       </div>
-    </div>
+
+
+        </div>
+      </div>
   );
 };
 

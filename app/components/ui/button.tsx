@@ -2,7 +2,13 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Button = () => {
+
+interface ButtonProps {
+  text?:string;// prop for button text
+  href?:string ;
+}
+
+const Button :React.FC<ButtonProps> = ({text, href}) => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -21,7 +27,7 @@ const Button = () => {
       className="flex justify-center"
     >
       <a
-        href="https://forms.gle/J7wsFqay4miemAtc8"
+    href={href}
         className="relative inline-block group mb-20"
       >
         {/* Curved white edge (bottom-right reveal on hover) */}
@@ -33,7 +39,7 @@ const Button = () => {
         <button
           className="relative z-10 inline-flex items-center justify-center rounded-full border border-slate-400 bg-black px-8 py-3 tracking-widest text-white text-lg transform transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:-translate-x-2 group-active:bg-white group-active:text-black"
         >
-          SPONSOR US
+          {text}
         </button>
       </a>
     </div>
