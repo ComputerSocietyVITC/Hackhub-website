@@ -10,7 +10,7 @@ const Sponsors = () => {
       <div className="container mx-auto px-4 md:px-6">
         {/* Header with section number and title */}
         <div className="flex items-center gap-4 mb-16">
-          <span className="text-white font-bold text-2xl">05</span>
+          <span className="text-white font-bold text-2xl">06</span>
           <div className="flex-1 h-px bg-white"></div>
           <h2 className="text-white text-2xl sm:text-4xl font-extrabold uppercase">Sponsors</h2>
         </div>
@@ -29,8 +29,9 @@ const Sponsors = () => {
         </div>
 
         {/* Button container */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-10">
           <Button text='Sponsor US' href='https://forms.gle/J7wsFqay4miemAtc8'/>
+          <Button text='Brochure' href='/Hackhub_Broucher_gallery.pdf'/>
         </div>
       </div>
     </section>

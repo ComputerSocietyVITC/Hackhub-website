@@ -44,10 +44,10 @@ const ContactSection = () => {
       {/* Get In Touch Section */}
       <div className="contact-section mt-16 pt-8 px-12">
         {/* Section Header */}
-        <div className="flex justify-between items-center mb-12">
-          <p className="text-white font-bold text-xl">07</p>
+        <div className="flex justify-between items-center mb-12 font-montserrat">
+          <p className="text-white font-bold text-xl">10</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-xl font-bold">GET IN TOUCH</p>
+          <p className="text-white text-2xl font-extrabold">GET IN TOUCH</p>
         </div>
 
         {/* Contact Form */}

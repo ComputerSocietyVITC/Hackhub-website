@@ -67,15 +67,15 @@ const Timeline = () => {
   return (
     <div className={`relative w-full min-h-screen  ${montserrat.variable} ${archivo.variable} font-montserrat`}>
       {/* Header Section */}
-      <div className="relative w-full mb-12 px-4 md:px-16">
+      <div className="relative w-full mb-12 px-4 mx-4 md:px-16 font-montserrat">
         <div className="absolute left-0 top-1/2 -translate-y-1/2 pl-4 md:pl-0">
           <span className="text-white font-bold text-xl font-archivo">03</span>
         </div>
 
         <div className="w-full">
           <div className="relative flex items-center w-full">
-            <div className="flex-1 h-[1px] bg-white"></div>
-            <span className="text-white text-xl sm:text-3xl font-bold ml-4 sm:ml-8 font-archivo">TIMELINE</span>
+            <div className="flex-1 h-[1px] bg-white mx-4"></div>
+            <span className="text-white text-xl sm:text-3xl font-extrabold sm:ml-8">TIMELINE</span>
           </div>
         </div>
       </div>

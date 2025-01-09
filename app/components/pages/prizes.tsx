@@ -12,15 +12,15 @@ const Prizes = () => {
       {/* Main Content Wrapper */}
       <div className="max-w-full mx-auto px-4 py-8">
         {/* Header Section */}
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex justify-between items-center mb-12 font-montserrat">
           {/* Left text */}
-          <p className="text-white text-xl sm:text-3xl font-bold">PRIZES</p>
+          <p className="text-white text-xl font-extrabold uppercase  sm:text-3xl ">PRIZES</p>
 
           {/* Divider line */}
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
 
           {/* Right text */}
-          <p className="text-white text-xl sm:text-3xl lg:text-xl font-bold">04</p>
+          <p className="text-white text-xl sm:text-3xl lg:text-xl font-bold">07</p>
         </div>
 
         {/* Main Content Section */}

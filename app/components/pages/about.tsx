@@ -9,10 +9,10 @@ const Aboutpage: React.FC = () => {
     <div className="bg-cover bg-center h-screen w-screen flex items-center justify-center">
       <div className=" w-full flex justify-center">
         <div className=" mb-40 w-full px-5">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center font-montserrat">
             <p className="text-white font-bold text-xl">01</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white text-xl sm:text-3xl font-bold">ABOUT</p>
+            <p className="text-white text-xl sm:text-3xl font-extrabold">ABOUT</p>
           </div>
 
          
@@ -45,7 +45,7 @@ Don’t miss this chance to network, learn, and compete for exciting prizes! Vis
           </div>
 {/* Button container */}
 <div className="flex flex-col items-center justify-center mt-20">
-          <Button text='Learn More' href='/Hackhub_Broucher_gallery.pdf'/>
+          <Button text='Know more about us' href='https://ieeecsvitc.com'/>
         </div>
       </div>
 

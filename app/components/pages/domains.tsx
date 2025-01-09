@@ -33,8 +33,8 @@ export default function Domains() {
   return (
     <div className="w-full h-full px-4 py-8">
       {/* Section Header */}
-      <div className="flex items-center gap-4 mb-8">
-        <span className="text-white font-bold text-xl">DOMAINS</span>
+      <div className="flex items-center gap-4 mb-8 font-montserrat">
+        <span className="text-white font-extrabold text-2xl ">DOMAINS</span>
         <div className="flex-1 h-[1px] bg-white"></div>
         <span className="text-white font-bold text-xl">02</span>
       </div>

@@ -42,8 +42,8 @@ const PrevEditions = () => {
     <div className="bg-cover bg-center w-screen flex items-center justify-center pb-4 mt-7">
       <div className="w-full flex justify-center items-center">
         <div className="mt-12 w-full px-5">
-          <div className="flex justify-between items-center mb-12">
-            <p className="text-white text-xl sm:text-3xl font-bold">PREVIOUS EDITIONS</p>
+          <div className="flex justify-between items-center mb-12 font-montserrat">
+            <p className="text-white text-xl sm:text-3xl font-extrabold">PREVIOUS EDITIONS</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
             <p className="text-white font-bold text-xl">04</p>
           </div>

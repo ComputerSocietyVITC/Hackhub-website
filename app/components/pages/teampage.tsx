@@ -103,10 +103,10 @@ const TeamPage = () => {
     <div className="bg-cover bg-center w-full">
       <div className="max-w-full mx-auto px-4 pb-24">
         {/* Header section */}
-        <div className="flex justify-between items-center mb-8">
-          <p className="text-white font-bold text-xl">05</p>
+        <div className="flex justify-between items-center mb-8 font-montserrat">
+          <p className="text-white font-bold text-xl">08</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-xl sm:text-3xl font-bold">THE HACKHUB TEAM</p>
+          <p className="text-white text-2xl sm:text-3xl font-extrabold uppercase  ">THE HACKHUB TEAM</p>
         </div>
   
         {/* Show entire team button */}
