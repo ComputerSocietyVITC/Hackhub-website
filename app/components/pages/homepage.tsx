@@ -106,6 +106,17 @@ const Homepage: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen relative">
       <canvas
@@ -171,6 +182,7 @@ const Homepage: React.FC = () => {
           className="apply-button"
           data-hackathon-slug="hackhubvitc"
           data-button-theme="dark"
+          style={{ height: "44px", width: "312px" }}
         ></div>
       </div>
     </div>
