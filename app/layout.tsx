@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Head from 'next/head';
+import Head from "next/head";
 import Stars from "./components/stars/stars";
 import { Hamburger } from "./components/ui/hamburger";
 import Loader from "./components/ui/loader";
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   ],
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,18 +40,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <Head>
+      <Head>
         {/* Add Google Font link for Archivo Narrow */}
         <link
           href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
           rel="stylesheet"
         />
-         {/* add analytics */}
-        <script 
-          defer 
-          data-domain="hackhub25.ieeecsvitc.com" 
-          src="https://analytics.adityajyoti.com/js/script.js">
-        </script>
+        {/* add analytics */}
+        <script
+          defer
+          data-domain="hackhub25.ieeecsvitc.com"
+          src="https://analytics.adityajyoti.com/js/script.js"
+        ></script>
 
         {/* Preload carousel images */}
         <link rel="preload" href="/images/EventImages/1.jpg" as="image" />
@@ -60,26 +59,20 @@ export default function RootLayout({
         <link rel="preload" href="/images/EventImages/3.jpg" as="image" />
         <link rel="preload" href="/images/EventImages/4.jpg" as="image" />
         <link rel="preload" href="/images/EventImages/5.jpg" as="image" />
-        
-
-  
-        
       </Head>
-      
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-black`}
       >
         <Loader>
-        
-        {children}
-        <Stars starCount={130} />
-        <div className="hamburger-container">
-          <Hamburger />
-        </div>
-       
+          {children}
+          <Stars starCount={130} />
+          <div className="hamburger-container">
+            <Hamburger />
+          </div>
         </Loader>
+        <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
       </body>
-      
     </html>
   );
 }
