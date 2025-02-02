@@ -8,7 +8,6 @@ import NavBar from "./components/ui/navbar";
 import Domains from "./components/pages/domains";
 import Timeline from "./components/pages/timeline";
 import ContactSection from "./components/pages/form";
-import PrevSponsors from "./components/pages/prevSponsors";
 import TeamPage from "./components/pages/teampage";
 import Prizes from "./components/pages/prizes";
 import Link from "next/link";
@@ -31,6 +30,14 @@ export default function Home() {
       
       </div>
 
+      <div id="sponsors">
+      <AlternateLayout>
+        
+          <Sponsors />
+          </AlternateLayout>
+
+      </div>
+
       <div id="domains">
         
           <Domains />
@@ -46,20 +53,6 @@ export default function Home() {
         <GlobalLayout height="auto">
           <PrevEditions />
         </GlobalLayout>
-      </div>
-
-      <div>
-        <GlobalLayout>
-          <PrevSponsors/>
-        </GlobalLayout>
-        </div>
-
-      <div id="sponsors">
-      <AlternateLayout>
-        
-          <Sponsors />
-          </AlternateLayout>
-
       </div>
 
       <div id="prizes">

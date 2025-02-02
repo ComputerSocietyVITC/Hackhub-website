@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const Sponsors = () => {
   return (
-    <section className="relative w-full min-h-screen bg-cover bg-center py-12 font-montserrat">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="relative w-full bg-cover bg-center py-12 font-montserrat">
+      <div className="w-full px-4 md:px-6">
         {/* Header with section number and title */}
         <div className="flex items-center gap-4 mb-16">
-          <span className="text-white font-bold text-2xl">06</span>
+          <span className="text-white font-bold text-2xl">02</span>
           <div className="flex-1 h-px bg-white"></div>
           <h2 className="text-white text-2xl sm:text-4xl font-extrabold uppercase">
             Sponsors
@@ -20,7 +20,7 @@ const Sponsors = () => {
         {/* Title Sponsor Section */}
         <div className="flex flex-col items-center text-center mb-12 gap-12 p-5">
           <div className="flex flex-col items-center justify-center">
-            <h2 className="text-white text-3xl sm:text-4xl font-extrabold uppercase mb-6 underline underline-offset-4">
+            <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase mb-6 underline-offset-4">
               Title Sponsor
             </h2>
             <div className="">
@@ -34,7 +34,7 @@ const Sponsors = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h2 className="text-white text-3xl sm:text-4xl font-extrabold uppercase underline underline-offset-4">
+            <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase underline-offset-4">
               Silver Tier
             </h2>
             <div className=" mt-6">
@@ -48,7 +48,7 @@ const Sponsors = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h2 className="text-white text-3xl sm:text-4xl font-extrabold uppercase underline underline-offset-4">
+            <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase underline-offset-4">
               Bronze Tier
             </h2>
             <div className="flex md:flex-row flex-col gap-12 mt-6">
