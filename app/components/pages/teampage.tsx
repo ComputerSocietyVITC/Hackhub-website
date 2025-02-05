@@ -113,7 +113,7 @@ const TeamPage = () => {
         <div className="flex justify-center mb-2">
           <button
             onClick={() => setShowFullTeam(!showFullTeam)}
-            className="px-12 py-3 text-white  border border-white/20 rounded-full 
+            className="px-12 py-3 text-white border border-white/20 rounded-full 
               hover:bg-white/10 transition-colors duration-300 text-sm tracking-widest"
           >
             {showFullTeam ? 'SHOW LESS' : 'MEET THE WHOLE TEAM'}

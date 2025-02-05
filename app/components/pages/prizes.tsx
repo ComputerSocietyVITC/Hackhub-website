@@ -31,7 +31,7 @@ const Prizes = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full sm:w-1/2 md:w-full lg:w-2/3 justify-center">
             {/* Card 1 */}
             <div
-              className="bg-cover bg-center h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
+              className="bg-center h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
               style={{ paddingBottom: '125%', backgroundImage: 'url("/images/1st_prize.png")' }}
             ></div>
 

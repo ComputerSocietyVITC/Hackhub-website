@@ -51,7 +51,7 @@ const ScrollFade: React.FC<ScrollFadeProps> = ({ children }) => {
   return (
     <div
       ref={sectionRef}
-      className="absolute inset-0 bg-black transition-opacity duration-300 ease-in-out"
+      className="absolute inset-0 transition-opacity duration-300 ease-in-out"
       style={{ opacity }}
     >
       {children}

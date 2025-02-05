@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useCallback } from "react"
 import { Montserrat } from 'next/font/google';
+import { useCallback, useState } from "react";
 
 export const runtime = "edge";
 
@@ -41,9 +41,8 @@ export default function Domains() {
       <div className=" text-white p-8">
         <div className="space-y-6 sm:ml-10">
           {domains.map((domain, idx) => (
-            <a
+            <div
               key={domain}
-              href="#"
               className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-bold uppercase ${montserrat.className} text-ellipsis overflow-hidden`}
               style={{ 
                 lineHeight: 1.2,
@@ -105,7 +104,7 @@ export default function Domains() {
                   )
                 ))}
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export const runtime = "edge";
 
@@ -40,18 +40,17 @@ const Stopwatch: React.FC<StopwatchProps> = ({ targetDate, top = "85%", left = "
 
   return (
     <div
-      className="absolute flex gap-3 "
+      className="absolute flex gap-3"
       style={{ top, left, transform: "translate(-50%, -50%)" }}
     >
       {Object.entries(timeLeft).map(([label, value]) => (
         <div
           key={label}
-          className="flex flex-col items-center justify-center md:w-32 md:h-20 w-20 h-15 bg-black text-white border-b-4 border-b-white border-t-2 border-r-2 border-l-2 rounded-2xl "
+          className="flex flex-col items-center justify-center text-center md:w-32 md:h-24 w-20 h-15 text-white border-b-4 border-b-white border-t-2 border-r-2 border-l-2 rounded-2xl"
         >
-          <span className="font-bold md:text-5xl text-2xl mr-9 ">{value}</span>
-          <span className="uppercase md:text-xs text-xs tracking-wide ml-2 mt-1 font-archivoNarrow text-gray-400">{label}</span>
+          <span className="font-bold md:text-5xl text-2xl text-center">{value}</span>
+          <span className="uppercase md:text-xs text-xs tracking-wide mt-1 font-archivoNarrow text-gray-400 text-center">{label}</span>
         </div>
-        
       ))}
     </div>
   );
