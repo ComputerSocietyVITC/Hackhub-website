@@ -146,7 +146,7 @@ const Homepage: React.FC = () => {
                 <div className="flex flex-col items-center text-center justify-center  w-full">
                     <div className="responsive-heading">
                         {/* IEEE COMPSOC */}
-                        <div className="text-white text-xl sm:text-2xl md:text-4xl xl:text-5xl font-extrabold italic flex flex-row justify-center items-center -mb-16 sm:-mb-0 lg:justify-end w-full">
+                        <div className="text-white text-xl sm:text-2xl md:text-3xl xl:text-5xl font-extrabold italic flex flex-row justify-center items-center -mb-16 sm:-mb-0 lg:justify-end w-full">
                             IEEE{" "}
                             <span className="text-stroke md:[-webkit-text-stroke:0] lg:[-webkit-text-stroke:1px_white] font-extrabold md:text-white lg:text-black">
                                 COMPSOC /
@@ -154,8 +154,8 @@ const Homepage: React.FC = () => {
                             <Image
                                 src="/images/github-4.png"
                                 alt="GitHub Logo"
-                                width={200}
-                                height={200}
+                                width={180}
+                                height={180}
                             />
                         </div>
                     </div>
@@ -171,7 +171,7 @@ const Homepage: React.FC = () => {
                     </div>
 
                     {/* Year */}
-                    <div className=" font-extrabold italic text-lg gap-2  sm:text-3xl md:text-5xl  lg:text-6xl lg:text-left text-white w-full z-15">
+                    <div className=" font-extrabold italic text-lg gap-2 text-center sm:text-3xl md:text-5xl  lg:text-6xl lg:text-left text-white w-full z-15">
                         2025
                     </div>
                 </div>
