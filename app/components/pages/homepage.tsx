@@ -4,6 +4,7 @@ import * as THREE from "three";
 import gsap from "gsap";
 import Image from "next/image";
 import Stopwatch from "../ui/stopwatch";
+import Button from "../ui/button";
 
 
 export const runtime = "edge";
@@ -119,7 +120,7 @@ const Homepage: React.FC = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen w-screen relative">
+        <div className="flex flex-col items-center justify-center h-screen w-screen">
             <canvas
                 ref={canvasRef}
                 style={{
@@ -156,8 +157,8 @@ const Homepage: React.FC = () => {
                 <Image
                     src="/images/github-4.png"
                     alt="GitHub Logo"
-                    width={170}
-                    height={170}
+                    width={150}
+                    height={150}
                 />
             </div>
         </div>
@@ -165,7 +166,7 @@ const Homepage: React.FC = () => {
         {/* Hackhub Logo */}
         <div className="responsive-container relative z-10">
             <div
-                className="bg-center bg-no-repeat bg-contain sm:h-[10vh] sm:w-[68vw] h-[18vh] md:h-[15vh] md:w-[70vw] lg:h-[26vh] mx-auto homepage-logo w-[80vw]"
+                className="bg-center bg-no-repeat bg-contain sm:h-[10vh] sm:w-[68vw] h-[18vh] md:h-[15vh] md:w-[70vw] lg:h-[25vh] mx-auto homepage-logo w-[80vw]"
                 style={{
                     backgroundImage: "url(images/hackhub_logo.png)",
                 }}
@@ -182,12 +183,17 @@ const Homepage: React.FC = () => {
 
 
             {/* Stopwatch */}
-            <div className="flex justify-center items-center mt-20 lg:mt-15 transform -translate-x-1/2 -translate-y-1/2 z-15">
+            <div className="flex flex-col justify-center items-center mt-20 lg:mb-10 transform -translate-x-1/2 -translate-y-1/2 z-15">
                 <Stopwatch targetDate="2025-03-07T18:00:00" />
+                
             </div>
+            <div className="absolute top-[90%] left-[50%] w-full transform -translate-x-1/2 z-15">
+    <Button href="https://hackhubvitc.devfolio.co" text="Register Here" />
+</div>
+           
 
             {/* Buttons */}
-            <div className=" hidden absolute flex-col gap-3 lg:flex-row lg:gap-20  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mb-5 lg:mt-12 z-15">
+            <div className=" hidden absolute ">
                 <div
                     className="apply-button"
                     data-hackathon-slug="hackhubvitc"
@@ -198,6 +204,7 @@ const Homepage: React.FC = () => {
                 </div>
                 
             </div>
+            
             </div>
             
      

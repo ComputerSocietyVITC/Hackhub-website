@@ -25,7 +25,7 @@ const NavBar: React.FC = () => {
                 left: "50%",
                 transform: "translateX(-50%)",
                 top: "8px",
-                maxWidth: "100%",
+                maxWidth: "90%",
                 zIndex: 50,
                 backdropFilter: "blur(10px)", // Added blur effect
                 backgroundColor: "rgba(13, 17, 23, 0.4)", // Semi-transparent background color
@@ -42,7 +42,7 @@ const NavBar: React.FC = () => {
                     >
                         <button
                             onClick={() => scrollToSection(id)}
-                            className="text-white w-full md:w-auto px-6 py-1 rounded-full font-bold duration-300 hover:bg-[#FFFFFF17] text-center"
+                            className="text-white w-full md:w-auto px-3 py-1 rounded-full font-bold duration-300 hover:bg-[#FFFFFF17] text-center"
                         >
                             {name}
                         </button>
