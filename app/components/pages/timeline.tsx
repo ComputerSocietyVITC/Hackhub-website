@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useCallback } from "react";
 import { Montserrat } from 'next/font/google';
 import { Archivo_Narrow } from 'next/font/google';
 
+
 export const runtime = "edge";
 
 const montserrat = Montserrat({ 
@@ -20,13 +21,15 @@ const archivo = Archivo_Narrow({
 
 const Timeline = () => {
   const timelineItems = [
-    { month: "Month", year: 2025, date: "10", title: "EVENT", desc: "Description to be announced" },
-    { month: "Month", year: 2025, date: "10", title: "EVENT", desc: "Description to be announced" },
-    { month: "Month", year: 2025, date: "10", title: "EVENT", desc: "Description to be announced" },
-    { month: "Month", year: 2025, date: "10", title: "EVENT", desc: "Description to be announced" },
-    { month: "Month", year: 2025, date: "10", title: "EVENT", desc: "Description to be announced" },
-    { month: "Month", year: 2025, date: "10", title: "EVENT", desc: "Description to be announced" },
-    { month: "Month", year: 2025, date: "10", title: "EVENT", desc: "Description to be announced" }
+    { month: "March", year: 2025, date: "7",time:"16:00-16:15", title: "Hackhub Kickoff" },
+    { month: "March", year: 2025, date: "7",time:"16:30-19:30", title: "Speaker Session 1" },
+    { month: "March", year: 2025, date: "7", time:"21:00",title: "Hackathon begins"},
+    { month: "March", year: 2025, date: "8", time:"14:00-17:00",title: "Speaker Session 2"},
+    { month: "March", year: 2025, date: "8", time: "21:00-23:59", title: "Speaker Session 3" },
+    { month: "March", year: 2025, date: "9", time:"8:45-11:45",title: "Speaker Session 4"},
+    { month: "March", year: 2025, date: "9", time: "12:00", title: "Hackathon Ends" },
+    { month: "March", year: 2025, date: "9", time: "14:00-16:00", title: "Evaluation Hour" }
+    
   ];
 
   const timelineRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -112,19 +115,19 @@ const Timeline = () => {
                   }`}>
                     <div className="mb-1">
                       <span className="text-white uppercase text-base tracking-wider">
-                      {item.date} {item.month} {item.year}
+                      {item.date} {item.month} {item.year} {item.time}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-6xl font-bold tracking-tight">
+                      <span className="text-5xl font-bold tracking-tight">
                         {item.title}
                       </span>
                     </div>
-                    <div>
+                   {/* <div>
                       <span className="text-xl tracking-tight">
-                        {item.desc}
+                      {item.time}
                       </span>
-                    </div>
+                    </div>*/}
                   </div>
                 </div>
 
@@ -132,24 +135,24 @@ const Timeline = () => {
                 <div className={`
                   md:hidden text-white w-full max-w-[120px]
                   ${index % 2 === 0 
-                    ? "ml-auto mr-10 text-left" 
-                    : "mr-auto ml-10 text-right"
+                    ? "ml-auto mr-5 text-left" 
+                    : "mr-auto ml-5 text-right"
                   }
                 `}>
                   <div className="flex flex-col">
                     <span className="text-white uppercase text-xs tracking-wider mb-1">
-                    {item.date} {item.month} {item.year}
+                    {item.date} {item.month} {item.year} 
                     </span>
                     <div className={`flex items-baseline gap-1 ${
                       index % 2 === 0 ? "" : "justify-end w-full"
                     }`}>
-                      <span className="text-xl font-bold">
+                      <span className="text-2xl font-bold">
                         {item.title}
                       </span>
                     </div>
                     <div>
                       <span className="text-sm tracking-tight">
-                        {item.desc}
+                      {item.time}
                       </span>
                     </div>
                   </div>

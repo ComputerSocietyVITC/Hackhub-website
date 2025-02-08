@@ -1,8 +1,7 @@
 // components/Prizes.tsx
 import React from 'react';
 import '@fontsource/montserrat'; 
-import Marquee from '../ui/marquee';
-import SponsorGrid from '../ui/sponsorgrid';
+
 
 export const runtime = "edge";
 
@@ -31,7 +30,7 @@ const Prizes = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full sm:w-1/2 md:w-full lg:w-2/3 justify-center">
             {/* Card 1 */}
             <div
-              className="bg-center h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
+              className="bg-center bg-cover h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
               style={{ paddingBottom: '125%', backgroundImage: 'url("/images/1st_prize.png")' }}
             ></div>
 
@@ -49,23 +48,8 @@ const Prizes = () => {
           </div>
         </div>
       </div>
-
-      {/* Marquee Section with Background Image */}
-      <div className="flex-col gap-8 lg:px-12 px-4 mt-12">
-        {/* Marquee Section (visible only on screens larger than 1024px) */}
-        <div className="hidden lg:block">
-          <Marquee />
-        </div>
-
-        {/* Title for smaller screens (Track Prizes) */}
-        <div className="lg:hidden text-center text-white text-3xl font-bold mt-8 opacity-75 sm:text-5xl">
-          Track Prizes
-        </div>
-
-        {/* Sponsor Grid */}
-        <SponsorGrid />
-      </div>
     </div>
+
   );
 };
 

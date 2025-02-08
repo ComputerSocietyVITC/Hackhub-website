@@ -5,6 +5,7 @@ import gsap from "gsap";
 import Image from "next/image";
 import Stopwatch from "../ui/stopwatch";
 
+
 export const runtime = "edge";
 
 const Homepage: React.FC = () => {
@@ -140,58 +141,66 @@ const Homepage: React.FC = () => {
                 />
             </div>
 
-            {/* Content */}
-            <div className="flex flex-col items-center justify-center z-10">
-                {/* Combined Flex Box */}
-                <div className="flex flex-col items-center text-center justify-center  w-full">
-                    <div className="responsive-heading">
-                        {/* IEEE COMPSOC */}
-                        <div className="text-white text-xl sm:text-2xl md:text-3xl xl:text-5xl font-extrabold italic flex flex-row justify-center items-center -mb-16 sm:-mb-0 lg:justify-end w-full">
-                            IEEE{" "}
-                            <span className="text-stroke md:[-webkit-text-stroke:0] lg:[-webkit-text-stroke:1px_white] font-extrabold md:text-white lg:text-black">
-                                COMPSOC /
-                            </span>
-                            <Image
-                                src="/images/github-4.png"
-                                alt="GitHub Logo"
-                                width={180}
-                                height={180}
-                            />
-                        </div>
-                    </div>
-
-                    {/* Hackhub Logo */}
-                    <div className="responsive-container">
-                        <div
-                            className="bg-center bg-no-repeat bg-contain sm:h-[10vh] sm:w-[68vw] h-[18vh]  md:h-[15vh] md:w-[70vw] lg:h-[26vh] mx-auto  homepage-logo w-[80vw]"
-                            style={{
-                                backgroundImage: "url(images/hackhub_logo.png)",
-                            }}
-                        ></div>
-                    </div>
-
-                    {/* Year */}
-                    <div className=" font-extrabold italic text-lg gap-2 text-center sm:text-3xl md:text-5xl  lg:text-6xl lg:text-left text-white w-full z-15">
-                        2025
-                    </div>
-                </div>
+           
+{/* Content */}
+<div className="flex flex-col items-center justify-center gap-y-4 relative z-15">
+    {/* Combined Flex Box */}
+    <div className="flex flex-col items-center text-center justify-center w-full gap-y-6 relative z-15">
+        <div className="responsive-heading">
+            {/* IEEE COMPSOC */}
+            <div className="text-white text-xl sm:text-2xl md:text-3xl xl:text-5xl font-extrabold italic flex flex-row justify-center items-center gap-x-4 pb-3 pt-6 w-full lg:justify-end">
+                IEEE{" "}
+                <span className="text-stroke md:[-webkit-text-stroke:0] lg:[-webkit-text-stroke:1px_white] font-extrabold md:text-white lg:text-black">
+                    COMPSOC /
+                </span>
+                <Image
+                    src="/images/github-4.png"
+                    alt="GitHub Logo"
+                    width={170}
+                    height={170}
+                />
             </div>
+        </div>
+
+        {/* Hackhub Logo */}
+        <div className="responsive-container relative z-10">
+            <div
+                className="bg-center bg-no-repeat bg-contain sm:h-[10vh] sm:w-[68vw] h-[18vh] md:h-[15vh] md:w-[70vw] lg:h-[26vh] mx-auto homepage-logo w-[80vw]"
+                style={{
+                    backgroundImage: "url(images/hackhub_logo.png)",
+                }}
+            ></div>
+        </div>
+
+        {/* Year */}
+        <div className="font-extrabold italic text-lg text-center sm:text-3xl md:text-5xl lg:text-6xl lg:text-left text-white w-full relative z-15">
+            2025
+        </div>
+    </div>
+</div>
+
+
 
             {/* Stopwatch */}
-            <div className="flex justify-center items-center mt-20 lg:mt-15 transform -translate-x-1/2 -translate-y-1/2">
-                <Stopwatch targetDate="2025-03-09T23:59:59" />
+            <div className="flex justify-center items-center mt-20 lg:mt-15 transform -translate-x-1/2 -translate-y-1/2 z-15">
+                <Stopwatch targetDate="2025-03-07T18:00:00" />
             </div>
 
             {/* Buttons */}
-            <div className="hidden absolute flex-col gap-3 lg:flex-row lg:gap-10  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mb-5 lg:mt-12 z-10">
+            <div className="absolute flex-col gap-3 lg:flex-row lg:gap-10  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mb-5 lg:mt-12 z-15">
                 <div
                     className="apply-button"
                     data-hackathon-slug="hackhubvitc"
                     data-button-theme="dark"
                     style={{ height: "44px", width: "312px" }}
-                ></div>
+                >
+                    <a href="https://hackhubvitc.devfolio.co"></a>
+                </div>
+                
             </div>
-        </div>
+            </div>
+            
+     
     );
 };
 

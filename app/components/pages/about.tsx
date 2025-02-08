@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Button from '../ui/button';
+
 
 export const runtime = "edge";
 
@@ -44,12 +44,14 @@ Don’t miss this chance to network, learn, and compete for exciting prizes! Vis
             </p>
           </div>
 {/* Button container */}
-<div className="flex flex-col items-center justify-center mt-20">
+
+{/*<div className="flex flex-col items-center justify-center mt-20">
           <Button text='Know more about us' href='https://ieeecsvitc.com'/>
         </div>
-      </div>
+      </div>*/}
+      
 
-
+     </div>
         </div>
       </div>
   );
