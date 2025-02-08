@@ -187,7 +187,7 @@ const Homepage: React.FC = () => {
             </div>
 
             {/* Buttons */}
-            <div className="absolute flex-col gap-3 lg:flex-row lg:gap-10  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mb-5 lg:mt-12 z-15">
+            <div className=" hidden absolute flex-col gap-3 lg:flex-row lg:gap-20  items-center justify-center top-[80%] left-[50%] transform -translate-x-1/2 mb-5 lg:mt-12 z-15">
                 <div
                     className="apply-button"
                     data-hackathon-slug="hackhubvitc"
