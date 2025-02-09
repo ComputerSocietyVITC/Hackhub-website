@@ -56,16 +56,7 @@ export interface TeamMember {
       linkedin: 'https://www.linkedin.com/in/teeshta-parmar-446b59285/',
       group: 'board'
     },
-    {
-      name: 'Shashwat Mishra',
-      role: 'Projects Lead',
-      image: '/images/people/BoardMembers/shashwat.jpg',
-      linkedin: 'https://www.linkedin.com/in/shashwat-mishra-a6ba78267/',
-      group: 'board'
-    },
     
-  
-   
     {
       name: 'Mrithula',
       role: 'Design Lead',
