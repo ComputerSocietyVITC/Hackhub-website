@@ -43,7 +43,7 @@ export default function Domains() {
           {domains.map((domain, idx) => (
             <div
               key={domain}
-              className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-bold uppercase ${montserrat.className} text-ellipsis overflow-hidden`}
+              className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-bold uppercase ${montserrat.className} text-ellipsis overflow-hidden`}
               style={{ 
                 lineHeight: 1.2,
                 letterSpacing: '-0.02em',
