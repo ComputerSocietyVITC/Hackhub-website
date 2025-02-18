@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Accordion,
@@ -12,7 +12,7 @@ export const runtime = "edge";
 export default function FaqPage() {
   return (
     <div className="min-h-screen w-full flex flex-col">
-      <div className="flex-1 w-full flex flex-col justify-center px-4 sm:px-10 pb-20 font-montserrat ">
+      <div className="flex-1 w-full flex flex-col justify-center px-4 sm:px-10 pb-20 font-montserrat">
         <div className="flex justify-between items-center mb-12">
           <p className="text-white text-xl sm:text-3xl font-extrabold">FAQ</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
@@ -20,29 +20,28 @@ export default function FaqPage() {
         </div>
 
         <div className="flex justify-start sm:justify-between mt-12">
-          <div className="w-full max-w-full lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto px-4 sm:px-6">
+          <div className="w-full max-w-full lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto px-4 sm:px-6 text-left">
             <Accordion type="multiple" className="space-y-5 text-semibold font-sans duration-500">
-              {[
-                'What is HackHub, and why should you participate?',
-                'Who can participate in HackHub?',
-                'What are the focus areas or tracks in this Hackathon?',
-                'What kind of support can participants expect?',
-                'How do I register for HackHub?',
-                'Do I need prior experience to participate in HackHub?',
-                'Are there any prizes for the winners?',
-                'What kind of projects can I build during HackHub?',
-                'How will projects be judged?',
-                'What if I have more questions about HackHub?',
+              {["What is HackHub, and why should you participate?",
+                "Who can participate in HackHub?",
+                "What are the focus areas or tracks in this Hackathon?",
+                "What kind of support can participants expect?",
+                "How do I register for HackHub?",
+                "Do I need prior experience to participate in HackHub?",
+                "Are there any prizes for the winners?",
+                "What kind of projects can I build during HackHub?",
+                "How will projects be judged?",
+                "What if I have more questions about HackHub?",
               ].map((question, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
                   className="border-b border-gray-600"
                 >
-                  <AccordionTrigger className="text-lg font-medium py-4 text-white hover:text-gray-300 transition">
+                  <AccordionTrigger className="text-lg font-medium py-4 text-white hover:text-gray-300 transition text-left">
                     {question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-white font-sans pb-4">
+                  <AccordionContent className="text-white font-sans pb-4 text-left">
                     {index === 0 && (
                       <p>
                         HackHub is a college-level hackathon designed to bring students, innovators, and tech

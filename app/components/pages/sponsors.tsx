@@ -22,7 +22,7 @@ const Sponsors = () => {
                         <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase mb-6 underline-offset-4">
                             Title Sponsor
                         </h2>
-                        <div className="">
+                        <div>
                             <Image
                                 src="/images/github-4.png"
                                 alt="GitHub Logo"
@@ -32,11 +32,28 @@ const Sponsors = () => {
                             />
                         </div>
                     </div>
+                    
+                    {/* Platinum Sponsor Section */}
+                    <div className="flex flex-col items-center justify-center">
+                        <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase mb-6 underline-offset-4">
+                            Platinum Sponsor
+                        </h2>
+                        <div>
+                            <Image
+                                src="/images/platinum.png"
+                                alt="Platinum Sponsor Logo"
+                                width={300}
+                                height={120}
+                                className="rounded-lg drop-shadow-lg bg-[#0D1117]"
+                            />
+                        </div>
+                    </div>
+
                     <div className="flex flex-col items-center justify-center">
                         <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase underline-offset-4">
                             Silver Tier
                         </h2>
-                        <div className=" mt-6">
+                        <div className="mt-6">
                             <Image
                                 src="/devfolio.webp"
                                 alt="Devfolio Logo"
@@ -76,11 +93,26 @@ const Sponsors = () => {
                     </div>
                 </div>
 
+                {/* Community Partner Section */}
+                <div className="flex flex-col items-center justify-center text-center mb-12 gap-12 p-5">
+                    <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase mb-6 underline-offset-4">
+                        Community Partner
+                    </h2>
+                    <div>
+                        <Image
+                            src="/images/community-partner.png"
+                            alt="Community Partner Logo"
+                            width={300}
+                            height={120}
+                            className="rounded-lg drop-shadow-lg bg-[#0D1117]"
+                        />
+                    </div>
+                </div>
+
                 {/* Description text */}
                 <div className="max-w-6xl mx-auto mb-24 text-center">
                     <p className="text-white text-lg sm:text-xl leading-relaxed">
-                        Join hands with{" "}
-                        <span className="font-bold">HackHub</span>, a premier
+                        Join hands with <span className="font-bold">HackHub</span>, a premier
                         college-level hackathon that brings together brilliant
                         minds to solve real-world problems and create
                         groundbreaking solutions. This event is more than just a
