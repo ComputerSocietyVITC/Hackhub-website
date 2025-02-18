@@ -15,9 +15,10 @@ const domains = [
   "AIML",
   "WEB3",
   "HEALTH",
-  "OPEN&nbsp;INNOVATION",
   "GAME&nbsp;DEV",
-  "ENVIRONMENTAL&nbsp;SUSTAINABILITY"
+  "Hardware",
+  "OPEN&nbsp;INNOVATION"
+  
 ];
 
 export default function Domains() {
