@@ -53,7 +53,7 @@ const Sponsors = () => {
                         <h2 className="text-white text-xl sm:text-2xl font-extrabold uppercase underline-offset-4">
                             Silver Tier
                         </h2>
-                        <div className="mt-6">
+                        <div className="flex md:flex-row flex-col items-center justify-center gap-12 mt-6">
                             <Image
                                 src="/devfolio.webp"
                                 alt="Devfolio Logo"
@@ -61,6 +61,11 @@ const Sponsors = () => {
                                 height={120}
                                 className="rounded-lg drop-shadow-lg bg-[#0D1117]"
                             />
+                            <Image src="/logo-white.png" 
+                            alt="Scoops Logo"
+                            width={300}
+                            height={120}
+                            className="rounded-lg drop-shadow-lg bg-[#0D1117]"/>
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center">
