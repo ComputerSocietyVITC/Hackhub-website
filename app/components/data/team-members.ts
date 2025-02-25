@@ -57,7 +57,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Teeshta Parmar",
     role: "Social Media Lead",
-    image: "/images/people/BoardMembers/Teeshta_parmar.jpeg",
+    image: "/images/people/BoardMembers/Teeshta_parmar.webp",
     linkedin: "https://www.linkedin.com/in/teeshta-parmar-446b59285/",
     group: "board",
   },
@@ -79,7 +79,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Sam Shervin",
     role: "Technical Head",
-    image: "/images/people/BoardMembers/Sam_shervin.jpeg",
+    image: "/images/people/BoardMembers/Sam_shervin.webp",
     linkedin: "https://www.linkedin.com/in/sam-shervin/",
     group: "board",
   },
