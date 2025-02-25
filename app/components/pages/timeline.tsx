@@ -106,7 +106,7 @@ const Timeline = () => {
       {/* Header Section */}
       <div className="relative w-full mb-12 px-4 mx-4 md:px-16">
         <div className="absolute left-0 top-1/2 -translate-y-1/2 pl-4 md:pl-0">
-          <span className="text-white font-bold text-xl font-archivo">03</span>
+          <span className="text-white font-bold text-xl">03</span>
         </div>
 
         <div className="w-full">

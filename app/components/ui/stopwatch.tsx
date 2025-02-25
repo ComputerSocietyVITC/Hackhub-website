@@ -6,11 +6,15 @@ export const runtime = "edge";
 
 interface StopwatchProps {
   targetDate: string; // Target date for countdown
-  top?: string;       // Adjustable top position
-  left?: string;      // Adjustable left position
+  top?: string; // Adjustable top position
+  left?: string; // Adjustable left position
 }
 
-const Stopwatch: React.FC<StopwatchProps> = ({ targetDate, top = "85%", left = "50%" }) => {
+const Stopwatch: React.FC<StopwatchProps> = ({
+  targetDate,
+  top = "85%",
+  left = "50%",
+}) => {
   const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(targetDate));
 
   useEffect(() => {
@@ -48,8 +52,12 @@ const Stopwatch: React.FC<StopwatchProps> = ({ targetDate, top = "85%", left = "
           key={label}
           className="flex flex-col items-center justify-center text-center md:w-32 md:h-24 w-20 h-15 text-white border-b-4 border-b-white border-t-2 border-r-2 border-l-2 rounded-2xl"
         >
-          <span className="font-bold md:text-5xl text-2xl text-center">{value}</span>
-          <span className="uppercase md:text-xs text-xs tracking-wide mt-1 font-archivoNarrow text-gray-400 text-center">{label}</span>
+          <span className="font-bold md:text-5xl text-2xl text-center">
+            {value}
+          </span>
+          <span className="uppercase md:text-xs text-xs tracking-wide mt-1 text-gray-400 text-center">
+            {label}
+          </span>
         </div>
       ))}
     </div>
