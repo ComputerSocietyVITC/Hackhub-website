@@ -36,7 +36,7 @@ export default function SponsorsGrid() {
                 >
                   <Image
                     className="rounded-sm"
-                    src="/images/PreviousSponsors/devfolio.jpg"
+                    src="/images/PreviousSponsors/devfolio.webp"
                     width={800}
                     height={800}
                     alt="Devfolio logo"

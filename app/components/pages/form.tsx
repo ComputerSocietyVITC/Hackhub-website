@@ -98,7 +98,7 @@ const ContactSection = () => {
               className="absolute bottom-2 right-2 text-white hover:text-gray-300 transition-colors flex items-center justify-center"
             >
               <Image
-                src="/images/arrow.png"
+                src="/images/arrow.webp"
                 alt="Send"
                 width={24}
                 height={24}
@@ -130,7 +130,7 @@ const ContactSection = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-4">
             <Image
-              src="/images/hackhub_logo.png"
+              src="/images/Hackhub_logo.svg"
               alt="HACKHUB Logo"
               width={200}
               height={50}

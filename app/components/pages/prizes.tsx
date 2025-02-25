@@ -32,7 +32,7 @@ const Prizes = () => {
               className="bg-center bg-cover h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
               style={{
                 paddingBottom: "125%",
-                backgroundImage: 'url("/images/1st_prize.png")',
+                backgroundImage: 'url("/images/1st_prize.webp")',
               }}
             ></div>
 
@@ -41,7 +41,7 @@ const Prizes = () => {
               className="bg-cover bg-center h-64 sm:h-70 lg:h-96 rounded-lg shadow-md"
               style={{
                 paddingBottom: "125%",
-                backgroundImage: 'url("/images/2nd_Prize.png")',
+                backgroundImage: 'url("/images/2nd_Prize.webp")',
               }}
             ></div>
 
@@ -50,7 +50,7 @@ const Prizes = () => {
               className="bg-cover bg-center h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
               style={{
                 paddingBottom: "125%",
-                backgroundImage: 'url("/images/3rd_Prize.png")',
+                backgroundImage: 'url("/images/3rd_Prize.webp")',
               }}
             ></div>
           </div>

@@ -24,7 +24,7 @@ const Sponsors = () => {
             </h2>
             <div>
               <Image
-                src="/images/github-4.png"
+                src="/images/github-4.webp"
                 alt="GitHub Logo"
                 width={300}
                 height={300}
@@ -40,7 +40,7 @@ const Sponsors = () => {
             </h2>
             <div>
               <Image
-                src="/images/platinum.png"
+                src="/images/platinum.webp"
                 alt="Platinum Sponsor Logo"
                 width={300}
                 height={120}
@@ -62,7 +62,7 @@ const Sponsors = () => {
                 className="rounded-lg drop-shadow-lg bg-[#0D1117]"
               />
               <Image
-                src="/logo-white.png"
+                src="/logo-white.webp"
                 alt="Scoops Logo"
                 width={300}
                 height={120}
@@ -107,7 +107,7 @@ const Sponsors = () => {
           </h2>
           <div>
             <Image
-              src="/images/community-partner.png"
+              src="/images/community-partner.webp"
               alt="Community Partner Logo"
               width={300}
               height={120}

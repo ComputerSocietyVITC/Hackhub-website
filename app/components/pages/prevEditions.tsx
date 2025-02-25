@@ -7,7 +7,7 @@ const PrevEditions = () => {
   // Creating the references to the images
   const imagesInit = Array.from(
     { length: 9 },
-    (_, i) => `/images/EventImages/${i + 1}.jpg`
+    (_, i) => `/images/EventImages/${i + 1}.webp`
   );
 
   // Using the useState hook to store the images
