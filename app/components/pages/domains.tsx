@@ -1,15 +1,8 @@
-'use client'
+"use client";
 
-import { Montserrat } from 'next/font/google';
 import { useCallback, useState } from "react";
 
 export const runtime = "edge";
-
-// Import Montserrat ExtraBold
-const montserrat = Montserrat({
-  weight: ["800"], // Use 800 for ExtraBold
-  subsets: ["latin"],
-});
 
 const domains = [
   "AIML",
@@ -17,8 +10,7 @@ const domains = [
   "HEALTH",
   "GAME&nbsp;DEV",
   "Hardware",
-  "OPEN&nbsp;INNOVATION"
-  
+  "OPEN&nbsp;INNOVATION",
 ];
 
 export default function Domains() {
@@ -35,7 +27,7 @@ export default function Domains() {
   return (
     <div className="w-full h-full px-4 py-8">
       {/* Section Header */}
-      <div className="flex items-center gap-4 mb-8 font-montserrat">
+      <div className="flex items-center gap-4 mb-8">
         <span className="text-white font-extrabold text-2xl ">DOMAINS</span>
         <div className="flex-1 h-[1px] bg-white"></div>
         <span className="text-white font-bold text-xl">02</span>
@@ -45,66 +37,68 @@ export default function Domains() {
           {domains.map((domain, idx) => (
             <div
               key={domain}
-              className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-bold uppercase ${montserrat.className} text-ellipsis overflow-hidden`}
-              style={{ 
+              className={`relative block overflow-hidden whitespace-nowrap text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-bold uppercase text-ellipsis`}
+              style={{
                 lineHeight: 1.2,
-                letterSpacing: '-0.02em',
-                transform: 'translateZ(0)',
+                letterSpacing: "-0.02em",
+                transform: "translateZ(0)",
               }}
               onMouseEnter={() => handleMouseEnter(idx)}
               onMouseLeave={handleMouseLeave}
             >
               <div className="relative">
-                {domain.split(/(&nbsp;|)/).map((part, i) => (
-                  part === '&nbsp;' ? (
+                {domain.split(/(&nbsp;|)/).map((part, i) =>
+                  part === "&nbsp;" ? (
                     <span key={`space-${i}`}>&nbsp;</span>
                   ) : (
-                    part.split('').map((letter, j) => (
+                    part.split("").map((letter, j) => (
                       <span
                         key={`${letter}-${i}-${j}-top`}
                         className="inline-block transition-transform duration-500 [backface-visibility:hidden]"
                         style={{
-                          transform: hoveredDomain === idx 
-                            ? 'translateY(-100%)' 
-                            : 'translateY(0)',
+                          transform:
+                            hoveredDomain === idx
+                              ? "translateY(-100%)"
+                              : "translateY(0)",
                           transitionDelay: `${(i * part.length + j) * 20}ms`,
-                          willChange: 'transform',
+                          willChange: "transform",
                         }}
                       >
                         {letter}
                       </span>
                     ))
                   )
-                ))}
+                )}
               </div>
-              <div 
+              <div
                 className="absolute inset-0"
                 style={{
-                  WebkitFontSmoothing: 'antialiased',
-                  textRendering: 'optimizeLegibility'
+                  WebkitFontSmoothing: "antialiased",
+                  textRendering: "optimizeLegibility",
                 }}
               >
-                {domain.split(/(&nbsp;|)/).map((part, i) => (
-                  part === '&nbsp;' ? (
+                {domain.split(/(&nbsp;|)/).map((part, i) =>
+                  part === "&nbsp;" ? (
                     <span key={`space-${i}`}>&nbsp;</span>
                   ) : (
-                    part.split('').map((letter, j) => (
+                    part.split("").map((letter, j) => (
                       <span
                         key={`${letter}-${i}-${j}-bottom`}
                         className="inline-block transition-transform duration-500 [backface-visibility:hidden]"
                         style={{
-                          transform: hoveredDomain === idx 
-                            ? 'translateY(0)' 
-                            : 'translateY(100%)',
+                          transform:
+                            hoveredDomain === idx
+                              ? "translateY(0)"
+                              : "translateY(100%)",
                           transitionDelay: `${(i * part.length + j) * 20}ms`,
-                          willChange: 'transform'
+                          willChange: "transform",
                         }}
                       >
                         {letter}
                       </span>
                     ))
                   )
-                ))}
+                )}
               </div>
             </div>
           ))}

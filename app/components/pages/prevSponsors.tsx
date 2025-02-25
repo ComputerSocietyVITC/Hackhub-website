@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Aos from 'aos';
+import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
@@ -18,10 +18,12 @@ export default function SponsorsGrid() {
     <div className="flex justify-center">
       <div className="w-full flex justify-center">
         <div className="mt-10 w-full px-5">
-          <div className="flex justify-between items-center font-montserrat" data-aos="fade-up">
+          <div className="flex justify-between items-center" data-aos="fade-up">
             <p className="text-white font-bold text-xl">05</p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white text-xl sm:text-3xl font-extrabold">PREVIOUS SPONSORS</p>
+            <p className="text-white text-xl sm:text-3xl font-extrabold">
+              PREVIOUS SPONSORS
+            </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">
             {/* Left section */}

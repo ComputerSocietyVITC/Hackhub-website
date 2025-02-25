@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Head from "next/head";
 import Stars from "./components/stars/stars";
 import { Hamburger } from "./components/ui/hamburger";
 import Loader from "./components/ui/loader";
 import "./globals.css";
+import { Montserrat } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const runtime = "edge";
 
@@ -41,11 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        {/* Add Google Font link for Archivo Narrow */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
         {/* add analytics */}
         <script
           defer
@@ -62,7 +48,7 @@ export default function RootLayout({
       </Head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-[#0D1117]`}
+        className={`${montserrat.className} overflow-x-hidden bg-[#0D1117]`}
       >
         <Loader>
           {children}

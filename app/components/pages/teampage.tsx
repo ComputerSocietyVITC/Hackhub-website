@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useState } from 'react';
-import { teamMembers } from '../data/team-members';
+import Image from "next/image";
+import { useState } from "react";
+import { teamMembers } from "../data/team-members";
 
 export const runtime = "edge";
 
@@ -10,9 +10,9 @@ const TeamPage = () => {
   const [showFullTeam, setShowFullTeam] = useState(false);
 
   // Filter members by group
-  const boardMembers = teamMembers.filter(member => member.group === 'board');
-  const webDevTeam = teamMembers.filter(member => member.group === 'webdev');
-  const designTeam = teamMembers.filter(member => member.group === 'design');
+  const boardMembers = teamMembers.filter((member) => member.group === "board");
+  const webDevTeam = teamMembers.filter((member) => member.group === "webdev");
+  const designTeam = teamMembers.filter((member) => member.group === "design");
 
   const TeamSection = ({
     title,
@@ -29,48 +29,74 @@ const TeamPage = () => {
     return (
       <div className="mt-8">
         {title && (
-          <h2 className="text-white text-2xl font-light text-center mb-4">{title}</h2>
+          <h2 className="text-white text-2xl font-light text-center mb-4">
+            {title}
+          </h2>
         )}
         <div className="max-w-full mx-auto px-4">
           <div className="grid gap-8">
             {/* Complete rows */}
             {completeRowsCount > 0 && (
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3  xl:grid-cols-6 gap-8">
-                {members.slice(0, completeRowsCount * maxColumns).map((member) => (
-                  <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
-                    <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">
-                      <div className="absolute inset-0 w-full h-full">
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          fill={true}
-                          className="rounded-[22px] object-cover transition-transform duration-300 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-colors duration-300">
-                          <div className="text-white text-lg font-semibold p-2 rounded-b-[22px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div className="text-center">
-                              <div>{member.name}</div>
-                              <div className="text-sm font-normal">{member.role}</div>
+                {members
+                  .slice(0, completeRowsCount * maxColumns)
+                  .map((member) => (
+                    <a
+                      key={member.name}
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative group"
+                    >
+                      <div className="relative w-full h-[300px] overflow-hidden rounded-[22px]">
+                        <div className="absolute inset-0 w-full h-full">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            fill={true}
+                            className="rounded-[22px] object-cover transition-transform duration-300 group-hover:scale-110"
+                          />
+                          <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-colors duration-300">
+                            <div className="text-white text-lg font-semibold p-2 rounded-b-[22px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                              <div className="text-center">
+                                <div>{member.name}</div>
+                                <div className="text-sm font-normal">
+                                  {member.role}
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                ))}
+                    </a>
+                  ))}
               </div>
             )}
 
             {/* Last row - centered */}
             <div className="flex justify-center">
               <div
-                className={title === "Design Team" ? "grid grid-cols-1 sm:grid-cols-2 gap-8" : "grid gap-7"}
-                style={title !== "Design Team" ? {
-                  gridTemplateColumns: `repeat(${lastRowItems}, minmax(0, 1fr))`,
-                } : undefined}
+                className={
+                  title === "Design Team"
+                    ? "grid grid-cols-1 sm:grid-cols-2 gap-8"
+                    : "grid gap-7"
+                }
+                style={
+                  title !== "Design Team"
+                    ? {
+                        gridTemplateColumns: `repeat(${lastRowItems}, minmax(0, 1fr))`,
+                      }
+                    : undefined
+                }
               >
                 {members.slice(completeRowsCount * maxColumns).map((member) => (
-                  <a key={member.name} href={member.linkedin} target="_blank" rel="noopener noreferrer" className="relative group">
+                  <a
+                    key={member.name}
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative group"
+                  >
                     <div className="relative w-[200px] sm:w-[250px] md:w-[250px] lg:w-[370px] xl:w-[200px] 2xl:w-[300px] h-[300px] overflow-hidden rounded-[22px]">
                       <div className="absolute inset-0 w-full h-full">
                         <Image
@@ -83,7 +109,9 @@ const TeamPage = () => {
                           <div className="text-white text-lg font-semibold p-2 rounded-b-[22px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="text-center">
                               <div>{member.name}</div>
-                              <div className="text-sm font-normal">{member.role}</div>
+                              <div className="text-sm font-normal">
+                                {member.role}
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -103,29 +131,43 @@ const TeamPage = () => {
     <div className="bg-cover bg-center w-full">
       <div className="max-w-full mx-auto px-4 pb-24">
         {/* Header section */}
-        <div className="flex justify-between items-center mb-8 font-montserrat">
+        <div className="flex justify-between items-center mb-8">
           <p className="text-white font-bold text-xl">08</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-2xl sm:text-3xl font-extrabold uppercase  ">THE HACKHUB TEAM</p>
+          <p className="text-white text-2xl sm:text-3xl font-extrabold uppercase  ">
+            THE HACKHUB TEAM
+          </p>
         </div>
-  
+
         {/* Show entire team button */}
         <div className="flex justify-center mb-2">
           <button
             onClick={() => setShowFullTeam(!showFullTeam)}
-            className="px-12 py-3 text-white border border-white/20 rounded-full 
+            className="px-12 py-3 text-white border border-white/20 rounded-full
               hover:bg-white/10 transition-colors duration-300 text-sm tracking-widest"
           >
-            {showFullTeam ? 'SHOW LESS' : 'MEET THE WHOLE TEAM'}
+            {showFullTeam ? "SHOW LESS" : "MEET THE WHOLE TEAM"}
           </button>
         </div>
-  
+
         {/* Conditionally Render Team Sections */}
         {showFullTeam && (
           <div className="space-y-8">
-            <TeamSection title="THE BOARD MEMBERS" members={boardMembers} maxColumns={6} />
-            <TeamSection title="WebDev Team" members={webDevTeam} maxColumns={6} />
-            <TeamSection title="Design Team" members={designTeam} maxColumns={2} />
+            <TeamSection
+              title="THE BOARD MEMBERS"
+              members={boardMembers}
+              maxColumns={6}
+            />
+            <TeamSection
+              title="WebDev Team"
+              members={webDevTeam}
+              maxColumns={6}
+            />
+            <TeamSection
+              title="Design Team"
+              members={designTeam}
+              maxColumns={2}
+            />
           </div>
         )}
       </div>

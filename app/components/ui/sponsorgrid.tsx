@@ -1,17 +1,9 @@
-import React from 'react';
-import { Montserrat } from 'next/font/google';
-
+import React from "react";
 export const runtime = "edge";
-
-// Load Montserrat font with Extra Bold weight
-const montserrat = Montserrat({
-  weight: ['800'], // Use 800 for ExtraBold
-  subsets: ['latin'], // Latin subset
-});
 
 const SponsorGrid = () => {
   return (
-    <div className={`max-w-full mx-auto px-4 py-8 ${montserrat.className}`}>
+    <div className={`max-w-full mx-auto px-4 py-8`}>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-14">
         {/* Cards */}
         {[1, 2, 3, 4, 5, 6].map((sponsor) => (
@@ -26,7 +18,9 @@ const SponsorGrid = () => {
                 {/* Placeholder for logo */}
               </div>
               {/* Sponsor Text */}
-              <h1 className="text-[#141414] text-2xl font-extrabold mt-4">Sponsor {sponsor}</h1>
+              <h1 className="text-[#141414] text-2xl font-extrabold mt-4">
+                Sponsor {sponsor}
+              </h1>
             </div>
 
             {/* Tracks and Prize Section */}

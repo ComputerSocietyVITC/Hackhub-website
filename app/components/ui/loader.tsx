@@ -1,14 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Montserrat } from "next/font/google";
 
 export const runtime = "edge";
-
-const montserrat = Montserrat({
-  weight: ["800"], // Use 800 for ExtraBold
-  subsets: ["latin"],
-});
 
 export default function Loader({
   children,
@@ -57,16 +51,13 @@ export default function Loader({
           }
         });
 
-        
         const minDisplayTime = new Promise<void>((resolve) =>
           setTimeout(resolve, 2000)
         );
 
         await Promise.race([
           Promise.all([windowLoadPromise, ...imagePromises, minDisplayTime]),
-          new Promise<void>((resolve) =>
-            setTimeout(resolve, fallbackTimeout)
-          ),
+          new Promise<void>((resolve) => setTimeout(resolve, fallbackTimeout)),
         ]);
 
         setIsLoading(false);
@@ -92,7 +83,7 @@ export default function Loader({
     return (
       <div
         id="loader"
-        className={`min-h-screen flex flex-col items-center justify-center bg-black text-white transition-opacity duration-500 ease-in-out ${montserrat.className}`}
+        className={`min-h-screen flex flex-col items-center justify-center bg-black text-white transition-opacity duration-500 ease-in-out`}
       >
         <div className="text-center space-y-6">
           {/* Responsive heading text */}
