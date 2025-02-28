@@ -27,6 +27,11 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      if(!formData.Name||!formData.Email||!formData.Phone_No||!formData.Message){
+        alert("Please fill all the fields");
+        return;
+      }
+
       await postData(formData);
       alert("Form submitted successfully!");
       setFormData({
@@ -35,9 +40,7 @@ const ContactSection = () => {
         Phone_No: "",
         Message: "",
       });
-      if(!formData.Name||!formData.Email||!formData.Phone_No||!formData.Message){
-        alert("Please fill all the fields");
-      }
+  
     } catch (error) {
       console.error("Error submitting the form:", error);
       alert("Failed to submit the form. Please try again.");
