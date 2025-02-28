@@ -35,6 +35,9 @@ const ContactSection = () => {
         Phone_No: "",
         Message: "",
       });
+      if(!formData.Name||!formData.Email||!formData.Phone_No||!formData.Message){
+        alert("Please fill all the fields");
+      }
     } catch (error) {
       console.error("Error submitting the form:", error);
       alert("Failed to submit the form. Please try again.");
