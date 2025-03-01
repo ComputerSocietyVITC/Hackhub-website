@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "collaboration",
     "events",
   ],
+  icons: {
+    icon: "/images/Hackhub_logo.svg", 
+  },
 };
 
 export default function RootLayout({

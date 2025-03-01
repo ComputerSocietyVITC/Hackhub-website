@@ -1,58 +1,59 @@
 import React from "react";
+import Image from "next/image";
 
 export const runtime = "edge";
 
 const Prizes = () => {
   return (
     <div className="min-h-screen w-full mt-10">
-      {/* Main Content Wrapper */}
       <div className="max-w-full mx-auto px-4 py-8">
-        {/* Header Section */}
         <div className="flex justify-between items-center mb-12">
-          {/* Left text */}
-          <p className="text-white text-xl font-extrabold uppercase  sm:text-3xl ">
+          <p className="text-white text-xl font-extrabold uppercase sm:text-3xl">
             PRIZES
           </p>
-
-          {/* Divider line */}
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-
-          {/* Right text */}
           <p className="text-white text-xl sm:text-3xl lg:text-xl font-bold">
             07
           </p>
         </div>
 
-        {/* Main Content Section */}
-        <div className="flex  mb-12 sm:items-center lg:flex-row flex-col gap-8 justify-center">
-          {/* Cards Section - Right Side */}
+        <div className="flex mb-12 sm:items-center lg:flex-row flex-col justify-center">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full sm:w-1/2 md:w-full lg:w-2/3 justify-center">
-            {/* Card 1 */}
-            <div
-              className="bg-center bg-cover h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
-              style={{
-                paddingBottom: "125%",
-                backgroundImage: 'url("/images/1st_prize.webp")',
-              }}
-            ></div>
+            {/* Gold Prize (1st Place) */}
+            <div className="flex flex-col items-center relative">
+              <Image
+                src="/images/1st_prize.webp"
+                alt="First Prize"
+                width={300}
+                height={400}
+                className="rounded-lg shadow-xl drop-shadow-[0_0_20px_rgba(255,215,0,0.8)] transition-transform transform "
+              />
+              <p className="mt-3 text-yellow-500 text-4xl font-semibold">₹25,000</p>
+            </div>
 
-            {/* Card 2 */}
-            <div
-              className="bg-cover bg-center h-64 sm:h-70 lg:h-96 rounded-lg shadow-md"
-              style={{
-                paddingBottom: "125%",
-                backgroundImage: 'url("/images/2nd_Prize.webp")',
-              }}
-            ></div>
+            {/* Silver Prize (2nd Place) */}
+            <div className="flex flex-col items-center relative">
+              <Image
+                src="/images/2nd_Prize.webp"
+                alt="Second Prize"
+                width={300}
+                height={400}
+                className="rounded-lg shadow-xl drop-shadow-[0_0_20px_rgba(192,192,192,0.8)] transition-transform transform "
+              />
+              <p className="mt-3 text-gray-300 text-4xl font-semibold">₹15,000</p>
+            </div>
 
-            {/* Card 3 */}
-            <div
-              className="bg-cover bg-center h-64 sm:h-72 lg:h-96 rounded-lg shadow-md"
-              style={{
-                paddingBottom: "125%",
-                backgroundImage: 'url("/images/3rd_Prize.webp")',
-              }}
-            ></div>
+            {/* Bronze Prize (3rd Place) */}
+            <div className="flex flex-col items-center relative">
+              <Image
+                src="/images/3rd_Prize.webp"
+                alt="Third Prize"
+                width={300}
+                height={400}
+                className="rounded-lg shadow-xl drop-shadow-[0_0_20px_rgba(205,127,50,0.8)] transition-transform transform"
+              />
+              <p className="mt-3 text-orange-500 text-4xl font-semibold">₹10,000</p>
+            </div>
           </div>
         </div>
       </div>
