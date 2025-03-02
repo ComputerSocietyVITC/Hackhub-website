@@ -16,7 +16,7 @@ export default function FaqPage() {
         <div className="flex justify-between items-center mb-12">
           <p className="text-white text-xl sm:text-3xl font-extrabold">FAQ</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white font-bold text-xl">09</p>
+          <p className="text-white font-bold text-xl">10</p>
         </div>
 
         <div className="flex justify-start sm:justify-between mt-12">

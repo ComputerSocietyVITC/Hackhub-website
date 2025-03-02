@@ -27,7 +27,12 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      if(!formData.Name||!formData.Email||!formData.Phone_No||!formData.Message){
+      if (
+        !formData.Name ||
+        !formData.Email ||
+        !formData.Phone_No ||
+        !formData.Message
+      ) {
         alert("Please fill all the fields");
         return;
       }
@@ -40,7 +45,6 @@ const ContactSection = () => {
         Phone_No: "",
         Message: "",
       });
-  
     } catch (error) {
       console.error("Error submitting the form:", error);
       alert("Failed to submit the form. Please try again.");
@@ -50,10 +54,10 @@ const ContactSection = () => {
   return (
     <div>
       {/* Get In Touch Section */}
-      <div className="contact-section mt-16 pt-8 px-12">
+      <div className="contact-section mt-16 pt-8 mx-4">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-12">
-          <p className="text-white font-bold text-xl">10</p>
+          <p className="text-white font-bold text-xl">11</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
           <p className="text-white text-2xl font-extrabold">GET IN TOUCH</p>
         </div>
@@ -61,7 +65,7 @@ const ContactSection = () => {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="flex justify-between items-start"
+          className="flex justify-between items-start px-12"
         >
           <div className="flex flex-col space-y-4 w-1/2">
             <input

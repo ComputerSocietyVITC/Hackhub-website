@@ -75,11 +75,11 @@ const TeamPage = () => {
   };
 
   return (
-    <div className="bg-cover bg-center w-full">
-      <div className="max-w-7xl mx-auto px-4 pb-24">
+    <div className="bg-cover bg-center w-full mt-8">
+      <div className="px-4 pb-24">
         {/* Header section */}
         <div className="flex justify-between items-center mb-12">
-          <p className="text-white font-bold text-xl">08</p>
+          <p className="text-white font-bold text-xl">09</p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
           <p className="text-white text-2xl sm:text-3xl font-extrabold uppercase">
             THE HACKHUB TEAM
