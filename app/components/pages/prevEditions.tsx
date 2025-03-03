@@ -48,7 +48,7 @@ const PrevEditions = () => {
               PREVIOUS EDITIONS
             </p>
             <div className="flex-1 h-[1px] bg-white mx-4"></div>
-            <p className="text-white font-bold text-xl">04</p>
+            <p className="text-white font-bold text-xl">05</p>
           </div>
           {isDesktop ? (
             <ImageGrid images={images} />

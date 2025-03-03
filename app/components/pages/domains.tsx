@@ -28,9 +28,11 @@ export default function Domains() {
     <div className="w-full h-full px-4 py-8">
       {/* Section Header */}
       <div className="flex items-center gap-4 mb-8">
-        <span className="text-white font-extrabold text-2xl ">DOMAINS</span>
+        <span className="text-white font-extrabold text-xl sm:text-3xl">
+          DOMAINS
+        </span>
         <div className="flex-1 h-[1px] bg-white"></div>
-        <span className="text-white font-bold text-xl">02</span>
+        <span className="text-white font-bold text-xl">03</span>
       </div>
       <div className=" text-white p-8">
         <div className="space-y-6 sm:ml-10">

@@ -77,7 +77,7 @@ const Speakers = () => {
             SPEAKERS
           </p>
           <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-xl sm:text-3xl font-bold">08</p>
+          <p className="text-white text-xl font-bold">07</p>
         </div>
       </div>
       <div className="xl:w-[75%] mx-16 flex flex-col space-y-10 xl:space-y-8">

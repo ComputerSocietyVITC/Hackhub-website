@@ -56,10 +56,12 @@ const ContactSection = () => {
       {/* Get In Touch Section */}
       <div className="contact-section mt-16 pt-8 mx-4">
         {/* Section Header */}
-        <div className="flex justify-between items-center mb-12">
-          <p className="text-white font-bold text-xl">11</p>
-          <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-2xl font-extrabold">GET IN TOUCH</p>
+        <div className="flex items-center gap-4 mb-8">
+          <span className="text-white font-extrabold text-xl sm:text-3xl">
+            GET IN TOUCH
+          </span>
+          <div className="flex-1 h-[1px] bg-white"></div>
+          <span className="text-white font-bold text-xl">10</span>
         </div>
 
         {/* Contact Form */}

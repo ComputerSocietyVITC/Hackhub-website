@@ -9,11 +9,11 @@ const Aboutpage: React.FC = () => {
       <div className=" w-full flex justify-center">
         <div className=" w-full px-5">
           <div className="flex justify-between items-center">
-            <p className="text-white font-bold text-xl">01</p>
-            <div className="flex-1 h-[1px] bg-white mx-4"></div>
             <p className="text-white text-xl sm:text-3xl font-extrabold">
               ABOUT
             </p>
+            <div className="flex-1 h-[1px] bg-white mx-4"></div>
+            <p className="text-white font-bold text-xl">01</p>
           </div>
 
           <div

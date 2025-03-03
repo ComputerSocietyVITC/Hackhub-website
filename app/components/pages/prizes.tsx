@@ -7,14 +7,12 @@ const Prizes = () => {
   return (
     <div className="min-h-screen w-full mt-10">
       <div className="max-w-full mx-auto px-4 py-8">
-        <div className="flex justify-between items-center mb-12">
-          <p className="text-white text-xl font-extrabold uppercase sm:text-3xl">
+        <div className="flex items-center gap-4 mb-8">
+          <span className="text-white font-extrabold text-xl">06</span>
+          <div className="flex-1 h-[1px] bg-white"></div>
+          <span className="text-white font-bold text-xl sm:text-3xl">
             PRIZES
-          </p>
-          <div className="flex-1 h-[1px] bg-white mx-4"></div>
-          <p className="text-white text-xl sm:text-3xl lg:text-xl font-bold">
-            07
-          </p>
+          </span>
         </div>
 
         <div className="flex mb-12 sm:items-center lg:flex-row flex-col justify-center">
@@ -28,7 +26,9 @@ const Prizes = () => {
                 height={400}
                 className="rounded-lg shadow-xl drop-shadow-[0_0_20px_rgba(255,215,0,0.8)] transition-transform transform "
               />
-              <p className="mt-3 text-yellow-500 text-4xl font-semibold">₹25,000</p>
+              <p className="mt-3 text-yellow-500 text-4xl font-semibold">
+                ₹25,000
+              </p>
             </div>
 
             {/* Silver Prize (2nd Place) */}
@@ -40,7 +40,9 @@ const Prizes = () => {
                 height={400}
                 className="rounded-lg shadow-xl drop-shadow-[0_0_20px_rgba(192,192,192,0.8)] transition-transform transform "
               />
-              <p className="mt-3 text-gray-300 text-4xl font-semibold">₹15,000</p>
+              <p className="mt-3 text-gray-300 text-4xl font-semibold">
+                ₹15,000
+              </p>
             </div>
 
             {/* Bronze Prize (3rd Place) */}
@@ -52,7 +54,9 @@ const Prizes = () => {
                 height={400}
                 className="rounded-lg shadow-xl drop-shadow-[0_0_20px_rgba(205,127,50,0.8)] transition-transform transform"
               />
-              <p className="mt-3 text-orange-500 text-4xl font-semibold">₹10,000</p>
+              <p className="mt-3 text-orange-500 text-4xl font-semibold">
+                ₹10,000
+              </p>
             </div>
           </div>
         </div>

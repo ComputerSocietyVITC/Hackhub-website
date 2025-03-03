@@ -9,9 +9,9 @@ const Sponsors = () => {
       <div className="w-full px-4 md:px-6">
         {/* Header with section number and title */}
         <div className="flex items-center gap-4 mb-16">
-          <span className="text-white font-bold text-2xl">02</span>
+          <span className="text-white font-bold text-xl">02</span>
           <div className="flex-1 h-px bg-white"></div>
-          <h2 className="text-white text-2xl sm:text-4xl font-extrabold uppercase">
+          <h2 className="text-white text-xl sm:text-3xl font-extrabold uppercase">
             Sponsors
           </h2>
         </div>
