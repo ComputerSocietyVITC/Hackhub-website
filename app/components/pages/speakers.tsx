@@ -44,12 +44,6 @@ const Speakers = () => {
 
   const speakers = [
     {
-      image: "/kamal.jpeg",
-      name: "Kamal S.",
-      company: "Microsoft",
-      bio: "Senior Cloud Advocate @ Microsoft, Google Dev Expert - Flutter, Developer Advocate, Women Techmakers Ambassador!,OpenSource Community Builder, Speaker, Youtuber - Whatsupcoders, Google Mentor, Mentor @mentorcruise",
-    },
-    {
       image: "/lalith.jpeg",
       name: "Lalith Krishnan Haribabu",
       company: "Digital South Trust",
