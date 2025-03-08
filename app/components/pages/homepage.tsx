@@ -4,7 +4,7 @@ import * as THREE from "three";
 import gsap from "gsap";
 import Image from "next/image";
 import Stopwatch from "../ui/stopwatch";
-import Button from "../ui/button";
+
 
 export const runtime = "edge";
 
