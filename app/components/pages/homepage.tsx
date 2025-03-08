@@ -180,7 +180,7 @@ const Homepage: React.FC = () => {
 
       {/* Stopwatch */}
       <div className="flex flex-col justify-center items-center mt-20 lg:mb-10 transform -translate-x-1/2 -translate-y-1/2 z-15">
-        <Stopwatch targetDate="2025-03-07T18:00:00" />
+        <Stopwatch targetDate="2025-03-09T08:00:00" />
       </div>
       {/*
       <div className="absolute top-[90%] left-[50%] w-full transform -translate-x-1/2 z-15">
