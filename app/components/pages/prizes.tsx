@@ -55,7 +55,7 @@ const Prizes = () => {
                 className="rounded-lg shadow-xl drop-shadow-[0_0_20px_rgba(205,127,50,0.8)] transition-transform transform"
               />
               <p className="mt-3 text-orange-500 text-4xl font-semibold">
-                ₹10,000
+                ₹5,000
               </p>
             </div>
           </div>
